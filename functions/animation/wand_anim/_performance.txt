@@ -1,0 +1,1 @@
+I've split the animations into so many functions to optimise performance as much as possible

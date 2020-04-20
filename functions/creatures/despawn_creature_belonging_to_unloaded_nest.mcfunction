@@ -1,0 +1,17 @@
+execute as @s[tag=armorSuitCreature] run function hp:creatures/armor_suit/armor_suit_death
+execute as @s[tag=bearCreature] run function hp:creatures/bear/bear_death
+execute as @s[tag=blubberWormCreature] run function hp:creatures/blubber_work/blubber_worm_death
+execute as @s[tag=deathEaterCreature] run function hp:creatures/death_eater/death_eater_death
+execute as @s[tag=largeSpiderCreature] run function hp:creatures/large_spider/large_spider_death
+execute as @s[tag=smallSpiderCreature] run function hp:creatures/small_spider/small_spider_death
+execute as @s[tag=monsterBookCreature] run function hp:creatures/monster_book/monster_book_death
+execute as @s[tag=ratCreature] run function hp:creatures/rat/rat_death
+execute as @s[tag=skeletonCreature] run function hp:creatures/skeleton/skeleton_death
+execute as @s[tag=skeletonArm] run function hp:creatures/skeleton/skeleton_arm_death
+execute as @s[tag=skeletonFallenBody] run function hp:creatures/skeleton/skeleton_fallen_body_death
+execute as @s[tag=skeletonHead] run function hp:creatures/skeleton/skeleton_head_death
+execute as @s[tag=skeletonArcherCreature] run function hp:creatures/skeleton_archer/skeleton_archer_death
+execute as @s[tag=skeletonSwordsmanCreature] run function hp:creatures/skeleton_swordsman/skeleton_swordsman_death
+execute as @s[tag=toadCreature] run function hp:creatures/toad/toad_death
+execute as @s[tag=trollCreature] run function hp:creatures/troll/troll_death
+execute as @s[tag=wolfCreature] run function hp:creatures/wolf/wolf_death

@@ -1,0 +1,21 @@
+summon area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:1000,Particle:"block air",Tags:[chunkLoader]}
+
+execute as @e[tag=chunkLoader,limit=1,sort=nearest] at @s run spreadplayers 696 232 1 1 false @s
+execute as @e[tag=chunkLoader,limit=1,sort=nearest] at @s run spreadplayers 696 248 1 1 false @s
+execute as @e[tag=chunkLoader,limit=1,sort=nearest] at @s run spreadplayers 712 280 1 1 false @s
+
+
+summon minecraft:armor_stand 711.77 65.00 282.74 {HurtByTimestamp: 0, Attributes: [{Base: 20.0d, Name: "generic.maxHealth"}, {Base: 0.0d, Name: "generic.knockbackResistance"}, {Base: 0.699999988079071d, Name: "generic.movementSpeed"}, {Base: 0.0d, Name: "generic.armor"}, {Base: 0.0d, Name: "generic.armorToughness"}], Invulnerable: 1b, FallFlying: 0b, ShowArms: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, FallDistance: 0.0f, DisabledSlots: 0, DeathTime: 0s, Pose: {}, Invisible: 1b, Tags: ["hospitalArchClassroomEntity"], Motion: [0.0d, -0.0784000015258789d, 0.0d], Small: 0b, Health: 20.0f, Air: 300s, OnGround: 1b, Rotation: [162.09654f, 78.523705f], HandItems: [{}, {}], Fire: -1s, ArmorItems: [{}, {}, {}, {id: "minecraft:diamond_sword", Count: 1b, tag: {Unbreakable: 1b, Damage: 1510}}], NoBasePlate: 0b, HurtTime: 0s}
+
+summon minecraft:armor_stand 703.60 59.00 241.14 {HurtByTimestamp: 0, Attributes: [{Base: 20.0d, Name: "generic.maxHealth"}, {Base: 0.0d, Name: "generic.knockbackResistance"}, {Base: 0.699999988079071d, Name: "generic.movementSpeed"}, {Base: 0.0d, Name: "generic.armor"}, {Base: 0.0d, Name: "generic.armorToughness"}], Invulnerable: 1b, FallFlying: 0b, ShowArms: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, FallDistance: 0.0f, DisabledSlots: 0, DeathTime: 0s, Pose: {}, Invisible: 1b, Tags: ["hospitalArchClassroomEntity"], Motion: [0.0d, -0.0784000015258789d, 0.0d], Small: 0b, Health: 20.0f, Air: 300s, OnGround: 1b, Rotation: [-133.83174f, 78.78461f], HandItems: [{}, {}], Fire: -1s, ArmorItems: [{}, {}, {}, {id: "minecraft:diamond_sword", Count: 1b, tag: {Unbreakable: 1b, Damage: 1510}}], NoBasePlate: 0b, HurtTime: 0s}
+
+summon minecraft:item_frame 698.97 60.50 235.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 4b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [90.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:prismarine_shard", Count: 1b}, ItemDropChance: 0.0f, Fire: -1s, TileY: 60, TileX: 698, TileZ: 235, Tags: ["hospitalArchClassroomEntity"]}
+summon minecraft:item_frame 696.50 60.50 236.97 {Motion: [0.0d, 0.0d, 0.0d], Facing: 2b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [180.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:prismarine_shard", Count: 1b}, ItemDropChance: 0.0f, Fire: -1s, TileY: 60, TileX: 696, TileZ: 236, Tags: ["hospitalArchClassroomEntity"]}
+summon minecraft:item_frame 695.03 59.50 233.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 5b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [270.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:prismarine_crystals", Count: 1b}, ItemDropChance: 0.0f, Fire: -1s, TileY: 59, TileX: 695, TileZ: 233, Tags: ["hospitalArchClassroomEntity"]}
+summon minecraft:item_frame 698.50 60.50 230.03 {Motion: [0.0d, 0.0d, 0.0d], Facing: 3b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [0.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:prismarine_shard", Count: 1b}, ItemDropChance: 0.0f, Fire: -1s, TileY: 60, TileX: 698, TileZ: 230, Tags: ["hospitalArchClassroomEntity"]}
+summon minecraft:item_frame 696.03 60.50 238.50 {Motion: [0.0d, 0.0d, 0.0d], Facing: 5b, ItemRotation: 0b, Invulnerable: 0b, Air: 300s, OnGround: 0b, PortalCooldown: 0, Rotation: [270.0f, 0.0f], FallDistance: 0.0f, Item: {id: "minecraft:prismarine_shard", Count: 1b}, ItemDropChance: 0.0f, Fire: -1s, TileY: 60, TileX: 696, TileZ: 238, Tags: ["hospitalArchClassroomEntity"]}
+
+
+kill @e[tag=chunkLoader]
+
+scoreboard players set hospitalArchClassroomsIsCulled global 0

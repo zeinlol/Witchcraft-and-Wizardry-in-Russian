@@ -1,0 +1,28 @@
+execute as @s[scores={travelPoint=19},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:12}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:12,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=18},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:11}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:11,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=17},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:10}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:10,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=16},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:8}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:8,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=15},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:7}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:7,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=14},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:5}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:5,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=13},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:4}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:4,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=12},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:2}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:2,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=11},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:1}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:1,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=11}] at @s run effect give @s minecraft:levitation 1 255 true
+execute as @s[scores={travelPoint=11}] run tag @s add isLevitating
+execute as @s[scores={travelPoint=10}] at @s run tp @s 5002.66 121.00 10016.04 -92.36 -1.25
+execute as @s[scores={travelPoint=9}] at @s run tp @s 5002.66 121.00 10016.04 -92.36 -0.25
+execute as @s[scores={travelPoint=9}] at @s run effect clear @s minecraft:levitation
+execute as @s[scores={travelPoint=9}] run tag @s remove isLevitating
+execute as @s[scores={travelPoint=9},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:2}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:2,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=8},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:3}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:3,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=7},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:4}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:4,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=6},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:6}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:6,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=5},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:7}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:7,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=3},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:9}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:9,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=2},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:10}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:10,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=1},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:11}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:11,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=0},tag=offhandCanBeReplaced,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:12}}]}] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,Damage:12,qDetect:1b,fDetect:1b}
+execute as @s[scores={travelPoint=0}] run tag @s remove inTravelPoint
+execute as @s[scores={travelPoint=0,trackedQuestID=1..}] run tag @s add silentQuestAnimation
+execute as @s[scores={travelPoint=0,trackedQuestID=1..}] run tag @s add showTrackedQuest
+execute as @s[scores={travelPoint=0}] run tag @s remove travelPointAzkabanDrop

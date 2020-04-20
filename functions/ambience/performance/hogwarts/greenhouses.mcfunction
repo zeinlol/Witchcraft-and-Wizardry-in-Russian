@@ -1,0 +1,42 @@
+# Greenhouses
+execute as @s[x=725,dx=38,y=53,dy=7,z=24,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=726,dx=36,y=61,dy=1,z=25,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=728,dx=32,y=63,dy=1,z=27,dz=2] run tag @s add hogwartsGreenhouses
+execute as @s[x=725,dx=38,y=53,dy=8,z=40,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=763,dx=0,y=60,dy=0,z=40,dz=0] run tag @s add hogwartsGreenhouses
+execute as @s[x=726,dx=36,y=60,dy=2,z=41,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=728,dx=32,y=63,dy=1,z=43,dz=2] run tag @s add hogwartsGreenhouses
+execute as @s[x=793,dx=46,y=53,dy=7,z=24,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=794,dx=44,y=61,dy=1,z=25,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=796,dx=40,y=63,dy=1,z=27,dz=2] run tag @s add hogwartsGreenhouses
+execute as @s[x=793,dx=46,y=53,dy=7,z=40,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=794,dx=44,y=60,dy=2,z=41,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=796,dx=40,y=63,dy=1,z=43,dz=2] run tag @s add hogwartsGreenhouses
+execute as @s[x=831,dx=8,y=53,dy=7,z=56,dz=34] run tag @s add hogwartsGreenhouses
+execute as @s[x=832,dx=6,y=62,dy=0,z=57,dz=32] run tag @s add hogwartsGreenhouses
+execute as @s[x=834,dx=2,y=63,dy=1,z=59,dz=28] run tag @s add hogwartsGreenhouses
+execute as @s[x=815,dx=8,y=52,dy=8,z=56,dz=34] run tag @s add hogwartsGreenhouses
+execute as @s[x=816,dx=6,y=60,dy=2,z=57,dz=32] run tag @s add hogwartsGreenhouses
+execute as @s[x=818,dx=2,y=63,dy=1,z=59,dz=28] run tag @s add hogwartsGreenhouses
+execute as @s[x=831,dx=8,y=53,dy=7,z=98,dz=34] run tag @s add hogwartsGreenhouses
+execute as @s[x=832,dx=6,y=60,dy=2,z=99,dz=32] run tag @s add hogwartsGreenhouses
+execute as @s[x=834,dx=2,y=63,dy=1,z=101,dz=28] run tag @s add hogwartsGreenhouses
+execute as @s[x=815,dx=8,y=53,dy=7,z=98,dz=34] run tag @s add hogwartsGreenhouses
+execute as @s[x=816,dx=6,y=61,dy=1,z=99,dz=32] run tag @s add hogwartsGreenhouses
+execute as @s[x=818,dx=2,y=63,dy=1,z=101,dz=28] run tag @s add hogwartsGreenhouses
+execute as @s[x=824,dx=14,y=47,dy=5,z=40,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=839,dx=2,y=47,dy=4,z=43,dz=2] run tag @s add hogwartsGreenhouses
+execute as @s[x=714,dx=33,y=52,dy=9,z=56,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=714,dx=33,y=62,dy=0,z=58,dz=4] run tag @s add hogwartsGreenhouses
+execute as @s[x=714,dx=33,y=62,dy=3,z=59,dz=4] run tag @s add hogwartsGreenhouses
+
+# Greenhouse Round thing
+execute as @s[x=773,dx=10,y=52,dy=14,z=8,dz=10] run tag @s add hogwartsGreenhouses
+execute as @s[x=774,dx=8,y=70,dy=1,z=9,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=774,dx=9,y=67,dy=2,z=9,dz=9] run tag @s add hogwartsGreenhouses
+execute as @s[x=774,dx=8,y=67,dy=2,z=8,dz=10] run tag @s add hogwartsGreenhouses
+execute as @s[x=773,dx=10,y=67,dy=2,z=9,dz=8] run tag @s add hogwartsGreenhouses
+execute as @s[x=775,dx=6,y=72,dy=0,z=10,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=776,dx=4,y=73,dy=0,z=11,dz=4] run tag @s add hogwartsGreenhouses
+execute as @s[x=772,dx=12,y=52,dy=11,z=10,dz=6] run tag @s add hogwartsGreenhouses
+execute as @s[x=775,dx=6,y=54,dy=9,z=7,dz=12] run tag @s add hogwartsGreenhouses

@@ -1,0 +1,69 @@
+execute positioned 4978 121 10003 run function hp:creatures/dark_wizard/summon_dark_wizard
+# execute positioned 4988 141 9996 run function hp:creatures/death_eater/summon_death_eater
+execute positioned 4990 141 9981 run function hp:creatures/death_eater/summon_death_eater
+execute positioned 5008 121 9983 run function hp:creatures/skeleton/summon_skeleton
+# execute positioned 5009 121 9995 run function hp:creatures/dark_wizard/summon_dark_wizard
+execute positioned 5019 121 9998 run function hp:creatures/skeleton_swordsman/summon_skeleton_swordsman
+# execute positioned 5006 121 10019 run function hp:creatures/skeleton/summon_skeleton
+execute positioned 5015 121 10012 run function hp:creatures/skeleton/summon_skeleton
+execute positioned 5017 121 10008 run function hp:creatures/dark_wizard/summon_dark_wizard
+# execute positioned 5025 121 10011 run function hp:creatures/skeleton/summon_skeleton
+execute positioned 4971 141 10012 run function hp:creatures/death_eater/summon_death_eater
+# execute positioned 5021 141 10019 run function hp:creatures/death_eater/summon_death_eater
+execute positioned 4990 121 9987 run function hp:creatures/skeleton_archer/summon_skeleton_archer
+# execute positioned 4982 121 10002 run function hp:creatures/skeleton_archer/summon_skeleton_archer
+execute positioned 5002 121 10012 run function hp:creatures/skeleton_swordsman/summon_skeleton_swordsman
+# execute positioned 4996 121 9977 run function hp:creatures/dark_spirit/summon_dark_spirit
+execute positioned 5004 141 9982 run function hp:creatures/death_eater/summon_death_eater
+execute positioned 5011 121 9992 run function hp:creatures/dark_spirit/summon_dark_spirit
+execute positioned 5016 141 10002 run function hp:creatures/death_eater/summon_death_eater
+# execute positioned 5014 121 10015 run function hp:creatures/dark_spirit/summon_dark_spirit
+
+execute as @e[tag=darkWizardCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=darkWizardCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=darkWizardCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=darkWizardCreatureIsBeingSummoned,limit=1,sort=nearest] run tag @s remove darkWizardCreatureIsBeingSummoned
+
+execute as @e[tag=skeletonCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=skeletonCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=skeletonCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=skeletonCreatureIsBeingSummoned,limit=1,sort=nearest] run tag @s remove skeletonCreatureIsBeingSummoned
+
+execute as @e[tag=skeletonSwordsmanCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=skeletonSwordsmanCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=skeletonSwordsmanCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=skeletonSwordsmanCreatureIsBeingSummoned,limit=1,sort=nearest] run tag @s remove skeletonSwordsmanCreatureIsBeingSummoned
+
+execute as @e[tag=skeletonArcherCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=skeletonArcherCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=skeletonArcherCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=skeletonArcherCreatureIsBeingSummoned,limit=1,sort=nearest] run tag @s remove skeletonArcherCreatureIsBeingSummoned
+
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.nestID int 1 run scoreboard players set @s nestID 3
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run scoreboard players set @s dSinceAppiration 3
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run scoreboard players set @s deathEaterA 101
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 96
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 91
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 86
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 81
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 76
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 71
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 66
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 61
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 56
+execute as @e[tag=deathEaterCreatureIsBeingSummoned,limit=1,sort=random] run scoreboard players set @s deathEaterA 51
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run tag @s add deathEaterApparate
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run data merge entity @s {NoGravity:1b,Invulnerable:1b}
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run effect give @s minecraft:invisibility 10 1 true
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run effect give @s minecraft:jump_boost 100000 255 true
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run tag @s add isSpawningDeathEater
+execute as @e[tag=deathEaterCreatureIsBeingSummoned] run tag @s remove deathEaterCreatureIsBeingSummoned
+
+
+execute as @e[tag=darkSpiritCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questID int 1 run scoreboard players set @s questID 35
+execute as @e[tag=darkSpiritCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.questSession int 1 run scoreboard players operation @s questSession = azkabanSpellChallengeID global
+execute as @e[tag=darkSpiritCreatureIsBeingSummoned] store result entity @s ArmorItems[3].tag.waveID int 1 run scoreboard players set @s waveID 6
+execute as @e[tag=darkSpiritCreatureIsBeingSummoned,limit=1,sort=nearest] run tag @s remove darkSpiritCreatureIsBeingSummoned

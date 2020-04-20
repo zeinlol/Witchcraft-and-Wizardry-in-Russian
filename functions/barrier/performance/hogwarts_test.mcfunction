@@ -1,0 +1,37 @@
+# Hogwarts
+execute as @s[x=-349,dx=1987,y=0,dy=99999,z=890,dz=210] run tag @s add leavingPlayableArea
+execute as @s[x=-349,dx=63,y=0,dy=99999,z=-887,dz=1987] run tag @s add leavingPlayableArea
+execute as @s[x=-349,dx=324,y=0,dy=99999,z=754,dz=346] run tag @s add leavingPlayableArea
+execute as @s[x=-286,dx=51,y=0,dy=99999,z=702,dz=52] run tag @s add leavingPlayableArea
+execute as @s[x=-286,dx=62,y=0,dy=99999,z=203,dz=257] run tag @s add leavingPlayableArea
+execute as @s[x=-286,dx=79,y=0,dy=99999,z=-887,dz=1089] run tag @s add leavingPlayableArea
+execute as @s[x=-349,dx=304,y=0,dy=99999,z=-887,dz=738] run tag @s add leavingPlayableArea
+execute as @s[x=-207,dx=88,y=0,dy=99999,z=-148,dz=257] run tag @s add leavingPlayableArea
+execute as @s[x=-45,dx=1683,y=0,dy=99999,z=-887,dz=412] run tag @s add leavingPlayableArea
+execute as @s[x=787,dx=851,y=0,dy=99999,z=-474,dz=230] run tag @s add leavingPlayableArea
+execute as @s[x=1276,dx=362,y=0,dy=99999,z=-244,dz=1133] run tag @s add leavingPlayableArea
+execute as @s[x=651,dx=624,y=0,dy=99999,z=511,dz=378] run tag @s add leavingPlayableArea
+execute as @s[x=1051,dx=224,y=0,dy=99999,z=-243,dz=754] run tag @s add leavingPlayableArea
+execute as @s[x=699,dx=87,y=0,dy=99999,z=-474,dz=101] run tag @s add leavingPlayableArea
+execute as @s[x=-45,dx=245,y=0,dy=99999,z=-475,dz=43] run tag @s add leavingPlayableArea
+execute as @s[x=-286,dx=139,y=0,dy=99999,z=110,dz=392] run tag @s add leavingPlayableArea
+execute as @s[x=530,dx=30,y=0,dy=99999,z=645,dz=244] run tag @s add leavingPlayableArea
+execute as @s[x=1324,dx=314,y=0,dy=99999,z=-887,dz=1987] run tag @s add leavingPlayableArea
+
+execute as @s[x=-349,dx=97,y=0,dy=99999,z=720,dz=380] run tag @s add leftPlayableArea
+execute as @s[x=-349,dx=45,y=0,dy=99999,z=-887,dz=1606] run tag @s add leftPlayableArea
+execute as @s[x=-349,dx=191,y=0,dy=99999,z=-887,dz=1377] run tag @s add leftPlayableArea
+execute as @s[x=-158,dx=28,y=0,dy=99999,z=-163,dz=260] run tag @s add leftPlayableArea
+execute as @s[x=-157,dx=83,y=0,dy=99999,z=-887,dz=724] run tag @s add leftPlayableArea
+execute as @s[x=-73,dx=226,y=0,dy=99999,z=-887,dz=390] run tag @s add leftPlayableArea
+execute as @s[x=154,dx=1484,y=0,dy=99999,z=-887,dz=351] run tag @s add leftPlayableArea
+execute as @s[x=726,dx=912,y=0,dy=99999,z=-535,dz=134] run tag @s add leftPlayableArea
+execute as @s[x=809,dx=829,y=0,dy=99999,z=-400,dz=133] run tag @s add leftPlayableArea
+execute as @s[x=1088,dx=550,y=0,dy=99999,z=-266,dz=471] run tag @s add leftPlayableArea
+execute as @s[x=1150,dx=488,y=0,dy=99999,z=206,dz=894] run tag @s add leftPlayableArea
+execute as @s[x=620,dx=160,y=0,dy=99999,z=828,dz=272] run tag @s add leftPlayableArea
+execute as @s[x=781,dx=368,y=0,dy=99999,z=829,dz=271] run tag @s add leftPlayableArea
+execute as @s[x=593,dx=26,y=0,dy=99999,z=671,dz=429] run tag @s add leftPlayableArea
+execute as @s[x=-251,dx=843,y=0,dy=99999,z=930,dz=170] run tag @s add leftPlayableArea
+execute as @s[x=-251,dx=203,y=0,dy=99999,z=776,dz=153] run tag @s add leftPlayableArea
+execute as @s[x=1351,dx=287,y=0,dy=99999,z=-887,dz=1987] run tag @s add leftPlayableArea

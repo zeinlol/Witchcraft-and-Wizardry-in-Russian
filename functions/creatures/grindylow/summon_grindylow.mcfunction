@@ -1,0 +1,3 @@
+summon minecraft:drowned ~ ~1 ~ {IsBaby:1b,Silent:1b,PersistenceRequired:1b,Team:"Creature",Health:20f,Tags:["undead","creature","grindylowCreature","grindylowCreatureIsBeingSummoned"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:100000000}],Attributes:[{Name:generic.maxHealth,Base:20},{Name:generic.attackDamage,Base:20},{Name:generic.followRange,Base:50}],ArmorItems:[{},{},{},{id:"minecraft:stone_sword",Count:1b,tag:{Unbreakable:1b,Damage:92}}]}
+execute as @e[tag=grindylowCreatureIsBeingSummoned,limit=1,sort=nearest] run scoreboard players set @s animTest 0
+execute as @e[tag=grindylowCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health

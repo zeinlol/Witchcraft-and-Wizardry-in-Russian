@@ -1,0 +1,1 @@
+I could probably fairly easily have extended this to a broader usage system that let players inspect signs or other items in the world.

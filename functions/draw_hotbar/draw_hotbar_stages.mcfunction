@@ -1,0 +1,11 @@
+# Hotbar stages. In it's own function to save performance.
+replaceitem entity @s[scores={hotbar_stage=1}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:50,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=2}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:51,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=3}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:52,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=4}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:53,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=5}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:54,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=6}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:55,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=7}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:56,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=8},tag=!remindQuestBook] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:57,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=8},tag=remindQuestBook] hotbar.5 minecraft:diamond_sword{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:1268,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[scores={hotbar_stage=9}] hotbar.5 minecraft:wooden_hoe{display:{Name:"{\"text\":\"Инвентарь\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:58,Unbreakable:1b,qDetect:1b}

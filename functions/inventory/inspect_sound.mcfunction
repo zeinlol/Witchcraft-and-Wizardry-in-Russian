@@ -1,0 +1,16 @@
+execute as @s[scores={inspectSound=0}] at @s run playsound minecraft:custom.ui.inventory.game_inventory.generic.picked_up_generic master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=1}] at @s run playsound minecraft:custom.inventory.pickup.book master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=2}] at @s run playsound minecraft:custom.inventory.pickup.metal1 master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=3}] at @s run playsound minecraft:custom.inventory.pickup.cloth master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=4}] at @s run playsound minecraft:custom.inventory.pickup.food master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=5}] at @s run playsound minecraft:custom.inventory.pickup.gem master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=6}] at @s run playsound minecraft:custom.inventory.pickup.herb master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=7}] at @s run playsound minecraft:custom.inventory.pickup.liquid master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=8}] at @s run playsound minecraft:custom.inventory.pickup.meat master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=9}] at @s run playsound minecraft:custom.inventory.pickup.metal2 master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=10}] at @s run playsound minecraft:custom.inventory.pickup.paper master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=11}] at @s run playsound minecraft:custom.inventory.pickup.ring master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=12}] at @s run playsound minecraft:custom.inventory.pickup.metal3 master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=13}] at @s run playsound minecraft:custom.inventory.pickup.wood master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=14}] at @s run playsound minecraft:custom.ui.inventory.game_inventory.key.picked_up_key master @s ~ ~ ~ 1 1 1
+execute as @s[scores={inspectSound=15}] at @s run playsound minecraft:custom.inventory.pickup.sword master @s ~ ~ ~ 1 1 1

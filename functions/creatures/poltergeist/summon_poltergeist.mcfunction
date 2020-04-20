@@ -1,0 +1,2 @@
+summon vex ~ ~ ~ {Tags:["creature","poltergeistCreature","poltergeistCreatureIsBeingSummoned"],Attributes:[{Name:generic.maxHealth,Base:12},{Name:generic.followRange,Base:60},{Name:generic.attackDamage,Base:20}],Health:12f,ArmorItems:[{},{},{},{id:"minecraft:golden_hoe",Count:1b,tag:{Unbreakable:1b,Damage:32}}]}
+execute as @e[tag=poltergeistCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health

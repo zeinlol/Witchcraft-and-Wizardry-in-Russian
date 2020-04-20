@@ -1,0 +1,3 @@
+execute if score alohomoraChainTimerIsGoing global matches 1 run scoreboard players set alohomoraChain2 global 1
+execute if score alohomoraChainTimerIsGoing global matches 1 as 6395fce8-cb41-45d0-bd64-52e00c33034d store result entity @s ArmorItems[3].tag.Damage int 1 run scoreboard players set tmp tmp 7
+execute unless score alohomoraChainTimerIsGoing global matches 1 run playsound minecraft:custom.ui.error master @a 6478 45 -12 30 1 1
