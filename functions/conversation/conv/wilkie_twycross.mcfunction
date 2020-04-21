@@ -271,7 +271,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"√ Travel back to Министерство Магии main hall\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationMinistryOfMagic_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно в Министерство Магии main hall\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationMinistryOfMagic_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"Министерство Магии\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationMinistryOfMagic_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] run tag @s add hasSpokenToTwycrossAfterDeathEaterAttack
 #-------------------------------
