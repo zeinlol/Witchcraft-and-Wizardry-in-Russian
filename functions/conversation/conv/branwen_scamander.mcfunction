@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hello there. Welcome to our shop, Magical Menagerie. Feel free to look around, but please be careful with the the creatures. And let me know if you have any questions.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет. Welcome to our shop, Magical Menagerie. Feel free to look around, but please be careful with the the creatures. And let me know if you have any questions.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
