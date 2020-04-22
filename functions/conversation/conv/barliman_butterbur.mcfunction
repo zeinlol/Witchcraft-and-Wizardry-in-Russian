@@ -62,7 +62,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You must be new here. The Daily Prophet is a wizarding newspaper. It is the primary source of news for British and Irish witches and wizards. It's a magical newspaper, and by means of a Protean Charm, it can change over the course of a day, as the news changes.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You must be new here. The 'Ежедневный Пророк' is a wizarding newspaper. It is the primary source of news for British and Irish witches and wizards. It's a magical newspaper, and by means of a Protean Charm, it can change over the course of a day, as the news changes.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -93,7 +93,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Daily Prophet has been producing papers since 1743, the same year it famously described Gideon Flatworthy, head of an extremist anti-Muggle group, as 'less a wizard, more a lazy walrus-like object who lies all day on a rather smelly cushion, and expects people to admire him for it'\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The 'Ежедневный Пророк' has been producing papers since 1743, the same year it famously described Gideon Flatworthy, head of an extremist anti-Muggle group, as 'less a wizard, more a lazy walrus-like object who lies all day on a rather smelly cushion, and expects people to admire him for it'\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

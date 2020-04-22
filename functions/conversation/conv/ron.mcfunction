@@ -295,7 +295,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Are you kidding me? Of course, I like Quidditch. I support the Chudley Cannons. My brothers always make me play as Keeper when we play at home, so I'm hoping to become the Keeper for the Gryffindor team at some point. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Are you kidding me? Of course, I like Quidditch. I support the Chudley Cannons. My brothers always make me play as Keeper when we play at home, so I'm hoping to become Вратарь for the Gryffindor team at some point. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

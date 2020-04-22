@@ -152,6 +152,6 @@ execute if score wizardingWirelessNetworkIsCulled global matches 0 unless entity
 execute if score zonkosIsCulled global matches 1 if entity @p[tag=!cullAll,x=5427,y=95,z=2455,dx=40,dy=58,dz=41] run function hp:entity_culling/hogsmeade/zonkos/zonkos_set
 execute if score zonkosIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5427,y=95,z=2455,dx=40,dy=58,dz=41] run function hp:entity_culling/hogsmeade/zonkos/zonkos_remove
 
-# Daily Prophet 
+# 'Ежедневный Пророк' 
 execute if score hogsmeadeDailyPophetIsCulled global matches 1 if entity @p[tag=!cullAll,x=5318,y=99,z=2441,dx=32,dy=67,dz=29] run function hp:entity_culling/hogsmeade/daily_prophet_hogsmeade/daily_prophet_hogsmeade_set
 execute if score hogsmeadeDailyPophetIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5318,y=99,z=2441,dx=32,dy=67,dz=29] run function hp:entity_culling/hogsmeade/daily_prophet_hogsmeade/daily_prophet_hogsmeade_remove

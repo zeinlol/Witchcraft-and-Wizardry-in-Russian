@@ -310,7 +310,7 @@ execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlay
 tag @s remove use
 
 ############################
-# Delinquent Daily Prophet #
+# Delinquent 'Ежедневный Пророк' #
 ############################
 execute if score delinquentDailyProphet sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[scores={conv=427},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 

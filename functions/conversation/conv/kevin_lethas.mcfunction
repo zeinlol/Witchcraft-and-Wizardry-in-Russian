@@ -66,7 +66,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" He did...?! Oh, dear! I had to deliver a shipment of the Daily Prophet to the Ministry today. I completely forgot. I have such a terrible memory, I keep forgetting important things. I hope this never happens again, but knowing me... If only I had a Напоминалка or something. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" He did...?! Oh, dear! I had to deliver a shipment of the 'Ежедневный Пророк' to the Ministry today. I completely forgot. I have such a terrible memory, I keep forgetting important things. I hope this never happens again, but knowing me... If only I had a Напоминалка or something. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

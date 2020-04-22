@@ -34,10 +34,10 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ What is the Daily Prophet?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ What is the 'Ежедневный Пророк'?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ How long has the Daily Prophet been in print?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ How long has the 'Ежедневный Пророк' been in print?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Is this an independent newspaper?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
@@ -71,7 +71,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You must be new here. The Daily Prophet is a wizarding newspaper. It is the primary source of news for British and Irish witches and wizards. It's a magical newspaper, and by means of a Protean Charm, it can change over the course of a day, as the news changes.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You must be new here. The 'Ежедневный Пророк' is a wizarding newspaper. It is the primary source of news for British and Irish witches and wizards. It's a magical newspaper, and by means of a Protean Charm, it can change over the course of a day, as the news changes.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -102,7 +102,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Daily Prophet has been producing papers since 1743, the same year it famously described Gideon Flatworthy, head of an extremist anti-Muggle group, as 'less a wizard, more a lazy walrus-like object who lies all day on a rather smelly cushion, and expects people to admire him for it'\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The 'Ежедневный Пророк' has been producing papers since 1743, the same year it famously described Gideon Flatworthy, head of an extremist anti-Muggle group, as 'less a wizard, more a lazy walrus-like object who lies all day on a rather smelly cushion, and expects people to admire him for it'\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

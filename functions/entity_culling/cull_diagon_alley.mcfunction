@@ -28,7 +28,7 @@ execute if score brewsAndStewsIsCulled global matches 0 unless entity @p[tag=!cu
 execute if score broomstixIsCulled global matches 1 if entity @p[tag=!cullAll,x=2817,y=48,z=821,dx=42,dy=38,dz=21] run function hp:entity_culling/diagon_alley/broomstix/broomstix_set
 execute if score broomstixIsCulled global matches 0 unless entity @p[tag=!cullAll,x=2817,y=48,z=821,dx=42,dy=38,dz=21] run function hp:entity_culling/diagon_alley/broomstix/broomstix_remove
 
-# Daily Prophet 
+# 'Ежедневный Пророк' 
 execute if score dailyProphetIsCulled global matches 1 if entity @p[tag=!cullAll,x=2856,y=43,z=1011,dx=49,dy=62,dz=50] run function hp:entity_culling/diagon_alley/daily_prophet/daily_prophet_set
 execute if score dailyProphetIsCulled global matches 0 unless entity @p[tag=!cullAll,x=2856,y=43,z=1011,dx=49,dy=62,dz=50] run function hp:entity_culling/diagon_alley/daily_prophet/daily_prophet_remove
 

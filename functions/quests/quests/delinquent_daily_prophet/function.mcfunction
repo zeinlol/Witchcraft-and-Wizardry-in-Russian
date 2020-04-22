@@ -1,5 +1,5 @@
 ##############################################
-# Delinquent Daily Prophet
+# Delinquent 'Ежедневный Пророк'
 ##############################################
 scoreboard players set @s questID 50
 scoreboard players operation @s questState = delinquentDailyProphet sharedQuests
@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Travel to the Daily Prophet offices in Косой Переулок
+# Travel to the 'Ежедневный Пророк' offices in Косой Переулок
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
@@ -158,7 +158,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 5 ###########################################################################################
 #############
-# Speak to Wayne Brocklehurst
+# Speak to Уэйн Броклхерст
 
 ### Tracked Quest ###
 execute as @s[scores={questState=5},tag=isTrackedQuest] run tag @s remove hideQuestTracking

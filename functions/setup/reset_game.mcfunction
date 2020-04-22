@@ -167,7 +167,7 @@ scoreboard players set parchmentPoverty sharedQuests 0
 # Hand of Glory
 scoreboard players set handOfGlory sharedQuests 0
 
-# Delinquent Daily Prophet
+# Delinquent 'Ежедневный Пророк'
 scoreboard players set delinquentDailyProphet sharedQuests 0
 
 # Riddle Riches

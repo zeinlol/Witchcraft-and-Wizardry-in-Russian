@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You get what you pay for. If you are looking to get your feet off the ground, you're in the right place. If you're looking to do it with any kind of speed or grace you might have more luck over at Spintwitches Sporting Needs. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You get what you pay for. If you are looking to get your feet off the ground, you're in the right place. If you're looking to do it with any kind of speed or grace you might have more luck over at 'Спортивные принадлежности для квиддича'. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -168,7 +168,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Quidditch is played on broomsticks with two teams, and the object of the game is to score more goals than the opponents. There are four balls in the game; the Golden Snitch, the Квоффл and two Бладжерs. Each team has seven players; one Seeker, one Keeper, two Beaters and three Chasers, each with different tasks.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Quidditch is played on broomsticks with two teams, and the object of the game is to score more goals than the opponents. There are four balls in the game; Золотой Снитч, the Квоффл and two Бладжерs. Each team has seven players; one Seeker, one Keeper, two Beaters and three Chasers, each with different tasks.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

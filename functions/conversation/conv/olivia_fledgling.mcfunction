@@ -177,16 +177,16 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Seeker\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Ловец\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Chasers\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Охотник\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Beaters\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Загонщик\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 9
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Keeper\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Вратарь\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 10
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"На самом деле что-то другое\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -213,7 +213,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is one Seeker per team. The goal of the Seeker is to catch the Golden Snitch. They play a crucial role in Quidditch, as a game does not end until the Seeker catches the Snitch. A team whose Seeker catches the Snitch receives one-hundred and fifty points, which almost always wins the match for that team.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is one Seeker per team. The goal of Ловец is to catch Золотой Снитч. They play a crucial role in Quidditch, as a game does not end until Ловец catches the Snitch. A team whose Seeker catches the Snitch receives one-hundred and fifty points, which almost always wins the match for that team.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -244,7 +244,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" In earlier versions of Quidditch, before the snidget bird was replaced by the Golden Snitch, the Seeker was known as the Hunter.\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" In earlier versions of Quidditch, before the snidget bird was replaced by Золотой Снитч, Ловец was known as the Hunter.\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -276,7 +276,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well. There are three Chasers per team. The Chasers control the Квоффл and attempt to get it through the goal hoops past the Keeper. Each goal is worth ten points.\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well. There are three Chasers per team. Охотник control the Квоффл and attempt to get it through the goal hoops past Вратарь. Each goal is worth ten points.\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -370,7 +370,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is one Keeper per team, and it is their job to guard the three goalposts attempting to stop the other team's Chasers from scoring. The Keeper also wears the most protection than any other position, which includes a helmet, shoulder/chest pads, and knee pads. This protects them and effectively makes them heavier than most of their other teammates.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is one Keeper per team, and it is their job to guard the three goalposts attempting to stop the other team's Chasers from scoring. Вратарь also wears the most protection than any other position, which includes a helmet, shoulder/chest pads, and knee pads. This protects them and effectively makes them heavier than most of their other teammates.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -401,14 +401,14 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There are three different kinds of balls used in Quidditch: the Golden Snitch, the Бладжерs, and the Квоффл.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There are three different kinds of balls used in Quidditch: Золотой Снитч, the Бладжерs, and the Квоффл.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Golden Snitch\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Золотой Снитч\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 12
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Бладжерs\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
@@ -441,7 +441,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Golden Snitch is what it's all about. The Seekers look for the Snitch, and when it is caught the team scores one-hundred and fifty points and the game ends.\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Золотой Снитч is what it's all about. Ловецs look for the Snitch, and when it is caught the team scores one-hundred and fifty points and the game ends.\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -534,7 +534,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Snidgets were used in Quidditch until the 14th century, when Quidditch had grown so much in popularity that the snidget had become an endangered species. People started looking for alternative birds when Bowman Wright, a metal-charmer from Godric's Hollow, came up with the artificial snidget, the Golden Snitch, that is also used in modern Quidditch.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Snidgets were used in Quidditch until the 14th century, when Quidditch had grown so much in popularity that the snidget had become an endangered species. People started looking for alternative birds when Bowman Wright, a metal-charmer from Godric's Hollow, came up with the artificial snidget, Золотой Снитч, that is also used in modern Quidditch.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -598,7 +598,7 @@ tag @s[scores={convState=17},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The beater's job is to protect their teammates, and aim them at the opposing players instead. Long ago Бладжерs, then known as blooders, were just rocks bewitched to fly around, but rocks are too fragile, and after a few hits from the beaters' bats, the players were just chased around by flying gravel for the rest of the game.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The beater's job is to protect their teammates, and aim them at the opposing players instead. Long ago Бладжерs, then known as blooders, were just rocks bewitched to fly around, but rocks are too fragile, and after a few hits from Загонщик' bats, the players were just chased around by flying gravel for the rest of the game.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

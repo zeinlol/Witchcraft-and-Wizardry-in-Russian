@@ -173,7 +173,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I do. I'm the Seeker for the Gryffindor team. I have been since my very first year - I was chasing after Malfoy when he'd stolen Neville's Напоминалка and flown off with it. It was my first time on a broom as well. I thought I was in so much trouble, but it turns out that wasn't the case at all. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I do. I'm Ловец for the Gryffindor team. I have been since my very first year - I was chasing after Malfoy when he'd stolen Neville's Напоминалка and flown off with it. It was my first time on a broom as well. I thought I was in so much trouble, but it turns out that wasn't the case at all. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

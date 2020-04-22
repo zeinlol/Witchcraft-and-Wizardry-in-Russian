@@ -13,7 +13,7 @@ execute unless entity @s[scores={ambienceLocation=8}] as @s[scores={lastRegion=2
 execute unless entity @s[scores={ambienceLocation=9}] as @s[scores={lastRegion=2},x=2850,dx=22,y=48,dy=25,z=919,dz=22,tag=!isFastTravelling] run function hp:ambience/soundscapes/madam_malkins
 # Eeylops Owl Emporium
 execute unless entity @s[scores={ambienceLocation=10}] as @s[scores={lastRegion=2},x=2853,dx=16,y=46,dy=15,z=961,dz=9,tag=!isFastTravelling] run function hp:ambience/soundscapes/eeylops_owl_emporium
-# Daily Prophet
+# 'Ежедневный Пророк'
 execute unless entity @s[scores={ambienceLocation=11}] as @s[scores={lastRegion=2},x=2860,dx=44,y=45,dy=15,z=1024,dz=28,tag=!isFastTravelling] unless entity @s[x=2855,y=51,z=1039,dx=13,dy=16,dz=15] run function hp:ambience/soundscapes/daily_prophet
 # Best Quality Potages
 # 2853 46 995 2861 71 1002 - 8 15 7

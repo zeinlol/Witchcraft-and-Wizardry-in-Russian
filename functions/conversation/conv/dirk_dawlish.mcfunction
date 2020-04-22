@@ -81,7 +81,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ah, the Нимбус 2000. A lovely thing. It's a racing broom produced by the Нимбус Racing Broom Company. At the time of its release it was the fastest broomstick in production, until the Нимбус 2001 took over that title.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ah, the Нимбус 2000. A lovely thing. It's a racing broom produced by the 'Скоростные мётлы Нимбус'. At the time of its release it was the fastest broomstick in production, until the Нимбус 2001 took over that title.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -112,7 +112,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yes, the Нимбус 2001. It is a racing broom produced by the Нимбус Racing Broom Company. It is faster than the Нимбус 2000, and though it is not as fast as the Молния it is still used by the majority of Quidditch teams across the globe.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yes, the Нимбус 2001. It is a racing broom produced by the 'Скоростные мётлы Нимбус'. It is faster than the Нимбус 2000, and though it is not as fast as the Молния it is still used by the majority of Quidditch teams across the globe.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -267,7 +267,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Quidditch is played on broomsticks with two teams, and the object of the game is to score more goals than the oppomnnts. There are four balls in the game; The Golden Snitch, the Квоффл and two Бладжерs. Each team has seven players; one Seeker, one Keeper, two Beaters and three Chasers, each with different tasks.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Quidditch is played on broomsticks with two teams, and the object of the game is to score more goals than the oppomnnts. There are four balls in the game; Золотой Снитч, the Квоффл and two Бладжерs. Each team has seven players; one Seeker, one Keeper, two Beaters and three Chasers, each with different tasks.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
