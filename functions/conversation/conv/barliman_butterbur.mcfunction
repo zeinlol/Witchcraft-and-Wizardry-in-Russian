@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Why hello! I am \"},{\"text\":\"Барлиман Баттербур\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\", the owner and proprietor of The Wine Barrel Inn. How can I help you?\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Why hello! I am \"},{\"text\":\"Барлиман Баттербур\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\", the owner and proprietor of The Wine Barrel Inn. Чем могу быть полезен?\",\"color\":\"white\",\"bold\":\"false\"}]"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -155,7 +155,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" None to speak of. There are a few minor publications, such as the Quibbler, of course. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" None to speak of. There are a few minor publications, such as 'Придира', of course. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

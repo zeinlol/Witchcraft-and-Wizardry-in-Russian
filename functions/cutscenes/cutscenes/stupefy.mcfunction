@@ -319,7 +319,7 @@ tp @s[scores={cutSceneTimer=319}] 5558.106 96.58 -18.71 14.28004 20.43
 tp @s[scores={cutSceneTimer=320}] 5558.121 96.58 -18.71 14.38004 20.43
 execute as @s[scores={cutSceneTimer=300}] as @s run function hp:cutscenes/fade_in
 
-# ¤Lupin:¤ Welcome to Defense Against the Dark Arts!
+# ¤Lupin:¤ Добро пожаловать в  Defense Against the Dark Arts!
 execute as @s[scores={cutSceneTimer=40},tag=cutsceneLeader] run tag @e[tag=lupinClassroomFpEngine,limit=1] remove cutsceneStop
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
 execute as @s[scores={cutSceneTimer=20..80}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]

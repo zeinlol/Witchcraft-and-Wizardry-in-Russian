@@ -24,7 +24,7 @@ execute if score flyingApronIsCulled global matches 0 unless entity @p[tag=!cull
 execute if score gladragsWizardWearIsCulled global matches 1 if entity @p[tag=!cullAll,x=5257,y=94,z=2488,dx=24,dy=44,dz=46] run function hp:entity_culling/hogsmeade/gladrags_wizard_wear/gladrags_wizard_wear_set
 execute if score gladragsWizardWearIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5257,y=94,z=2488,dx=24,dy=44,dz=46] run function hp:entity_culling/hogsmeade/gladrags_wizard_wear/gladrags_wizard_wear_remove
 
-# Globus Mundi
+# Глобус Мунди
 execute if score globusMundiIsCulled global matches 1 if entity @p[tag=!cullAll,x=5309,y=92,z=2416,dx=37,dy=64,dz=39] run function hp:entity_culling/hogsmeade/globus_mundi/globus_mundi_set
 execute if score globusMundiIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5309,y=92,z=2416,dx=37,dy=64,dz=39] run function hp:entity_culling/hogsmeade/globus_mundi/globus_mundi_remove
 

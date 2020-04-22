@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Slugs and Jiggers Apothecary, Hogsmeade branch. We have just about everything you could need for potion brewing. You can also visit our store in Косой Переулок if you don't find what we need. Perhaps you'll have more luck there. Anyway, \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" аптека 'Слизень и Джиггер', Hogsmeade branch. We have just about everything you could need for potion brewing. You can also visit our store in Косой Переулок if you don't find what we need. Perhaps you'll have more luck there. Anyway, \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -65,7 +65,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What can I do for you? \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Чем могу быть полезен? \\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

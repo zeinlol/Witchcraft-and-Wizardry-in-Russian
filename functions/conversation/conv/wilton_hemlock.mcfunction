@@ -27,22 +27,22 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Welcome to Slugs and Jiggers apothecary. Good on you for coming in here. You don't seem like the type to fall for Mr. Mulpepper and his fancy ways.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  аптеку 'Слизень и Джиггер'. Хорошо, что вы пришли сюда. Я мистер Малпеппер, с радостью помогу вам.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≡ I would like to buy something\"}",Tags:["_____buy_____","_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≡ Мне бы хотелось чего-нибудь купить\"}",Tags:["_____buy_____","_____Normal_____","_____click_____","convOption","i"]}
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите о вашем магазине\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about Косой Переулок\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Косом Переулке\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Tell me about potion brewing\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о зельеварении\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -69,7 +69,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I sell potion equipment and ingredients. This shop was established in 1207. The 'slug' in the name refers to a slug of liquid, not the snail. And the 'Jigger' also refers to the liquid measurement, not the flea. I hate it when people get the meanings messed up. I can't stand word play. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я продаю зелья и ингредиенты. Этот магазин был основан в 1207 г. 'Слизень' в названии отсылается к слизким жидкостям, а не к улитке. 'Джиггер' же относится к различным измерениям, а не к блохам. Ненавижу, когда люди путают значения. Я не могу терпеть такую игру слов. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -101,7 +101,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" This is a great place to get supplies if you like brewing potions, as long as you're willing to pay. If I don't have what you want, you can check with some of the other potion shops in Косой Переулок. If you aren't willing to pay, you might find supplies scattered around, if you go exploring, or you could go hunting for creatures and plants to obtain them yourself.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это отличное место, чтобы запастись ингридиентами, если вам нравиться варить зелья, конечно пока вы готовы платить. Если у меня нет того, что вам нужно, вы можете посетить другие магазины зелий в Косом переулке. Если у вас нет денег, можете поискать припасы разбросанные вокруг, просто исследуйте мир, охотьтесь на существ, собирайте растения, чтобы получить ингридиенты самостоятельно.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -132,7 +132,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ah, interested in potions? That's good. Potions must be brewed carefully to achieve the proper effects. In certain cases, those that are brewed incorrectly or in a dirty cauldron can become poisons. In other cases, even potions that have been brewed correctly may in some cases have deleterious effects.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" О, интересуешься зельями? Это хорошо. Зелья нужно варить аккуратно, чтобы получить нужные эффекты. В некоторых случаях, если варить неаккуратно, неправильно или в грязном котле, зелья могут стать ядом. В других случаях даже правильно приготовленные зелья могут в некоторых случаях иметь пагубные последствия.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -163,7 +163,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" For example, Felix Felicis causes recklessness and overconfidence when used more than sparingly, while the Elixir to Induce Euphoria has side-effects such as excessive singing and nose-tweaking, though these can be countered by adding peppermint.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Например, Феликс Фелицис вызывает безрассудство и чрезмерную уверенность, если использовать его слишком часто. Так же Эйфорийный эликсир имеет побочные эффекты, такие как чрезмерное пение и изменение носа, хотя с ними можно бороться, добавляя мяту.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

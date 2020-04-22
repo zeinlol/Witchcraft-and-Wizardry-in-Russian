@@ -61,7 +61,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I thought not. It's not a story Dumbledore would tell you. It's an old legend. Cadmus Peverell was a pure-blood wizard, who held the resurrection stone. A stone so powerful it could use its magic to bring back life... He held such strong dark magic that Cadmus Peverell could keep the ones he cared about from dying. The Deathly Hallows is a pathway to many abilities some consider to be unnatural. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I thought not. It's not a story Dumbledore would tell you. It's an old legend. Cadmus Peverell was a pure-blood wizard, who held Воскрешающий камень. A stone so powerful it could use its magic to bring back life... He held such strong dark magic that Cadmus Peverell could keep the ones he cared about from dying. The Дары Смерти is a pathway to many abilities some consider to be unnatural. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -199,7 +199,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ... I died here! Nobody missed me even when I was alive. Took them hours to find my body — I know, I was sitting right here waiting for them. Now barely anybody even comes in here anymore... Well... If you die, you're welcome to share my toilet. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" ... I died here! Nobody missed me even when I was alive. Took them hours to find my body — I know, I was sitting right here waiting for them. Now barely anybody even comes in here anymore... Well... If you die, you're Добро пожаловать в  share my toilet. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

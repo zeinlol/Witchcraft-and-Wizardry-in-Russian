@@ -91,7 +91,7 @@ execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2
 # 2851 49 909 2862 54 917 - 11 5 8
 execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2},x=2851,dx=11,y=49,dy=5,z=909,dz=8,tag=!isFastTravelling] run function hp:ambience/soundscapes/diagon_alley_store
 
-# Globus Mundi
+# Глобус Мунди
 # 2853 53 888 2862 77 898 - 9 24 10
 execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2},x=2853,dx=9,y=53,dy=24,z=888,dz=10,tag=!isFastTravelling] run function hp:ambience/soundscapes/diagon_alley_store
 

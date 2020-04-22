@@ -849,7 +849,7 @@ execute as @s[scores={cutSceneTimer=860}] run tp @s 738.1948 53.8912 60.94871 27
 execute as @s[scores={cutSceneTimer=840}] run function hp:cutscenes/fade_in
 
 
-# ¤Sprout:¤ Welcome everyone! Welcome to Greenhouse 1.
+# ¤Sprout:¤ Welcome everyone! Добро пожаловать в  Greenhouse 1.
 execute as @s[scores={cutSceneTimer=70},tag=cutsceneLeader] as @e[tag=sproutClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1000 1 1
 execute as @s[scores={cutSceneTimer=70..200}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"      "}]
 execute as @s[scores={cutSceneTimer=70},tag=cutsceneLeader] as @e[tag=sproutClassroom,limit=1] run function hp:npc/update_npc_head_expression

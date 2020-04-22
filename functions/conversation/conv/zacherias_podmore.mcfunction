@@ -27,14 +27,14 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Welcome to Globus Mundi! What can I do for you? \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Глобус Мунди! Чем могу быть полезен? \\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ What kind of travels do you offer? \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Какие путешествия Вы предлагаете? \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -61,7 +61,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We have it all. Broom tours to Cork, Antwerp, Helsinki, Gothenburg, Bratislava, and Edinburgh. No? How about visiting ancient warlock burial sites accompanied by learned masters of magical history. If you're heading west we assist with wand permit applications bonafide MACUSA Authorised Agents. We also do Apparition tours: experience the Muggle way of life all over Great Britain. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Куда угодно. Приключенческие туры по Корку, Антверпену, Хельсинкам, Гётеборгу, Братиславе и Эдинбургу. Вам мало? Как насчет посещения древних захоронений колдунов в сопровождении знатоков магической истории? Если вы направляетесь на запад, мы поможем с заявками на разрешение на палочку от МАКУСА. Так же есть экзотический тур: попробуйте на себе какого это, быть магглом, пожив без волшебства в любой точке Великобритании! \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -94,7 +94,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! I've been waiting for this.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Отлично! Я как раз ждал его.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
