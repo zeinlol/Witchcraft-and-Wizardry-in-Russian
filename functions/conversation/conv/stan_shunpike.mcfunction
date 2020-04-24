@@ -449,7 +449,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What are you talkin' to me for? You need to take the Hogwarts Express to get to the school! Leaves from Платформа номер девять и три четверти at Станция Кингс-Кросс, close by. You can also take some time to explore London while you're here, all up to you. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What are you talkin' to me for? You need to take the Хогвартс-экспресс to get to the school! Leaves from Платформа номер девять и три четверти at Станция Кингс-Кросс, close by. You can also take some time to explore London while you're here, all up to you. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

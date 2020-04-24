@@ -1,4 +1,4 @@
-# Check for ledge if spot is not valid (here it checks if it's ok to apparate on top of the block the player points to to make it easier to get on top of a ledge)
+# Check for ledge if spot is not valid (here it checks if it's Хорошо to apparate on top of the block the player points to to make it easier to get on top of a ledge)
 tag @s add foundLedge
 execute as 0-0-10-0-1 at @s run tp @s ~ ~1 ~
 execute at 0-0-10-0-1 unless block ~ ~ ~ #hp:apparate_ray run tag @s remove foundLedge

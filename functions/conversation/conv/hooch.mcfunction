@@ -509,7 +509,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ok performance! I have to take back the training broom, but you can purchase a broom of your own in Косой Переулок. You can always come back when you have a broom of your own, and see if you can beat your best time around the course.\\n\\n Your next class is Charms with Professor Flitwick. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хорошо performance! I have to take back the training broom, but you can purchase a broom of your own in Косой Переулок. You can always come back when you have a broom of your own, and see if you can beat your best time around the course.\\n\\n Your next class is Charms with Professor Flitwick. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
