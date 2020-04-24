@@ -55,7 +55,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I just invented something about a rain cloud in Professor Trelawney's classroom, but I don't think she bought it...\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I just invented something about a rain cloud in Профессор Трелони's classroom, but I don't think she bought it...\"}"}
 #execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -91,7 +91,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You could help? What do you mean? It was a stupid thing to invent - I guess it was just how I was feeling at the time. I should just have lied about seeing something simple, like Longbottom losing his toad again. Professor Trelawney might actually have bought that.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You could help? What do you mean? It was a stupid thing to invent - I guess it was just how I was feeling at the time. I should just have lied about seeing something simple, like Longbottom losing his toad again. Профессор Трелони might actually have bought that.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -188,7 +188,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You'll need to acquire 'Погода в Банке' and then use it in Professor Trelawney's classroom. This is Brilliant! \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You'll need to acquire 'Погода в Банке' and then use it in Профессор Трелони's classroom. This is Brilliant! \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm gutted. My Divination test went horribly! I couldn't see anything during the crystal gazing part. I just invented something about a rain cloud in Professor Trelawney's classroom, but I don't think she bought it.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm gutted. My Divination test went horribly! I couldn't see anything during the crystal gazing part. I just invented something about a rain cloud in Профессор Трелони's classroom, but I don't think she bought it.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -177,7 +177,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Great! Good thing for us they sell those 'Погода в Банке' things at both Zonko's Joke Shop in Hogsmeade and Всевозможные Волшебные Вредилки in Косой Переулок. That's the perfect gadget for this!\\n You'll need to acquire 'Погода в Банке' and then use it in Professor Trelawney's classroom. This is brilliant!\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Great! Good thing for us they sell those 'Погода в Банке' things at both Zonko's Joke Shop in Hogsmeade and Всевозможные Волшебные Вредилки in Косой Переулок. That's the perfect gadget for this!\\n You'll need to acquire 'Погода в Банке' and then use it in Профессор Трелони's classroom. This is brilliant!\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

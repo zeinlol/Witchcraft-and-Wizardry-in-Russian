@@ -60,7 +60,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 4 ###########################################################################################
 #############
-# Speak to professor McGonagall
+# Speak to Профессор Макгонаггал
 
 ### Tracked Quest ###
 execute as @s[scores={questState=4},tag=isTrackedQuest] run tag @s remove hideQuestTracking
