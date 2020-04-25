@@ -175,7 +175,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" To Muggles, the pub appears to be a broken-down old shop front on Charing Cross Road. This, however, was not the case prior to the imposition of the Statute of Secrecy and, in fact, prior to this, Muggle visitors were neither turned away, nor made to feel unwelcome.
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" To Muggles, the pub appears to be a broken-down old shop front on Чаринг-Кросс-Роуд. This, however, was not the case prior to the imposition of the Statute of Secrecy and, in fact, prior to this, Muggle visitors were neither turned away, nor made to feel unwelcome.
 Для Маглов этот паб похож на старый магазинный фасад с Чаринг Кросс Роуд. Однако этого не было до введения Закона о тайне. До этого посетители-маглы могли сюда зайти, но сдесь им было крайне некомфортно.\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
@@ -251,13 +251,13 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Косом Переулке\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Лютный Переулок\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Лютном Переулке\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 14
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ How do you enter Косой Переулок?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ вы посещаете Косой Переулок?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 15
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"I have another question\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"У меня другой вопрос\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 
@@ -282,7 +282,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" All of these people are Muggles, and all of them are wrong. The oldest pub in London, as any wizard will tell you, is Дырявый Котёл on Charing Cross Road. \\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Все эти люди - маглы, и все они ошибаются. Старейшим пабои в Лондоне, и это знает каждый волшебник, является Дырявый Котёл на Чаринг-Кросс-Роуд. \\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -314,7 +314,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There's an entrance out back in a small, walled courtyard with a dustbin. You can get to Косой Переулок by tapping the correct brick in the wall. You can probably find someone there to help you with that.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Запасной выход ведёт в небольшой, обнесенный стеной двор с мусорным баком. Оттуда можно попасть в Косой Переулок, постучав по нужному кирпичу в стене. Ты, наверное, найдешь кого-нибудь, кто поможет тебе с этим.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -347,7 +347,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Косой Переулок is a cobblestoned wizarding alley and shopping area located right behind Дырявый Котёл. Inside the alley is an assortment of restaurants, shops, and other sights. The alley is completely hidden from the Muggle world and is essentially the centre of wizarding London.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Косой Переулок это переулок для волшебников и крупнейшее  место для торговли, расположен прямо за Дырявым Котлом. В переулке находится множество ресторанов, магазинов и много чего другого. Аллея полностью скрыта от мира маглов и является центром чародейства Лондона.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -378,7 +378,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Лютный Переулок is a shopping area off Косой Переулок in London. It is filled with numerous shops devoted to the Dark Arts, including Горбин и Бэркес, which specialises in objects that have curious and strong magical properties. Usually, unusual, dangerous and scary people walk around there.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Лютный Переулок - это одно из мест торговли в Косом Переулке в Лондоне. В нём много магазинов, которые торгуют вещами, связанными с тёмной магией, например Горбин и Бэркес, специализируется на предметах, имеющих любопытные и сильные магические свойства. Там обычно находятся странные, опасные и страшные люди.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -410,7 +410,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There's an entrance out back in a small, walled courtyard with a dustbin. You can get to Косой Переулок by tapping the correct brick in the wall. You can probably find someone there to help you with that.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" В этом пабе есть вход в небольшой, обнесенный стеной двор с мусорным баком. Оттуда можно попасть в Косой Переулок, постучав по нужному кирпичу в стене. Если что, думаю надёшь кого-то, кто поможет тебе с этим.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
