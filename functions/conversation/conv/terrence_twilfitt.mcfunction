@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Why hello, young customer. Добро пожаловать в  Twilfitt and Tattings. We're proud to cater to the finest and wealthiest wizarding families throughout the ages. The Lestranges, the Blacks, The Malfoys. Controversial? Oh well, yes. But very well dressed. \\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет вам, молодой покупатель. Добро пожаловать в 'Твилфитт и Таттинг'. Мы гордимся тем, что обслуживаем самые лучшие и богатые семьи волшебников на протяжении веков. Лестрейндж, Блэки, Малфои. Разношорстный список, не так ли? Зато очень хорошо одеты. \\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -59,7 +59,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" How might I assist you?\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Чем я могу вам помочь?\\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -98,7 +98,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Anyone can wear clothes. But the right clothes? That is not so easy. They wear Twilfitt and Tattings or they are nobody. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Любой может носить одежду. Но что насчёт стильной одежды? Это не так просто. Выбор прост: 'Твилфит и Таттинг' или ничего.\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -129,7 +129,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" If you're looking to dress, there is only one option: Twilfitt and Tattings. Of course, there is that other shop down the street. Dresses the students of Hogwarts in their rags before they go off to school. You and I both know that that place is beneath you. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Если хотите одеться, есть только один вариант: 'Твилфитт и Таттинг'. Конечно, есть другой магазин ниже по улице. Одевает учеников Хогвартса в тряпки перед тем, как они пойдут в школу. Но мы оба знаем, что то место недостойно вас. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
