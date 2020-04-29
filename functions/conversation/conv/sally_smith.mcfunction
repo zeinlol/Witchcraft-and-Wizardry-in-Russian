@@ -25,7 +25,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm gutted. My divination test went horribly! I couldn't see anything during the crystal-gazing part.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я опустошен. Мой тест  прорицания прошел ужасно! Я ничего не смог увидеть в Шаре.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -55,14 +55,14 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I just invented something about a rain cloud in Профессор Трелони's classroom, but I don't think she bought it...\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я создал дождевое облако в кабинете профессора Трелони, но я не уверен что она с ним справится...\"}"}
 #execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Maybe I can do something to help\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Возможно я могу помочь\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 
@@ -91,7 +91,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You could help? What do you mean? It was a stupid thing to invent - I guess it was just how I was feeling at the time. I should just have lied about seeing something simple, like Longbottom losing his toad again. Профессор Трелони might actually have bought that.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Можешь помочь? Что ты имеешь в виду? Было глупо колдовать - я думаю, что просто был на эмоциях в то время. Я соврал о том, что видел что-то наподобие, того, как Долгопупс снова потерял жабу. Профессор Трелони возможно поверила это.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
