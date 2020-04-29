@@ -62,7 +62,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 3 ###########################################################################################
 #############
-# Use the map to travel to your common room
+# Use the map to Отправиться в your common room
 
 scoreboard players remove @s[scores={questTimer=1..}] questTimer 1
 execute as @s[scores={questTimer=1}] run scoreboard players set @s hotbar_stage 9

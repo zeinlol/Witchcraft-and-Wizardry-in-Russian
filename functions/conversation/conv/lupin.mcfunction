@@ -133,7 +133,7 @@ execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ What happens if they attack you?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"I need to ask about something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"хочу спросить что-то другое\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 
@@ -513,7 +513,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Marauder's Map is a magical document that reveals all of Hogwarts School of Witchcraft and Wizardry. You can use it to traverse the castle and quickly travel to locations you have unlocked. \\n\\n\"}"} 
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Marauder's Map is a magical document that reveals all of Hogwarts School of Witchcraft and Wizardry. You can use it to traverse the castle and quickly Отправиться в locations you have unlocked. \\n\\n\"}"} 
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -577,7 +577,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now, there is another thing you could do to help. Suitable for someone like you; it seems you have a knack for this. I happen to know that the famed historian, Батильда Бэгшот, is in the middle of her research for a new book. I shouldn't wonder if she could use your help. Go talk to her and tell I sent you. You will find her in Godric's Hollow. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now, there is another thing you could do to help. Suitable for someone like you; it seems you have a knack for this. I happen to know that the famed historian, Батильда Бэгшот, is in the middle of her research for a new book. I shouldn't wonder if she could use your help. Go talk to her and tell I sent you. You will find her in Годрикова впадина. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -645,10 +645,10 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 points to Gryffindor.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 points to Ravenclaw.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 points to Slytherin.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 points to Hufflepuff.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 очков Гриффиндору.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 очков Когтеврану.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 очков Слизерину.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! 15 очков Пуффендую.\\n\\n The Stupefy charm is now unlocked, and can be used when you encounter enemies in the world. Your next class is Potions with Professor Северус Снегг. You can head there right away, or choose to explore the school further first.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -756,10 +756,10 @@ tag @s[scores={convState=21},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 points to Gryffindor.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 points to Ravenclaw.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 points to Slytherin.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 points to Hufflepuff.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 очков Гриффиндору.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 очков Когтеврану.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 очков Слизерину.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Brilliant! 15 очков Пуффендую.\\n\\n The Bombarda Maxima charm is now unlocked! I believe your next class is Herbology with Professor Sprout.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -904,7 +904,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Travel to practice area\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться в practice area\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=1}] run scoreboard players set lupin p1convOverride 26
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=2}] run scoreboard players set lupin p2convOverride 26
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=3}] run scoreboard players set lupin p3convOverride 26
@@ -1288,10 +1288,10 @@ tag @s[scores={convState=36},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 points to Gryffindor! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 points to Ravenclaw! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 points to Hufflepuff! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 points to Slytherin! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 очков Гриффиндору! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 очков Когтеврану! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 очков Пуффендую! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" You handled yourself very well. Good thing you were able to use the Patronus charm to reach me. Yes, indeed. Very well done. 20 очков Слизерину! \\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -1578,7 +1578,7 @@ tag @s[scores={convState=44},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Скоро начнём, просто подожи остальных.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

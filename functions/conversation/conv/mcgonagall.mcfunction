@@ -248,7 +248,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Gryffindor was founded by Godric Gryffindor. He was an English wizard. He was great friends with Salazar Slytherin, but opposed him when he later thought that they should not accept Muggle-born students at Hogwarts. In his honour Gryffindor's birthplace became known as Godric's Hollow. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Gryffindor was founded by Godric Gryffindor. He was an English wizard. He was great friends with Salazar Slytherin, but opposed him when he later thought that they should not accept Muggle-born students at Hogwarts. In his honour Gryffindor's birthplace became known as Годрикова впадина. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -475,10 +475,10 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Gryffindor.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Ravenclaw.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Slytherin.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 points to Hufflepuff.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 очков Гриффиндору.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 очков Когтеврану.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 очков Слизерину.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent work! 20 очков Пуффендую.\\n\\n You have now unlocked the Vera Verto charm, and you'll be able to transfigure certain objects. Your next class is Defence Against the Dark Arts with Professor Lupin.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -587,7 +587,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Скоро начнём, просто подожи остальных.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

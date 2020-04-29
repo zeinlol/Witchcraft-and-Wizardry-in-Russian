@@ -238,7 +238,7 @@ execute unless entity @s[scores={lastRegion=3}] as @s[scores={discoverLocation=0
 execute unless entity @s[scores={lastRegion=4}] as @s[scores={discoverLocation=0},x=4992,dx=1024,y=0,dy=255,z=2048,dz=1024,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/hogsmeade
 # Ministry 9786 0 10000 10000 256 10338
 execute unless entity @s[scores={lastRegion=5}] as @s[scores={discoverLocation=0},x=9786,dx=214,y=0,dy=256,z=10000,dz=338,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory,tag=!inProperCutScene] run function hp:discovery/regions/ministry
-# Little Whinging 2096 60 -1030 2463 214 -636
+# Литтл Уингинг 2096 60 -1030 2463 214 -636
 execute unless entity @s[scores={lastRegion=6}] as @s[scores={discoverLocation=0},x=2072,dx=384,y=0,dy=256,z=-1030,dz=394,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory,tag=!inProperCutScene] run function hp:discovery/regions/little_whinging
 # Azkaban 4789 0 9806 5251 0 10262 
 execute unless entity @s[scores={lastRegion=7}] as @s[scores={discoverLocation=0},x=4789,dx=462,y=0,dy=255,z=9806,dz=456,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/azkaban
@@ -247,7 +247,7 @@ execute unless entity @s[scores={lastRegion=8}] as @s[scores={discoverLocation=0
 execute unless entity @s[scores={lastRegion=8}] as @s[scores={discoverLocation=0},x=6917,y=24,z=4888,dx=151,dy=91,dz=159,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/spell_challenges
 execute unless entity @s[scores={lastRegion=8}] as @s[scores={discoverLocation=0},x=6388,y=17,z=838,dx=294,dy=128,dz=160,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/spell_challenges
 execute unless entity @s[scores={lastRegion=8}] as @s[scores={discoverLocation=0},x=1639,y=0,z=573,dx=379,dy=175,dz=435,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/spell_challenges
-# Godric's Hollow 6665 0 2992 7017 255 3351
+# Годрикова впадина 6665 0 2992 7017 255 3351
 execute unless entity @s[scores={lastRegion=9}] as @s[scores={discoverLocation=0},x=6665,dx=352,y=0,dy=255,z=2992,dz=359,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory,tag=!inProperCutScene] run function hp:discovery/regions/godrics_hollow
 # Residences 4992 0 3968 5811 255 4787
 execute unless entity @s[scores={lastRegion=10}] as @s[scores={discoverLocation=0},x=4992,dx=819,y=0,dy=255,z=3968,dz=819,tag=!isFastTravelling,tag=!inConversation,tag=!inInventory] run function hp:discovery/regions/residences

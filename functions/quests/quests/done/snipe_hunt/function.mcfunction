@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Travel to the Дом Лавгудов
+# Отправиться в the Дом Лавгудов
 
 execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
 execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] run tag @s remove questHasNoDirection
@@ -18,10 +18,10 @@ execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] at @s as
 
 # Title
 execute as @s[scores={questState=1..6,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1..6,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Speak with Полумна Лавгуд to travel to the Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Speak with Полумна Лавгуд to travel to the Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Speak with Полумна Лавгуд to travel to the Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Speak with Полумна Лавгуд to travel to the Дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Speak with Полумна Лавгуд to Отправиться в the Дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Speak with Полумна Лавгуд to Отправиться в the Дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Speak with Полумна Лавгуд to Отправиться в the Дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Speak with Полумна Лавгуд to Отправиться в the Дом Лавгудов","color":"gold"}]
 
 
 ### Tracked Quest ###
@@ -93,7 +93,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 4 ###########################################################################################
 #############
-# Travel to the windmill
+# Отправиться в the windmill
 
 ### Tracked Quest ###
 execute as @s[scores={questState=4,lastRegion=10},tag=isTrackedQuest] run tag @s remove hideQuestTracking

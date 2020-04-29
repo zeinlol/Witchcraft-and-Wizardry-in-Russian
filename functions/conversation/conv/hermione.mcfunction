@@ -340,7 +340,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Maybe you could help me put up some flyers in Hogsmeade to spread the word? \\n\\n Travel to Hogsmeade, and hang the flyers on 5 notice boards.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Maybe you could help me put up some flyers in Hogsmeade to spread the word? \\n\\n Отправиться в Hogsmeade, and hang the flyers on 5 notice boards.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -547,7 +547,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Travel to The Library\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTheLibrary_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться в The Library\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTheLibrary_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"Библиотека\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationTheLibrary_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ End Memory\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"Dumbledore's Office\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}

@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Find the Knight Bus
+# Find 'Ночной рыцарь'
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
@@ -35,7 +35,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 2 ###########################################################################################
 #############
-# Speak to the Knight Bus conductor
+# Speak to 'Ночной рыцарь' conductor
 
 execute as @s[scores={questState=2,questTextTimer=1..},tag=isTrackedQuest] run scoreboard players remove @s questTextTimer 1
 execute as @s[scores={questState=2,questTextTimer=24},tag=isTrackedQuest] run function hp:quests/ding_sound

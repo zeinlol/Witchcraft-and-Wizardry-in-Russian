@@ -417,7 +417,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 9 ###########################################################################################
 #############
-# Travel to the underground library
+# Отправиться в the underground library
 
 ### Tracked Quest ###
 execute as @s[scores={questState=9},tag=isTrackedQuest] run tag @s remove hideQuestTracking

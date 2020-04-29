@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yes?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Да?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -61,7 +61,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What? He wanted me to think Trevan wrote this? That jealous idiot. Thought he could just manipulate me into ending things with Trevan? Thank you for telling me the truth. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Что? Он хотел, чтобы я думала, что Треван написал это? Этот ревнивый идиот. Думал, что он сможет манипулировать мной, чтобы я покончила с Треваном? Спасибо, что сказал мне правду. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -95,7 +95,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You tell Кевин Энтвистл that I won't stand for this kind of thing. I don't want to talk to him anymore. And tell Trevan about this too. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Передай, пожалуйста, Кевину Энтвистлу что я не потерплю таких вещей. Я больше не хочу с ним говорить. и Тревану передай тоже самое, если не сложно. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -133,7 +133,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Thanks for letting me know that the letter was fake. I can't believe Кевин Энтвистл wanted me to think Trevan wrote those things. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Спасибо, что дали мне понять, что письмо было фальшивым. Не могу поверить, что Кевин Энтвистл хотел, чтобы я думала, что Треван написал это. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -167,7 +167,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A letter? From Trevan? He's so sweet. What's this… What does it say? I ... If that is what that egg thinks of me, I'll…  \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Письмо? От Тревана? Он такой милый. Что это... Что это значит? Я... Если это то, что он думает обо мне, я... \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -201,7 +201,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You can tell Trevan Davis to stay away from me. I'm not speaking to him anymore. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты можешь сказать Тревану Дэвису держаться от меня подальше. Я с ним больше не разговариваю! \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -239,7 +239,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Thanks for clearing up the situation with Trevan. He seemed so nice, I can't believe he would write those things. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Спасибо, что прояснил ситуацию с Треваном. Он казался таким милым, что я не могу поверить, что он написал эти вещи. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -73,7 +73,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≡ What books have you got for sale?\"}",Tags:["_____buy_____","_____Normal_____","_____click_____","convOption","i"]}
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≈ I have something to sell you\"}",Tags:["_____sell_____","_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≈ У меня есть кое-то  для вас на продажу\"}",Tags:["_____sell_____","_____Normal_____","_____click_____","convOption","i"]}
 
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ У меня есть вопрос\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}

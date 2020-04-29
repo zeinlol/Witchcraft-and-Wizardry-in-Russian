@@ -643,10 +643,10 @@ execute as @s[tag=testDistance,scores={testRespawnID=78}] run function hp:respaw
 execute as @s[tag=tpToRespawnPoint,scores={respawnID=78}] run tp @s 2888.73 63.00 185.43 -240.20 -6.29
 
 ###################
-# Little Whinging #
+# Литтл Уингинг #
 ###################
 
-# Little Whinging
+# Литтл Уингинг
 scoreboard players set @s testRespawnID 79
 execute as @s[tag=testDistance,scores={testRespawnID=79}] run scoreboard players set @s respawnX 2301
 execute as @s[tag=testDistance,scores={testRespawnID=79}] run scoreboard players set @s respawnY 63
@@ -725,7 +725,7 @@ execute as @s[tag=testDistance,scores={testRespawnID=87}] run function hp:respaw
 execute as @s[tag=tpToRespawnPoint,scores={respawnID=87}] run tp @s 9857.22 122.00 10100.34 -220.24 0.40
 
 ###################
-# Godric's Hollow #
+# Годрикова впадина #
 ###################
 
 scoreboard players set @s testRespawnID 88

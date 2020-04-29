@@ -304,7 +304,7 @@ execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=7}] as @s[tag=
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=8}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Slytherin House\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=8}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 18
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=9}] run data merge entity @s {CustomName:"{\"text\":\"I need to ask about something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=9}] run data merge entity @s {CustomName:"{\"text\":\"хочу спросить что-то другое\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=9}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 
@@ -473,7 +473,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Godric Gryffindor was an English wizard. He was great friends with Salazar Slytherin, but opposed him when he later thought that they should not accept Muggle-born students at Hogwarts. In his honour Gryffindor's birthplace became known as Godric's Hollow.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Godric Gryffindor was an English wizard. He was great friends with Salazar Slytherin, but opposed him when he later thought that they should not accept Muggle-born students at Hogwarts. In his honour Gryffindor's birthplace became known as Годрикова впадина.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -603,7 +603,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Students sorted into Gryffindor possess such character traits as courage, chivalry, and determination. The emblematic animal is a lion, and its colours are scarlet and gold. Сер Николас de Mimsy-Porpington, also known as 'Nearly Headless Nick', is the house ghost.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Students sorted into Gryffindor possess such character traits as courage, chivalry, and determination. The emblematic animal is a lion, and its colours are scarlet and gold. Сер Николас de Mimsy-Porpington, also known as 'Почти Безголовый Ник', is the house ghost.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -1376,10 +1376,10 @@ tag @s[scores={convState=38},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 60 points to Gryffindor. \\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 points to Ravenclaw. \\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 points to Hufflepuff. \\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 points to Slytherin. \\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 60 очков Гриффиндору. \\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 очков Когтеврану. \\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 очков Пуффендую. \\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Alas... It is important to fight and keep fighting, for only then can evil be kept at bay though never quite eradicated. \\n I gather from what you tell me that you played an instrumental role in containing this situation. Such a deed should be rewarded. 50 очков Слизерину. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

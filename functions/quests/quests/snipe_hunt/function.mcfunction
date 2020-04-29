@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Travel to the Дом Лавгудов
+# Отправиться в the Дом Лавгудов
 
 execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
 execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] run tag @s remove questHasNoDirection
@@ -93,7 +93,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 4 ###########################################################################################
 #############
-# Travel to the windmill
+# Отправиться в the windmill
 
 ### Tracked Quest ###
 execute as @s[scores={questState=4,lastRegion=10},tag=isTrackedQuest] run tag @s remove hideQuestTracking

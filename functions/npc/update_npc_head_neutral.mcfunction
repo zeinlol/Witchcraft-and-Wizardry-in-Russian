@@ -408,7 +408,7 @@ execute as @s[scores={npcHead=143}] run scoreboard players set @s tmp 77
 execute as @s[scores={npcHead=144}] run scoreboard players set @s tmp 76
 # Елена Когтевран
 execute as @s[scores={npcHead=145}] run scoreboard players set @s tmp 75
-# Nearly Headless Nick
+# Почти Безголовый Ник
 execute as @s[scores={npcHead=146}] run scoreboard players set @s tmp 74
 # Moaning Myrtle
 execute as @s[scores={npcHead=147}] run scoreboard players set @s tmp 73

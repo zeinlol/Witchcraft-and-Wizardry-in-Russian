@@ -13,7 +13,7 @@ execute as @s[scores={tmp=1}] if block ~ ~ ~ #hp:passthrough_void_air run scoreb
 # Stop if hitting barrier
 execute if entity @s[scores={tmp=2}] if block ~ ~ ~ barrier run scoreboard players set @s rc_loop 0
 
-# Continue if ray has not yet hit void air
+# Continue if ray has Ещё нет hit void air
 execute as @s[scores={tmp=0..1,rc_loop=0,tmp2=..60}] run tag @s add waitingToHitVoidAir
 execute as @s[scores={tmp=0..1,rc_loop=0,tmp2=..60}] run scoreboard players set @s rc_loop 1
 

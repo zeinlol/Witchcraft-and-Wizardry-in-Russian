@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Find the Knight Bus
+# Find 'Ночной рыцарь'
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
@@ -25,17 +25,17 @@ execute positioned 2346.87 63.63 -777.97 as @s[distance=..25,scores={questState=
 execute as @s[tag=newState] run scoreboard players set @s questState 2
 execute as @s[tag=newState] run function hp:quests/set_quest
 execute as @s[tag=newState] run scoreboard players set @s questTextTimer 100
-execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"You can travel to London using the Knight Bus!","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"You can travel to London using the Knight Bus!","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"You can travel to London using the Knight Bus!","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"You can travel to London using the Knight Bus!","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"You can Отправиться в London using 'Ночной рыцарь'!","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"You can Отправиться в London using 'Ночной рыцарь'!","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"You can Отправиться в London using 'Ночной рыцарь'!","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"You can Отправиться в London using 'Ночной рыцарь'!","bold":false,"color":"gold"}
 execute as @s[tag=newState] run tag @s remove newState
 
 
 #############
 ## State 2 ###########################################################################################
 #############
-# Speak to the Knight Bus conductor
+# Speak to 'Ночной рыцарь' conductor
 
 execute as @s[scores={questState=2,questTextTimer=1..},tag=isTrackedQuest] run scoreboard players remove @s questTextTimer 1
 execute as @s[scores={questState=2,questTextTimer=24},tag=isTrackedQuest] run function hp:quests/ding_sound

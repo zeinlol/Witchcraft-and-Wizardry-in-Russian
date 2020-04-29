@@ -65,7 +65,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I sell Пергамент, quills, ink. Anything writing related. A lot of the customers that come through here are Hogwarts students like yourself, buying supplies before they travel to the school.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I sell Пергамент, quills, ink. Anything writing related. A lot of the customers that come through here are Hogwarts students like yourself, buying supplies before they Отправиться в the school.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

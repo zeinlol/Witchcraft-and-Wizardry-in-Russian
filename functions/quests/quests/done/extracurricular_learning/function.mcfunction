@@ -44,7 +44,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 2 ###########################################################################################
 #############
-# Travel To Hogsmeade
+# Отправиться в Hogsmeade
 ### Tracked Quest ###
 execute as @s[scores={questState=2},tag=isTrackedQuest] run tag @s remove hideQuestTracking
 execute as @s[scores={questState=2},tag=isTrackedQuest] if entity @s[tag=showingTrackedQuest,tag=!playingQuestAnim,tag=drawingNormalHotbar,tag=takeOverInventory] if score @s questID = @s trackedQuestID run replaceitem entity @s hotbar.1 minecraft:diamond_axe{display:{Name:"{\"text\":\"Marauders Map\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:1535,Unbreakable:1b,qDetect:1b}

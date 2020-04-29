@@ -319,10 +319,10 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 points to Gryffindor.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 points to Ravenclaw.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 points to Hufflepuff.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 points to Slytherin.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Гриффиндору.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Когтеврану.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Пуффендую.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Слизерину.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -474,10 +474,10 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 points to Gryffindor!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 points to Ravenclaw!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 points to Hufflepuff!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 points to Slytherin!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 очков Гриффиндору!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 очков Когтеврану!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 очков Пуффендую!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Fantastic! You've really got the hang of this! 15 очков Слизерину!\\n\\n The levitation charm is now unlocked. You can head to your next class whenever you are ready. It's Defence Against the Dark Arts with Professor Lupin.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -605,10 +605,10 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 points to Gryffindor.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 points to Ravenclaw.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 points to Hufflepuff.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 points to Slytherin.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Гриффиндору.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Когтеврану.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Пуффендую.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Слизерину.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -710,7 +710,7 @@ tag @s[scores={convState=21},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Скоро начнём, просто подожи остальных.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

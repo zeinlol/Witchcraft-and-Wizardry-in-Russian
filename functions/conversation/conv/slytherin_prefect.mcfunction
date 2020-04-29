@@ -28,7 +28,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет. I'm a prefect and can help you with any questions you might have.\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет. Я староста и могу помочь вам с любыми вопросами.\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -59,7 +59,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Congratulations on being sorted into \"},{\"text\":\"Slytherin\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\"! \\n\\n\\n\\n\\n\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Поздравляю с поступлением в  \"},{\"text\":\"Слизерин\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\"! \\n\\n\\n\\n\\n\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -92,7 +92,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Slytherin House values cleverness, resourcefulness, determination, and a certain disregard for the rules. Its students tend to be ambitious, shrewd, cunning, strong leaders, and achievement-oriented.\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Слизерин ценит ум, находчивость, решимость и определенное пренебрежение к правилам. Студенты склонны быть амбициозными, проницательными, хитрыми, сильными лидерами и настроенными на достижения.\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -123,7 +123,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You are almost free to explore the castle now! First there are a few things I need to say though. Your first lesson is Charms with Professor Flitwick which will unlock the 'Lumos' spell. You can head over there right away, or explore the castle and its grounds first.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Теперь ты можешь ходить по всему замку! Но сначала мне нужно кое-что сказать. Твой первый урок - заклинания с профессором Флитвиком, будут учить заклинанию Люмос. Можешь отправиться туда прямо сейчас, или сначала изучить замок и его территорию.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -153,7 +153,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You'll find people around the castle with quests for you. They'll have a ⁿ icon above their head so you can recognise them. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты встретишь людей вокруг замка с заданиями для тебя. У них будет иконка ⁿ над головой, так что ты легко их увидишь. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -187,14 +187,14 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Удачи now. I think Fred and Джордж Уизли want to speak to you. You can find them by the Gryffindor table.\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Удачи. Я думаю Фрэд и Джордж Уизли хотят поговорить с тобой. Они возле стола Гриффиндора.\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ I'll find them. Thanks\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я найду их. Спасибо\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -219,7 +219,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm the Slytherin prefect! You need to go talk to the prefect of your own house.\\n\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я староста Слизерина! Тебе следует поговорить со старостой твоего факультета.\\n\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -250,7 +250,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You need to go interact with the Распределяющая Шляпа to be sorted!\\n\\n\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Тебе надо подойти к Распределяющей Шляпе для определения факультета!\\n\\n\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -283,7 +283,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Hello. My name is \"},{\"text\":\"Джемма Фарли\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Привет. Меня зовут \"},{\"text\":\"Джемма Фарли\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -314,7 +314,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I am one of the prefects of Slytherin House. I'll try to answer any questions you have. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я староста Слизерина. Я постараюсь ответить на любой твой вопрос. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -359,25 +359,25 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√  I need directions for somewhere\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√  Я ищу дорогу кое-куда\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 18
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ What are the traits of Slytherin House?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Какие черты Слизерина?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 11
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who was Salazar Slytherin?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кем был Салазар Слизерин?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 12
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ What is a Head Boy or Girl?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кто такие старосты школы?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ What are prefects?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что делают старосты\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 14
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who is the head of Slytherin House?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кто глава Слизерина?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 15
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who is the Slytherin House ghost?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кто является призраком Слизерина?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=7}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 16
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=8}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -405,7 +405,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We tend to be ambitious, shrewd, cunning, strong leaders, and achievement-oriented. Some say our motto is 'the end justifies our means', which is quite true. Although, in my own opinion we have some oafs in our house, like Crabbe and Goyle who could sooner be described as a pair of fists than as persons of any kind of cunning or personal ambition. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мы склонны быть амбициозными, проницательными, хитрыми, сильными лидерами и нацеленными на достижения. Некоторые говорят, что наш девиз - это 'цель оправдывает наши средства', что вполне верно. Хотя, по моему мнению, у нас в доме есть такие придурки, как Крэб и Гойл, которых можно скорее назвать двумя идиотами, чем людьми с какими-либо хитрыми или личными амбициями. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -437,7 +437,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\"He was one of the four founders of Hogwarts, but we all know he was the greatest of them. He was a Parselmouth and a very skilled Legilimens. He made his own wand out of snakewood and with a core of basilisk horn. It is said he could put it to sleep with Parseltongue, a skill only he and his family possess. That way, no one else could use his wand. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\"Он был одним из четырех основателей Хогвартса, но мы все знаем, что он был величайшим из них. Он был змееустом и очень опытным легилиментом. Он сделал собственную палочку из змеиного дерева и с сердечной жилой василиска. Говорят, что он в совершенстве знает Парсултанку, которой владеет только он и его семья. Таким образом, никто другой не мог использовать его палочку. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -470,7 +470,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A Head Girl or Head Boy is a seventh-year student who has authority over Prefects. Each year, our Headmaster selects both a Head Boy and a Head Girl. I think we Slytherins should be Head Boy or Girl. We all know we make the best leaders, after all. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Старорста школы - студент и студентка последнего курса. Руководит обычными старостами. Каждый год наш директор выбирает в роли старосты парня и девушку. Я думаю, что мы, Слизеринцы, должны быть старостами. Мы все знаем, что мы лучшие лидеры, в конце концов. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -502,7 +502,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A prefect is a student who has been given extra authority and responsibilities by the Head of House and Headmaster. One male and one female student are chosen in their fifth year and continue that role until their last year. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Староста - это студент, которому староста школы и директор предоставили дополнительные полномочия и обязанности. Один студент мужского пола и одна студентка женского пола с пятого курса обучения и продолжают выполнять эту роль до своего последнего года обучения. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -534,7 +534,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Professor Северус Снегг, our Potions Master. We Slytherins all think he’s great. Of course, he shouldn’t really allow his personal bias to influence the way he distributes house points, but everyone knows he favours the Slytherins. Even we admit that. But so what? Dumbledore does that too. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Проффесор Северус Снегг, наш преподователь зельеварения. Мы, слизеринцы, все думаем, что он классный. Конечно, он не должен позволять своим личным пристрастиям влиять на то, как он распределяет обязаности, но все знают, что он предпочитает слизеринцев. Даже мы это признаем. И что? Дамблдор тоже так делает. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -566,7 +566,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Кровавый Барон. He can be a little scary. And I wouldn’t ask too much about his past. You know what they say. Reason and love keep little company. But he’s alright on the whole, and besides; he’s the only one who can keep Peeves the Полтергейст in check. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кровавый Барон. Он может быть немного страшным. И я бы не стал слишком много спрашивать о его прошлом. Ты знаешь, что они говорят. Разум и Любовь не составляют компанию. Но в целом он в порядке, и, кроме того, он единственный, кто может контролировать Пивза. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -598,7 +598,7 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Where do you need to go? \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Куда тебе нужно пойти? \\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -618,10 +618,10 @@ execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"Тренировочное Поле\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 22
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"Herbology classroom\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"Класс Гербологии\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 23
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"Transfiguration\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"Трансфигурация\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 24
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"На самом деле что-то другое\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -650,7 +650,7 @@ tag @s[scores={convState=19},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That's easy. Just head through that door over by that Ravenclaw student and turn left. When you get to the end of the hall turn left again, and the Класс Заклинаний is the first door on your left. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это просто. Просто пройди через эту дверь к этому студенту из Когтеврану и поверни налево. Когда доберешься до конца коридора поверни снова налево, и класс Заклинаний будет первой дверью слева от вас. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -682,7 +682,7 @@ tag @s[scores={convState=20},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That's quite far away from here. If you head through that door over by that Ravenclaw student with the books and turn left and then left again when you get to the end of that hallway. Then carry on straight through the small door at the end. You can see the window to the classroom on your right from the wooden bridge. It's the curved one at the top. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это довольно далеко отсюда. Если пройдешь через эту дверь к тому студенту из Когтеврана с книгами и повернешь налево, а потом снова налево, когда дойдешь до конца коридора. Затем продолжай идти прямо через маленькую дверь в конце. Ты увидишь окно в класс справа от деревянного моста. Потом на изогнутой ленсице наверх. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -715,7 +715,7 @@ tag @s[scores={convState=21},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That's down in the dungeons. Just follow the carpet and turn right at the end. Take the second door on your left and go down the stairs to the entrance hall in from of the greenhouses and look for a staircase down to the dungeons on your left. It should be easy enough from there. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это в подземелье. Просто иди по ковру и поверни направо в конце. Откройте вторую дверь слева и спустись по лестнице в холл перед теплицами и поищи лестницу вниз к подземелью слева от тебя. Оттуда должно быть легко добраться. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -747,7 +747,7 @@ tag @s[scores={convState=22},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Тренировочная Площадка? Just head through that door by the Ravenclaw student with the books and turn left. When you get to a small spiral staircase go down, and then the Тренировочная Площадка are right outside.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Тренировочная Площадка? Просто иди через эту дверь к студенту из Когтеврана с книгами и поверни налево. Когда дойдешь до маленькой спиральной лестницы спустись вниз, и затем Тренировочная Площадка будет снаружи.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -779,7 +779,7 @@ tag @s[scores={convState=23},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You mean the greenhouses? Just head through that door by the Ravenclaw student with the books and turn left. When you get to a small spiral staircase go down, and head outside. Head through the low building extending out of the castle on your right, and you're there. Professor Sprout should be inside the greenhouse embedded into the castle. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Имеешь в виду теплицы? Просто пройди в эту дверь мимо студента из Когтеврана с книгами и поверни налево. Когда дойдешь до маленькой спиральной лестницы, спустись вниз и выйди наружу. Пройди через низкое здание, выходящее из замка справа, и ты на месте. Профессор Стебель должна быть внутри теплицы, встроенной в замок. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -811,7 +811,7 @@ tag @s[scores={convState=24},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That's easy. Transfiguration is just outside and across the Двор Трансфигурации. Enter through the door in the small tower on the left, and it should be through the door on your right. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это легко. Трансфигурация возможна только снаружи и в Дворе Трансфигурации. Иди через дверь в маленькой башне слева, и она должна быть через дверь справа от тебя. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

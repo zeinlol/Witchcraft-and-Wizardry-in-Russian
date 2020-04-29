@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" I will be teaching you the art of potion-brewing as your Potions Master, \"},{\"text\":\"Professor Северус Снегг\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Я буду учить вас искусству зельеварения. Я проффесор \"},{\"text\":\"Северус Снегг\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -62,14 +62,14 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What is your purpose?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" По какому вопросу пожаловали?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ There's something I need to ask\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Я должен кое-то у вас спросить\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -96,29 +96,29 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" What do you wish to know?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Что вы хотите узнать?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о your class\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о ваших занятиях\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Slytherin House\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о факультете Слизерин\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Which house did you belong to?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ На каком из факультетов вы учились?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Who taught you potion-brewing?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кто научил вас зельеварению?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Do you enjoy teaching Potions?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Вам нравиться преподавать зельеварение?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"I need to ask about something else\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"хочу спросить что-то другое\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 
@@ -142,7 +142,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I teach the subtle science and exact art of potion-making. As there is little foolish wand-waving here, you might hardly believe this is magic. I don't expect you will really understand the beauty of the softly simmering cauldron, the delicate power of liquids that creep through human veins, bewitching the mind, ensnaring the senses.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я преподаю тонкую науку и точное искусство изготовления зелий, в отличии от дурацких размахиваний глупыми палочками. Надеюсь вы думаете, что мой предмет основан на магии. Я не думаю, что вы действительно поймете красоту медленно кипящего котла, тонкую силу жидкостей, которые текут по человеческим венам, околдовывая разум и захватывая чувства.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -174,7 +174,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I initially applied for the position of Defence Against the Dark Arts, but Dumbledore instead employed me in the position of Potions Master. It may have escaped your notice, but life isn't fair.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я подал заявку на должность препродавателя по защите от темных искусств, но вместо этого Дамблдор нанял меня на должность преподавателя зельеварения. Возможно, вы так не считаете, но жизнь несправедлива.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -206,7 +206,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I was sorted into Slytherin. House of the cunning and ambitious. I value logic and cunning above magical power. I took over from Horace Slughorn as head of Slytherin House.\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Меня определили в Слизерин. Дом хитрых и амбициозных. Я ценю логику и мощь магической силы. Я заменил Горация Слизнорта на посту декана Слизерина.\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -238,7 +238,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I was taught by the Potions Master at that time, Horace Slughorn. He was also the head of Slytherin, so it seems that I have now completely taken over his responsibilities. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" В те времена меня учил мастер зельеварения, Гораций Слизнорт. Он также был деканом Слизерина, так что, похоже, теперь я полностью взял на себя его обязанности. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -270,7 +270,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I can teach you how to bottle fame, brew glory, even put a stopper in death.\\n\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я научу как околдовать разум и поработить чувства, я расскажу как разлить по флаконам известность, сварить славу и даже как закупорить смерть. \\n\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -304,7 +304,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Search the area around this room to find all the potion supplies.\\n\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Найдите все необходимые ингридиенты.\\n\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -338,7 +338,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now that you have gathered the required supplies you may proceed to brew your potion. Use a brewing stand by pressing ⌡, and press ⌡ again once you have selected the potion you wish to brew.\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Теперь, когда вы собрали необходимые ингридиенты, можете начать варить зелье. Используйте котёл для зелий, нажав ⌡, и нажмите ⌡ снова, когда выберите зелье, которое хотите сварить.\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -372,7 +372,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now that you have gathered the required supplies you may proceed to brew your potion. Interact with a brewing stand by pressing ⌡, and press ⌡ again once you have selected the potion you wish to brew.\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Теперь, когда вы собрали необходимые ингридиенты, можете начать варить зелье. Используйте котёл для зелий, нажав ⌡, и нажмите ⌡ снова, когда выберите зелье, которое хотите сварить.\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -406,7 +406,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" To consume your potion you must place it in one of your two quick slots. Inspect the potion in your inventory and select 'Move to quick slot'.\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Для употребления зелья необходимо поместить его в один из двух слотов. Выберите нужное зелье в вашем инвентаре и выберите 'Поместить в слот'.\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -441,7 +441,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" This will suffice for now. You now know how to utilise brewing stands to brew potions with different effects. Your next lesson is Charms with Professor Flitwick, where you will be learning the spell 'Brackium Emendo'. You may head there when you please. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Пока этого достаточно. Теперь вы знаете, как использовать котёл для приготовления зелий с различными свойствами. Ваш следующий урок - Заклинания у профессора Флитвика, где вас обучат изучать заклинанию 'Брахиам Эмендо'. Отправляйтесь туда, когда вам будет удобно. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -476,7 +476,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" We'll begin shortly. Just wait for everyone to arrive.\\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Скоро начнём, но сначала дождитесь остальных.\\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -507,7 +507,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Slytherin was founded by Salazar Slytherin. Now I am the head of the house. Slytherins are characterised by ambition and cunning. Of course, Salazar Slytherin also highly valued and favoured pure-blood students, and although students of any blood-status can now be placed in Slytherin a Muggle-born Slytherin is a rare occurrence. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Слизерин был основан Салазаром Слизерином. Теперь я глава этого факультета. У слизеринцев ярко выражены амбиции и хитрость. Конечно, Салазар Слизерин также высоко ценил и предпочитал чистокровных студентов, и хотя студенты любого кровного статуса теперь могут находиться в Слизерине, грязнокровный маг в Слизерине большая редкость. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -539,7 +539,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Slytherin has won many house cups, and is a very successful and sought-after house, here at Hogwarts, especially within certain pure-blood communities. The house sigil, that is the emblematic animal of the house, is a serpent, and the colours of the house are green and silver. The patron ghost of Slytherin is the Кровавый Барон.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Слизерин получил множество наград, и это очень успешный и востребованный факультет в Хогвартсе, особенно в определенных кругах чистокровок. Символ Слизерина - змея, а цвет - зелёный и серебряный. Призрак Слизерина - Кровавый Барон.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

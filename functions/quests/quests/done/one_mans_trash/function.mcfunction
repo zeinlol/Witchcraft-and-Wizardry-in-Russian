@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Travel to London
+# Отправиться в London
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking

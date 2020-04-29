@@ -1,6 +1,6 @@
 # Override respawn Points are used for challenges and such where spawnpoint can't be determined based on distance
 
-# Little Whinging
+# Литтл Уингинг
 execute as @s[scores={overrideRespawn=1}] run tp @s 2324.48 71.00 -943.45 -381.50 0.87
 # London in front of Дырявый Котёл
 execute as @s[scores={overrideRespawn=2}] run tp @s 2882.02 55.00 745.92 -56.52 -22.21

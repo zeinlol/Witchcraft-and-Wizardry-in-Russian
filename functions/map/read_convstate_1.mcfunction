@@ -2,7 +2,7 @@
 #         Hogwarts              #
 #################################
 
-# When first unlocked and the player can only travel to their commmon room
+# When first unlocked and the player can only Отправиться в their commmon room
 
 # Nice spelling past me you dumb dumb. Too late to fix it.
 scoreboard players set @p[tag=activePlayer,tag=onlyCommonRoomIsUnlocked,scores={house=1}] mapUnlocked 1

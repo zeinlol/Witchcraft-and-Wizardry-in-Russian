@@ -9,7 +9,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Travel to Кабинет Директора
+# Отправиться в Кабинет Директора
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
@@ -72,7 +72,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 3 ###########################################################################################
 #############
-# Travel to площадь Гриммо
+# Отправиться в площадь Гриммо
 
 ### Tracked Quest ###
 execute as @s[scores={questState=3},tag=isTrackedQuest] run tag @s remove hideQuestTracking
