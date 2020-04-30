@@ -41,7 +41,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эй ты! Да, ты. Кажется, у меня кончается пергамент и перья, что не очень хорошо, так как мне нужны обе эти вещи, чтобы делать свою работу. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эй ты! Да, ты. Слушай, у меня кончается пергамент и перья, что не очень хорошо, так как мне нужны обе эти вещи, чтобы делать свою работу. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

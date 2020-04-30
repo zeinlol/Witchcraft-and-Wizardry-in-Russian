@@ -25,7 +25,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Danger lies before you, while safety lies behind,\\n Two of us will help you, whichever you would find,\\n One among us seven will let you move ahead,\\n Another will transport the drinker back instead,\\n Two among our number hold only nettle wine,\\n Three of us are killers, waiting hidden in line.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Впереди опасность, то же позади,\\n Но две из нас помогут, ты только их найди.\\n Одна вперед отправит, еще одна - назад,\\n В двух - вино всего лишь, а еще в трех - яд.\\n Ты хочешь здесь остаться на долгие века?\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -57,7 +57,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Choose, unless you wish to stay here for evermore,\\n To help you in your choice, we give you these clues four:\\n First, however slyly the poison tries to hide \\n You will always find some on nettle wine's left side;\\n Second, different are those who stand at either end,\\n But if you would move onwards neither is your friend;\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Тогда ищи - к тому же подсказка тебе дана.\\n Во-первых, как бы ловко не скрывался яд,\\n Найти его несложно - от вина левый ряд. \\n Второе - в крайних бутылях налито не одно и то ж,\\n Но если вперёд тебе надо, помощи зря ты ждешь.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -89,7 +89,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Third, as you see clearly, all are different size,\\n Neither dwarf nor giant holds death in their insides;\\n Fourth, the second left and the second on the right \\n Are twins once you taste them, though different at first sight.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Затем ни в большой, ни в малой смерти ты не найдёшь,\\n А если из второй слева и второй справа глотнешь,\\n Сам убедишься - налито одно и то же в них, \\n Хотя на взгляд они разные, но это уже в-четвёртых.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

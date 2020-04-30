@@ -225,7 +225,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ravenlaw was founded by Rowena Ravenclaw, who was a Scottish witch. She was noted for her intelligence and creativity and regarded as one of the greatest witches of the age. In time Rowena Ravenclaw fell ill and died. Legend has it that she died of a broken heart, after her daughter Helena ran away with her Диадема. She lost the will to live. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ravenlaw was founded by Кандида Когтевран, who was a Scottish witch. She was noted for her intelligence and creativity and regarded as one of the greatest witches of the age. In time Кандида Когтевран fell ill and died. Legend has it that she died of a broken heart, after her daughter Helena ran away with her Диадема. She lost the will to live. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

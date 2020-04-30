@@ -55,7 +55,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я создал дождевое облако в кабинете профессора Трелони, но я не уверен что она с ним справится...\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я ляпнул, что видел дождевое облако в кабинете профессора Трелони, но я не уверен что она поверила в это...\"}"}
 #execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -91,7 +91,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Можешь помочь? Что ты имеешь в виду? Было глупо колдовать - я думаю, что просто был на эмоциях в то время. Я соврал о том, что видел что-то наподобие, того, как Долгопупс снова потерял жабу. Профессор Трелони возможно поверила это.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Можешь помочь? Что ты имеешь в виду? Было глупо такое говорить - я думаю, что просто был на эмоциях в то время. Надо было соврать о том, что видел что-то наподобие, того, как Долгопупс потерял жабу. Профессор Трелони возможно поверила бы в это.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -123,7 +123,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Unless... What if we made my prediction come true? That way she would think that I was really seeing something in the Кристальный Шар. I might even have a shot at not failing if we can pull this off. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Если только... что, если нам удасться исполнилось предсказание? Она бы подумала, что я действительно что-то вижу в Кристальном Шаре. У меня даже есть шанс не провалиться, если у нас получится. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -156,7 +156,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Good thing for us they sell those 'Погода в Банке' things at both Zonko's Joke Shop in Hogsmeade and Всевозможные Волшебные Вредилки. That's the perfect gadget for this! \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хорошая новость - мы можем купить 'Погоду в Банке' в  магазине шуток 'Зонко' в Хогсмиде или же во Всевозможных Волшебных Вредилках. Идеально нам подойдёт! \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -188,7 +188,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You'll need to acquire 'Погода в Банке' and then use it in Профессор Трелони's classroom. This is Brilliant! \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сможешь купить 'Погоду в Банке' и потом воспользоваться в кабинете профессор Трелони. Это гениально! \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -224,7 +224,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Did it work? Brilliant! Seems I might not fail divination after all. Here take this, you've earned it. 100 ≈\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сработало? Блестяще! Похоже, я не ошибся с предсказанием в конце концов. Вот возьми, ты заслужил. 100 ≈\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -261,7 +261,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Thank you for making my prediction come true! Without you I'd fail divination for sure. Now it's more like fifty-fifty. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Спасибо, что помог исполнить мое предсказание! Без тебя я бы не сдал прорицания. Теперь скорее 50 на 50. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
