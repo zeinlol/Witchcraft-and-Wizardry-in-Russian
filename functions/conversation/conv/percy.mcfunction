@@ -493,7 +493,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A Head Girl or Head Boy, like me, is a seventh-year student who has authority over prefects. Each year, our Headmaster selects both a Head Boy and a Head Girl. They lead the prefects and, in many cases, the entire student body. They are also an example to everyone on how an ideal student should behave. I am perfect for that job, am I not? \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Старорста школы - студент и студентка последнего курса. Руководит обычными старостами. Каждый год наш директор выбирает в роли старосты парня и девушку. Они так же являются для всех примером того, как должен вести себя идеальный ученик. Я идеален для этой работы, не так ли? \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -525,7 +525,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Староста - это студент, которому староста школы и директор предоставили дополнительные полномочия и обязанности. Один студент мужского пола и одна студентка женского пола с пятого курса обучения и продолжают выполнять эту роль до своего последнего года обучения. I was a prefect until I got promoted to Head Boy; a job with far more responsibility. I'm much more important now. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Староста - это студент, которому староста школы и директор предоставили дополнительные полномочия и обязанности. Один студент мужского пола и одна студентка женского пола с пятого курса обучения и продолжают выполнять эту роль до своего последнего года обучения. Я был обычным старостой, до того как стал старостой школы; работа с гораздо большей ответственностью. Теперь я намного важнее. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -589,7 +589,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Why Сер Николас de Mimsy-Porpington of course! He was a well-esteemed knight at King Henry VII's court, but he got himself beheaded after he accidentally made Lady Grieve grow a tusk. The beheading did not go well, however. It took the executioner forty-five hacks to chop the man's head off. Macabre, I know. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сэр Николас де Мимси-Дельфингтон конечно! Он был уважаемым рыцарем при дворе короля Генриха VII, но был обезглавлен после того, как случайно заставил леди Грив отрастить бивни. Обезглавливание, однако, прошло не очень хорошо. Палачу потребовалось 45 ударов, чтобы отрубить голову. Ужасно, я знаю. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -621,7 +621,7 @@ tag @s[scores={convState=17},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That's why he's known as Почти Безголовый Ник. His head is still connected to his body by a tiny piece of skin. Don't mention that name near him, though. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Вот почему он известен как Почти Безголовый Ник. Его голова все еще связана с его телом крошечным куском кожи. Не упоминай это имя рядом с ним. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

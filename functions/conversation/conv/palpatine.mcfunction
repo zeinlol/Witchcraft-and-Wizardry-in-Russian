@@ -27,17 +27,17 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Did you ever hear the tragedy of \"},{\"text\":\"Cadmus Peverell, the second brother\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Ты когда-нибудь слышал историю о \"},{\"text\":\"Кадмусе Певерелл, втором брате\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\",\"color\":\"white\",\"bold\":\"false\"}]"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ No?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Нет?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ A good question. For another time\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ Хороший вопрос. В другой раз\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState -1
 #-------------------------------
 
@@ -61,7 +61,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I thought not. It's not a story Dumbledore would tell you. It's an old legend. Cadmus Peverell was a pure-blood wizard, who held Воскрешающий камень. A stone so powerful it could use its magic to bring back life... He held such strong dark magic that Cadmus Peverell could keep the ones he cared about from dying. The Дары Смерти is a pathway to many abilities some consider to be unnatural. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я так не думаю. Это не та история, которую Дамблдор мог тебе рассказать. Это старая легенда. Кадмус Певерелл был чистокровным волшебником, который владел Воскрешающим камнем. Камень настолько мощный, что может использовать свою магию, чтобы вернуть жизнь... Он обладал такой сильной темной магией, что Кадмус Певерелл мог удержать тех, о ком заботился. Путь к многим способностям, которые некоторые считают неестественными. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -92,7 +92,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" He became so powerful ... The only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, the revived ones did not belong. He was driven mad, then killed himself in his grief. It's ironic. He could save others from death, but not himself.\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Он стал таким могущественным... Единственное, чего он боялся, это потерять свою силу, что, конечно, и произошло. К сожалению, возрожденным не место. Он сошел с ума, а затем покончил с собой в горе. Это иронично. Он мог спасти других от смерти, но не себя.\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
