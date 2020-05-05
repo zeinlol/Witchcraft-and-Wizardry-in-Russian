@@ -1,4 +1,4 @@
-# This is the block animation for the stair to dumbledore's office
+# This is the block animation for the stair to Кабинет Дамблдора
 execute if score dumbledoreStair global matches 2 run fill 735 110 306 737 128 308 air
 execute if score dumbledoreStair global matches 2 run setblock 736 110 307 minecraft:lapis_ore
 execute if score dumbledoreStair global matches 2 run setblock 736 112 307 minecraft:black_glazed_terracotta[facing=west]

@@ -64,7 +64,7 @@ execute as @s[scores={animTest=1..}] run scoreboard players remove @s animTest 1
 
 # Yo future me this is a really nasty hack but done to prevent a visual bug please fix it 
 # execute as @s[tag=tmpExecute] run function hp:draw_hotbar/draw_inventory
-# Yo past me I fixed it no worries.
+# Yo past me I fixed it Не беспокойся.
 
 # input
 execute as @s[tag=hasPressedF] run function hp:map/map_press_f

@@ -410,7 +410,7 @@ execute as @s[scores={npcHead=144}] run scoreboard players set @s tmp 76
 execute as @s[scores={npcHead=145}] run scoreboard players set @s tmp 75
 # Почти Безголовый Ник
 execute as @s[scores={npcHead=146}] run scoreboard players set @s tmp 74
-# Moaning Myrtle
+# Плакса Миртл
 execute as @s[scores={npcHead=147}] run scoreboard players set @s tmp 73
 # Aberforth
 execute as @s[scores={npcHead=148}] run scoreboard players set @s tmp 72

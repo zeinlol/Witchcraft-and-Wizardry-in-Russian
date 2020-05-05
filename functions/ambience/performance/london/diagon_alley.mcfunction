@@ -27,7 +27,7 @@ execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2
 # 2853 46 985 2855 51 990 - 2 5 5
 execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2},x=2853,dx=2,y=46,dy=5,z=985,dz=5,tag=!isFastTravelling] run function hp:ambience/soundscapes/diagon_alley_store
 
-# Mr Mulpepper's Apothecary
+# Аптека Малпеппера
 # 2855 46 972 2874 61 981 - 19 15 9
 execute unless entity @s[scores={ambienceLocation=6}] as @s[scores={lastRegion=2},x=2855,dx=19,y=46,dy=15,z=972,dz=9,tag=!isFastTravelling] run function hp:ambience/soundscapes/diagon_alley_store
 # 2852 46 975 2854 61 980 - 2 15 5

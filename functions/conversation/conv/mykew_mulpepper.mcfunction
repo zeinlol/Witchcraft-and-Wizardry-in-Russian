@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Good day! Добро пожаловать в  Mr Mulpepper's Apothecary. You did well to come in here. This is the finest apothecary in Косой Переулок.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добрый день! Добро пожаловать в аптеку Малпеппера. Хорошо, что вы пришли сюда. Это лучшая аптека в Косом Переулке.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -63,7 +63,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Косой Переулок is perfect if you have an interest in alchemy and potion-brewing. There are several apothecaries and potion shops scattered around the street but none can boast an inventory as expansive as mine. Certainly not Уилтон Болиголов from Slug and Jiggers next door, whatever he might say. If I don't have what you're looking for, no-one does.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Косой Переулок идеален, если вы интересуетесь алхимией и зельем. Есть несколько аптек и магазинов зелий, разбросанных по переулку, но никто не может похвастаться такими обширными запасами, как моя аптека. Конечно, владелец 'Слизень и Джиггер' так не считает, он рядом, по соседству. Если у меня нет того, что вы ищете, то ни у кого нет.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -1,4 +1,4 @@
-# This is the block animation for the stair to dumbledore's office
+# This is the block animation for the stair to Кабинет Дамблдора
 execute if score dumbledoreStair global matches 2 run playsound minecraft:custom.fx.rocks_move_short master @a 736 110 307 2 1
 execute if score dumbledoreStairDirection global matches 1 if score dumbledoreStair global matches 2 run playsound minecraft:custom.fx.stone_slide master @a 736 110 307 2 1
 

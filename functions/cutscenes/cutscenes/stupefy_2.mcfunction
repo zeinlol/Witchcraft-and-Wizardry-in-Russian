@@ -321,7 +321,7 @@ tp @s[scores={cutSceneTimer=319}] 5506.076 55.66586 32.91362 1816.05 1.72
 tp @s[scores={cutSceneTimer=320}] 5506.072 55.66541 32.92803 1816.05 1.72
 execute as @s[scores={cutSceneTimer=300}] run function hp:cutscenes/fade_in
 
-# ¤Lupin:¤ Excellent work!
+# ¤Lupin:¤ Отличная работа!
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
 execute as @s[scores={cutSceneTimer=20..160}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"  "}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] run function hp:npc/update_npc_head_expression
