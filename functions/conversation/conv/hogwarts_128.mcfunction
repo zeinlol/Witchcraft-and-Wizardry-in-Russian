@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You know, I think I got sorted into Slytherin just because I am an ambitious person. Having to deal with this whole blood status obsession is a bit much. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Знаешь, я думаю, что попал в Слизерин только потому что я амбициозный человек. Иметь дело со всей этой одержимостью состоянием крови немного чересчур. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

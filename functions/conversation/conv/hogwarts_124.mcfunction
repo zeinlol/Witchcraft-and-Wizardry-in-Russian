@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I wonder why Hermione isn't in Ravenclaw. I don't think Professor Flitwick asked a single question that she couldn't answer in Charms yesterday. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Интересно, почему Гермиона не в Когтевране. Не думаю, что профессор Флитвик сможет задать вопрос, на который она не могла бы ответить. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

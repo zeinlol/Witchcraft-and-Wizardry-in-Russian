@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Мадам Паддифут's Tea Shop, dear. How may I help you? \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в чайный магазин Мадам Паддифут. Чем могу быть полезна? \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -63,7 +63,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, this is just a small café. Many of the couples from Hogwarts come here to enjoy a cup of tea or coffee. Especially around Valentine's Day. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" О, это просто маленькое кафе. Многие парочки из Хогвартса приходят сюда, чтобы насладиться чашкой чая или кофе. Особенно в День Святого Валентина. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
