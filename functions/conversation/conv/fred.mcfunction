@@ -93,7 +93,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" It's the Marauder's Map! This magical piece of Пергамент will reveal all of Hogwarts to you. You can use it to travel about the castle and get to unlocked locations in no time. This little beauty's taught us more than all the teachers at this school.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" It's Карта Мародёров! This magical piece of Пергамент will reveal all of Hogwarts to you. You can use it to travel about the castle and get to unlocked locations in no time. This little beauty's taught us more than all the teachers at this school.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -970,7 +970,7 @@ tp @s[scores={cutSceneTimer=899}] 5508.26 45.24 -41.55 160.19 5.409963
 tp @s[scores={cutSceneTimer=900}] 5508.26 45.24 -41.55 160.19 5.559963
 execute as @s[scores={cutSceneTimer=880}] as @s run function hp:cutscenes/fade_in
 
-# ¤Lupin:¤ You can select the Stupefy spell by pressing { and cast it by double clicking £.
+# ¤Lupin:¤ You can select the Stupefy spell by pressing { для использования дважды нажми £.
 execute as @s[scores={cutSceneTimer=980},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
 execute as @s[scores={cutSceneTimer=980..1110}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                "}]
 

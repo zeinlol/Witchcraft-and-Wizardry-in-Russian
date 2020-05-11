@@ -27,29 +27,29 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yes? \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Да? \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Malfoy Manor\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Поместье Малфоев\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о the Malfoy family\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о семье Малфоев\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Hogwarts?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Хогвартсе?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Dumbledore?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Дамблдоре?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о the Weasleys?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Уизли?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Гарри Поттер?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Что вы думаете о Гарри Поттере?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -76,7 +76,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Manor has been in the family for generations and was founded by Armand Malfoy, who arrived in Britain with William the Conqueror as part of the invading Norman army and was given this land. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Поместье принадлежало семье на протяжении поколений и было основано Арманом Малфоем, который прибыл в Великобританию с Вильгельмом Завоевателем как часть вторгшейся нормандской армии и получил эту землю. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -109,7 +109,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Malfoy surname is one of the most respected in the wizarding world. The Malfoy family is one of the Sacred Twenty-Eight, the last truly pure-blooded families in Britain. We're proud of our pure blood-status and would not want to sully it. The Malfoys are related to other well-respected pure-blood families such as the Greengrasses, Rosiers, Blacks, and Lestranges. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Фамилия Малфой - одна из самых уважаемых в мире волшебников. Семья Малфой - одна из Священной Двадцать Восьмёрки, последних чистокровных семей в Британии. Мы гордимся нашим чистым кровяным состоянием и не хотим запятнать его. Малфои связаны с другими уважаемыми семействами чистой крови, такими как Гринграссы, Розье, Блэки и Лестрейнджи. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -141,7 +141,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Of those Malfoys who have been taught at Hogwarts, all have been in Slytherin. I for one wanted to send my son, Draco to Durmstrang. Dumbledore would be a bad influence. The man is far too tolerant regarding those of less than pure wizarding blood. At Durmstrang it isn't so, and I know Igor Karkaroff, the Headmaster of Durmstrang Institute. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Из тех Малфоев, которых учили в Хогвартсе, все были в Слизерине. Я хотел отправить своего сына, Драко, в Дурмстранг. Дамблдор плохо повлиял бы. Человек слишком терпелив к тем, у кого нет чистой волшебной крови. В Дурмстранге это не так, и я знаю Игоря Каркарова, директора Дурмстрангской школы. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -174,7 +174,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Besides, at Durmstrang institute they take a far more sensible line than Hogwarts when it comes to the Dark Arts. Hogwarts can be so close-minded. It can be… Shall we say, academically limiting? \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кроме того, в Дурмстранге придерживаются более разумной программы, чем в Хогвартсе, когда дело касается Тёмных Искусств. Хогвартс может быть очень ограниченым. Можно ли сказать, что это ограничивает образование? \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -206,7 +206,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The man is quite incompetent. His advocacy for Muggle rights is quite harmful, and the values that he seems to lead Hogwarts by are quite contrary to those that have been held in the highest regard by the Malfoys for hundreds of years. Shame really. There is no denying that he is a powerful wizard. Just think what such a man could achieve if he had an ounce of vision. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Этот человек совершенно некомпетентен. Его защита прав маглов весьма вредна, и то, как он руководит Хогвартсом, полностью противоречат тому, что высоко ценится Малфоями в течение сотен лет. Стыд, правда. Нельзя отрицать, что он могущественный волшебник. Просто подумай, чего такой человек мог бы достичь, если бы у него были другие взгляды на мир. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -239,7 +239,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Yet it isn't so. Instead, he is the worst thing that ever happened to Hogwarts. I do what I can to keep him in check through my contacts at the Ministry. But I for one would rather see my friend Северус Снегг take over his position. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Но это не так. Вместо этого, он - худшее, что когда-либо случалось с Хогвартсом. Я делаю все, что могу, чтобы держать его под контролем через мои связи в Министерстве. Но я бы предпочел, чтобы мой друг Северус Снегг занял его место. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -272,7 +272,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Weasleys? Let me see. Red hair... vacant expressions... tattered second-hand robes and books. I mean dear me, what's the use of being a disgrace to the name of wizard if they don't even pay you well for it. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Уизли? Дай мне подумать. Рыжие волосы... Глупое выражение лица... Потрепанные подержанные мантии и книги. Боже мой, какая польза от того, что бы позорить имя волшебника, если тебе за него не платят. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -305,7 +305,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well. I suppose it is not ... prudent ... to appear less than fond of Mr Гарри Поттер. Not when most of our kind regard him as the hero who made the Dark Lord disappear. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ну. Полагаю, это не очень... разумно... выглядеть так, стовно ты без ума от мистера Гарри Поттера. Но большинство волшебников считают его героем, который заставил Темного Лорда исчезнуть. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

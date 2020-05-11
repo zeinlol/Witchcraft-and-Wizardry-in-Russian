@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hey, listen. I'll let you in on a secret. If you ever need to get rid of anything, there is a place called the Выручай-комната above the library. That's a good place. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эй, слушай. Я открою тебе секрет. Если тебе когда-нибудь понадобится избавиться от чего-нибудь, есть место назваемое Выручай-комната где-то над библиотекой. Хорошее место. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

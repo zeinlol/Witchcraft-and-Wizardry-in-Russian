@@ -319,10 +319,10 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Гриффиндору.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Когтеврану.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Пуффендую.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Excellent! 10 очков Слизерину.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Прекрастно! 10 очков Гриффиндору.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Прекрастно! 10 очков Когтеврану.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Прекрастно! 10 очков Пуффендую.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Oh, well done! Прекрастно! 10 очков Слизерину.\\n\\n The Lumos charm is now unlocked, and can be used when you encounter dark areas in the world. When you are ready you can head to your next class: Defence Against the Dark Arts with Professor Lupin.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -413,7 +413,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" In order to use the spell, select it from your spell menu by pressing ² and then double-tap ⌠ to focus on an object to pick up. Then pick up and let go of objects by tapping ⌠ again. When levitating an object simply look where you want it to go. You can use the mouse wheel to adjust its distance to you.\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Чтобы использовать заклинание, выбери его из меню заклинаний нажав ² and then double-tap ⌠ to focus on an object to pick up. Then pick up and let go of objects by tapping ⌠ again. When levitating an object simply look where you want it to go. You can use the mouse wheel to adjust its distance to you.\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -514,7 +514,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно в classroom\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно в класс\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"Класс Заклинаний\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Закончить Воспоминание\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"Кабинет Дамблдора\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
@@ -605,10 +605,10 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Гриффиндору.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Когтеврану.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Пуффендую.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
-execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Excellent! The charm 'Brackium Emendo' is now unlocked! 10 очков Слизерину.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=1}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Прекрастно! The charm 'Brackium Emendo' is now unlocked! 10 очков Гриффиндору.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=2}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Прекрастно! The charm 'Brackium Emendo' is now unlocked! 10 очков Когтеврану.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=3}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Прекрастно! The charm 'Brackium Emendo' is now unlocked! 10 очков Пуффендую.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
+execute if entity @s[tag=use,scores={house=4}] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Прекрастно! The charm 'Brackium Emendo' is now unlocked! 10 очков Слизерину.\\n\\n You have a real knack for this and seem eager to learn!\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -676,7 +676,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно в classroom\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно в класс\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=!inMemory] run data merge entity @s {CustomName:"{\"text\":\"Класс Заклинаний\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationCharmsClassroom_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=!confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"√ Закончить Воспоминание\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption,tag=inMemory] run data merge entity @s {CustomName:"{\"text\":\"Кабинет Дамблдора\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationHeadmastersOffice_____","convOption","i"]}
