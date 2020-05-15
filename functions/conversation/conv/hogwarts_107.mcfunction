@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I've never really understood the Hogwarts houses. I mean students are sorted into what...? Brave students, clever students, evil students and miscellaneous. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я никогда не понимал факультеты Хогвартса. Я имею в виду, что студенты сортируются в...? Смелые студенты, умные студенты, злые студенты и прочие. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Did you hear Loony Lovegood in Astronomy yesterday? She wouldn't shut up about nargles and blibbering humdingers and Морщерогий кизлякs! \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты слашал Полумну Лавгуд на Астрономии вчера? Она не замолкала о нарглах, бундящаих шицах и иорщерогих кизляках! \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

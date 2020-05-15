@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Welcome, J. Pippin's Potions. Potions for all ailments. Glad you took interest in my shop. Чем могу быть полезен? \",\"color\":\"white\",\"bold\":\"false\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Здравствуйте, Зелья Дж. Пиппина. Зелья для всех нужд. Рад что вы заинтересовались этим магазином. Чем могу быть полезен? \",\"color\":\"white\",\"bold\":\"false\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -63,7 +63,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well, I have a small selection of finished potions, but I mostly sell ingredients, really. If you're not interested in brewing potions yourself, you should visit Elik's Elixirs in Косой Переулок in London. He might have what you're looking for. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ну, у меня есть небольшой выбор готовых зелий, в основном продаю ингредиенты. Если ты не заинтересован в том, чтобы варить зелья, тебе стоит посетить магазин Эликсиры Эликса в Косом Переулке в Лондоне. У него должно быть то, что ты ищешь. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

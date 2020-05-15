@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'll never understand why the Slytherins are content with living in a dark, dank dungeon. I mean... They tend to come from some of the wealthiest and most privileged backgrounds, so you'd expect them to have higher standards. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я никогда не пойму, почему Слизеринцы довольны жизнью в темном, сыром подземелье. я имею в виду... Они, как правило, происходят из самых богатых и привилегированных семей, так что можно ожидать от них более высоких стандартов. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

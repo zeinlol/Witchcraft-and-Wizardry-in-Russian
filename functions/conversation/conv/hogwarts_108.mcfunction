@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Can you believe Longbottom is still in Gryffindor? I actually assumed the hat would realise its mistake and resort him to Hufflepuff at some point. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты можешь себе представить, что Долгопупс до сих пор в Гриффиндоре? Я думаю что распределяющая шапа ошиблась с выбором, и стоило определить его в Пуффендуй. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

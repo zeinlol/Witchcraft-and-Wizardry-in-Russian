@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hey, let me tell you a secret! I found out how to get into the Кухня Хогвартса! Just go down to the bottom of Лестничная Башня and look for a painting of a pear. If you tickle the pear the entrance appears! \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ей, я хочу тебе рассказать секрет! Я нашел способ попасть на кухню! Просто иди в самый низ Лестничной Башни и ищи рисунок груши. Если пощекочешь её, появляется вход! \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
