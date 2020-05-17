@@ -12,7 +12,7 @@ execute if score hogsmeadeSecondHandBroomsIsCulled global matches 0 unless entit
 execute if score ceridwensCauldronsIsCulled global matches 1 if entity @p[tag=!cullAll,x=5207,y=89,z=2478,dx=22,dy=42,dz=33] run function hp:entity_culling/hogsmeade/ceridwens_cauldrons/ceridwens_cauldrons_set
 execute if score ceridwensCauldronsIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5207,y=89,z=2478,dx=22,dy=42,dz=33] run function hp:entity_culling/hogsmeade/ceridwens_cauldrons/ceridwens_cauldrons_remove
 
-# Dervish and Banges
+# Дэрвиш и Бэнгз
 execute if score dervishAndBangesIsCulled global matches 1 if entity @p[tag=!cullAll,x=5189,y=92,z=2495,dx=36,dy=50,dz=49] run function hp:entity_culling/hogsmeade/dervish_and_banges/dervish_and_banges_set
 execute if score dervishAndBangesIsCulled global matches 0 unless entity @p[tag=!cullAll,x=5189,y=92,z=2495,dx=36,dy=50,dz=49] run function hp:entity_culling/hogsmeade/dervish_and_banges/dervish_and_banges_remove
 

@@ -72,7 +72,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Look around. This is a junk store. I sell junk and I buy junk to resell it. At least I'm honest about it. Not like Dervish and Banges. Speaking of junk, if you have any items you don't need, selling them to shopkeepers like me is a great way to earn a bit of money. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Look around. This is a junk store. I sell junk and I buy junk to resell it. At least I'm honest about it. Not like Дэрвиш и Бэнгз. Speaking of junk, if you have any items you don't need, selling them to shopkeepers like me is a great way to earn a bit of money. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -103,7 +103,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There are lots of shops here. If you're looking to earn a quick galleon while getting rid of all the rubbish cluttering your inventory, you can go to me, or you could visit Dervish and Banges. But I wouldn't go there. Those two are holding on to some strange ideals. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There are lots of shops here. If you're looking to earn a quick galleon while getting rid of all the rubbish cluttering your inventory, you can go to me, or you could visit Дэрвиш и Бэнгз. But I wouldn't go there. Those two are holding on to some strange ideals. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

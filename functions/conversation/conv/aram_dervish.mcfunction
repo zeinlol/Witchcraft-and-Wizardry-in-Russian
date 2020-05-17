@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Dervish and Banges. Magical instruments, equipment, gadgets, gizmo, appliances, apparatus. If you're looking for Banges, you should be able to find him outside behind the shop. But don't expect much in the way of conversation: He's not one for talking. Especially not to Hogwarts students and people he doesn't know. Now... \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Дэрвиш и Бэнгз. Magical instruments, equipment, gadgets, gizmo, appliances, apparatus. If you're looking for Banges, you should be able to find him outside behind the shop. But don't expect much in the way of conversation: He's not one for talking. Especially not to Hogwarts students and people he doesn't know. Now... \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
