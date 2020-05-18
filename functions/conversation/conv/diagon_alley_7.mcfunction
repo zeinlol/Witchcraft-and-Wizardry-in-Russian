@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I need to visit Green Leaf. A Knarl destroyed my whole garden after I tried to feed it! And just as I had gotten rid of the garden gnome infestation...  \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мне нужно посетить Зелёный Лист. Нарлы уничтожили весь мой сад после того, как я попытался его привести в порядок! И разумеется, сразу же как я избавилась от садовых гномов...  \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

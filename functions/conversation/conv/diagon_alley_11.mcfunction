@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Пергамент, ink, and quills. What could be more convenient? I hear the Muggles have taken to write on paper using pens. Nonsense, it's sure to blow over. Bird feathers and calfskin is the obvious choice. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Пергамент, чернила и перья. Что может быть удобнее? Слышал, маглы пишут на бумаге с помощью ручек. Ерунда, она обязательно закончиться. Птичьи перья и телячья шкура - очевидный выбор. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

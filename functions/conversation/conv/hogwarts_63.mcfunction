@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Out of all the animals imaginable, why would Helga Hufflepuff choose a badger to represent our house? Why not a dragon or a hippogriff? \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Из всех животных, которые можно вообразить, зачем Пенелопа Пуфендуй выбрала барсука, как символ факультета? Почему не дракон или гиппогриф? \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

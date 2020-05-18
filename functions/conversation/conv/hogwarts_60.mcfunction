@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Gryffindors think they are so great... We Slytherins are brave too, yes, but not stupid. Given the choice, we will always choose to save our own necks. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Гриффиндорцы думают, что они такие классные... Мы, Слизеринцы, тоже храбрые, да, но не глупые. При наличии выбора мы всегда будем выбирать, как спасти наши собственные шеи. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

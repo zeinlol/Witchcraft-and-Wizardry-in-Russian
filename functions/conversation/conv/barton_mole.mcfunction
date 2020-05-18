@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  The Flying Apron Bakery. Чем могу быть полезен? \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  пекарню 'Летящий фартух'. Чем могу быть полезен? \\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -63,7 +63,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" When the snow starts to fall, people flock to my baked goods like moths to a wand-lighting charm. Good thing I have Hendry here to help me out, or I'm not sure I'd be able to keep up. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Когда снег начинает падать, люди стекаются к моей пекарне, как мотыльки к свету от палочек. Хорошо, что Хендри здесь, чтобы помочь мне, я не уверен, что смог бы справиться сам. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

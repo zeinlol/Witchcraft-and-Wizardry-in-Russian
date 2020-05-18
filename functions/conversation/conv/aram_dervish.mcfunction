@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Дэрвиш и Бэнгз. Magical instruments, equipment, gadgets, gizmo, appliances, apparatus. If you're looking for Banges, you should be able to find him outside behind the shop. But don't expect much in the way of conversation: He's not one for talking. Especially not to Hogwarts students and people he doesn't know. Now... \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Добро пожаловать в  Дэрвиш и Бэнгз. Магические инструменты, оборудование, гаджеты, приборы, аппараты. Если вы ищете Бенгза, вы можете найти его за магазином. Но не ждите многого от разговора: он не из тех, кто любит болтать. Особенно с учениками Хогвартса и людей, которых он не знает. Я вас слушаю... \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -78,7 +78,7 @@ execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data m
 #-------------------------------
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ I would like to ask a question\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Я хочу задать вопрос\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 #-------------------------------
 
@@ -107,7 +107,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hm? \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хм? \\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -115,10 +115,10 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Hogsmeade\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Хогсмиде\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Do you and Banges both run the shop?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Вы с Бенгзом управляете магазином вдвоём?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 #-------------------------------
 
@@ -147,7 +147,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hogsmeade is a small village, but there are many shops. That being said, there are only a few shopkeepers like us, who are willing to buy any items you have to sell. You should stick with us though. That woman up the street rubs elbows with all sorts. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хогсмид - небольшая деревня, но тут много магазинов. Тем не менее, есть только несколько владельцев магазинов, как мы, которые готовы купить любые предметы, которые вы хотите продать. Рекомендую остаться с нами. Хотя и женщина на той стороне улицы тоже много с кем имеет дело. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -181,7 +181,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" That we do. We stick together, him and I. And stick together we must. Ever since the end of the first wizarding war, I feel like we are the only true wizards here in Hogsmeade. They've gone soft, the lot of them. Even those who were sympathetic to our cause before. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Да, всё верно. Мы держимся вместе. Мы должны держаться вместе. С конца первой войны волшебников, я чувствую, что мы единственные настоящие волшебники в Хогсмиде. Они стали поддатливыми, почти все. Даже те, кто сочувствовал нашему делу раньше. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader	
 
 ###############################
@@ -214,7 +214,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Now perhaps I should guard my tongue. This was all years ago, mind you. You need to be more careful what you say these days. But I tell you: Maybe I don't go out and pick up a wand in the name of purebloods anymore. But it would be a coward who didn't hold on to his ideals nonetheless. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Наверно мне стоит держать язык за зубами. Имейте в виду, что это было много лет назад. Вам нужно быть более осторожным в том, что вы говорите в эти дни. Но поверьте: может, я больше и не выхожу и не беру палочку во имя чистокровок. Но только трусы не в состоянии придерживаться своих идеалов. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader	
 
 ###############################
@@ -247,7 +247,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The Muggles and Mudbloods have no business invading our world. Hogsmeade is a wizarding village. It ought to stay one. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Маглы и Грязнокровки не имеют права вторгаться в наш мир. Хогсмид - это волшебная деревня. Она должна остаться таковой. \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader	
 
 ###############################
@@ -259,7 +259,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\" Согласен \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 7
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\" I don't agree \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\" Не согласен \"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 #-------------------------------
 
@@ -283,7 +283,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Good, then you see through the lies that Dumbledore would teach you at Hogwarts. He had such potential. Used to be close to Grindelwald, I've heard. Now I know you're not supposed to praise that name, but we can speak honestly here. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хорошо, тогда ты видишь сквозь ложь, которой Дамблдор учит в Хогвартсе. У него был такой потенциал. Я слышал, что раньше он был близок с Гриндевальдом. Я знаю, что ты не должен восхвалять это имя, но мы можем говорить здесь честно. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader	
 
 ################################
@@ -322,7 +322,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well. You're no different than the lot of them then. But I'm telling you, there are people like Banges and me out there, waiting for something to happen. Something is coming. I think things are going to change around here. \\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ну... Тогда вы ничем не отличаетесь от большинства. Но я говорю вам, есть люди вроде Бэнгса и меня, которые ждут, что что-то случится. Что-то приближается. Думаю, здесь все изменится. \\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader	
 
 ################################
@@ -374,7 +374,7 @@ execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data m
 #-------------------------------
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Hogsmeade\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Хогсмиде\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 10
 #-------------------------------
 
@@ -403,7 +403,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hogsmeade is a small village, but there are many shops. That being said, there are only a few shopkeepers like us, who are willing to buy any items you have to sell. You should stick with us though. That woman up the street rubs elbows with all sorts. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хогсмид - небольшая деревня, но тут много магазинов. Тем не менее, есть только несколько владельцев магазинов, как мы, которые готовы купить любые предметы, которые вы хотите продать. Рекомендую остаться с нами. Хотя и женщина на той стороне улицы тоже много с кем имеет дело. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ###############################

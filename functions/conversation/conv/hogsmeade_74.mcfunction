@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" They say clothes make the man. I think it's true. Naked people have very little influence on society. \\n\\n\\n\\n\"}"}	
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Говорят, одежда делает человека. Я думаю, это правда. Голые люди имеют очень мало влияния на общество. \\n\\n\\n\\n\"}"}	
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

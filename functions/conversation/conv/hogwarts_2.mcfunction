@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I'm not sure about the structural integrity of this bridge. I mean look at it! There's no chance my old Muggle school would have approved this. 'Safest place in the world?' Not for the students, it isn't. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я не уверен в структурной целостности этого моста. Посмотри на него! Нет шансов, что моя старая школа маглов одобрила бы это. 'Самое безопасное место в мире'? Уж точно не для студентов. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

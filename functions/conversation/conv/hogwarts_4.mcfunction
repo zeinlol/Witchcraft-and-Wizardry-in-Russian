@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" This way to Хижина Хагрида and the Запретный Лес! Although I'd stay out if I were you. It is forbidden for a reason, you know... \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это дорожка к хижине Хагрида и в Запретный Лес! Я бы остался тут, если бы был тобой. Он запретный по какой-то причине, как ты знаешь... \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

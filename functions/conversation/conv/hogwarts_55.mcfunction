@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" If you're looking for the Ravenclaw tower, just go up the stairs and turn left when you've reached the library! At least, that was the way yesterday... \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Если ты ищешь башню Когтеврана, просто поднимись по лестнице и поверни налево, когда доберешься до библиотеки! По крайней мере, так было вчера... \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

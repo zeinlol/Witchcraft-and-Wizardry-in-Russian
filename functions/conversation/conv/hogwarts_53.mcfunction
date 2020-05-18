@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Professor Snape actually took points away from Longbottom in Potions last week when he melted his kettle. It was great! What a chump. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Профессор Снегг на самом деле отобрал балы у Долгопупса на зельеварении на прошлой неделе, когда он расплавил свой котёл. Это было здорово! Что за болван. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

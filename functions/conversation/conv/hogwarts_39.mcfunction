@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I found a spell in the library that repels rain from my glasses during Quidditch matches! It's called Imperv... Ompar... Ervaprius? No, that wasn't it... \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я нашел заклинание в библиотеке, которое отталкивает дождь от моих очков во время матчей по Квиддичу! Это называется Имперв... Омпар... Эрваприус? Нет, это не то... \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

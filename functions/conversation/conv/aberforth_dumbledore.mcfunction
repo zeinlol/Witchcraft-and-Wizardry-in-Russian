@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хмгх?\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хм?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -62,7 +62,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кхм. Хм ... Визжащая хижина, насклько я помню. Так называют этот заброшенный дом в долине. Поговаривают, что это из-за привидения. Чепуха. Хотя... порой, тихими ночами можно слышать странные звуки, похожие на крик и смех, доносящийся из дома. Примерно раз в месяц можно услышать вой волка, но это нечто другое.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кхм. Хм... Визжащая хижина, насклько я помню. Так называют этот заброшенный дом в долине. Поговаривают, что это из-за привидения. Чепуха. Хотя... порой, тихими ночами можно слышать странные звуки, похожие на крик и смех, доносящийся из дома. Примерно раз в месяц можно услышать вой волка, но это нечто другое.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I really think more people should wear their hats. They are part of the official Hogwarts school uniform, you know. I should speak to Professor Snape about this, these rules need to be enforced! \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я в серьёз думаю, что больше людей должны носить свои шляпы. Они часть официальной школьной формы Хогвартса, как ты знаешь. Я должен поговорить с профессором Снеггом об этом, эти правила должны быть соблюдены! \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

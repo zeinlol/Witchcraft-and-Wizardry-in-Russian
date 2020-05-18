@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Why hello! I am \"},{\"text\":\"Барлиман Баттербур\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\", the owner and proprietor of The Wine Barrel Inn. Чем могу быть полезен?\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Рад видеть! Я \"},{\"text\":\"Барлиман Баттербур\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\", владелец и основатель 'Вионного Бареля'. Чем могу быть полезен?\",\"color\":\"white\",\"bold\":\"false\"}]"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -62,7 +62,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" You must be new here. The 'Ежедневный Пророк' is a wizarding newspaper. It is the primary source of news for British and Irish witches and wizards. It's a magical newspaper, and by means of a Protean Charm, it can change over the course of a day, as the news changes.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Вы должно быть впервые тут. 'Ежедневный Пророк' это волшебная газета. Основной источник новостей для британских и ирландских волшебников. Это магическая газета, и с помощью Протеевых чар она может меняться в течение дня, по мере изменения новостей.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -93,7 +93,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The 'Ежедневный Пророк' has been producing papers since 1743, the same year it famously described Gideon Flatworthy, head of an extremist anti-Muggle group, as 'less a wizard, more a lazy walrus-like object who lies all day on a rather smelly cushion, and expects people to admire him for it'\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" 'Ежедневный Пророк' выпускает газеты с 1743 года, в том же году описывал Гидеона Флэтворфи, главу экстремистской анти-магловской группы, как 'слабого волшебника, при этом ленивого, похожего на моржа объекта, который лежит весь день на довольно вонючей подушке, и ожидает, что люди будут восхищаться им за это'\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -124,7 +124,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Well yes, of course. Are you suggesting that Министерство Магии is telling us what to write? Yes, admittedly there are some ties to the Ministry, but the idea that this newspaper would ever sacrifice journalistic integrity to appease Министерство Магии is absurd.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ну да, конечно. Вы предполагаете, что Министерство Магии говорит нам, что писать? Да, у нас есть некоторые связи с Министерством, но идея о том, что эта газета пожертвует журналистской честностью, чтобы успокоить Министерство абсурдна.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -155,7 +155,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" None to speak of. There are a few minor publications, such as 'Придира', of course. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Не о чем говорить. Есть только несколько второстепенных публикаций, таких как 'Придира'. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
