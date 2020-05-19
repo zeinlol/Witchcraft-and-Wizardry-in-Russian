@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hello dear. Looking to buy some supplies?\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Здравствуй, дорогой. Хочешь купить припасов?\\n \"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -66,7 +66,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There are lots of places to buy potion supplies in Косой Переулок if you aren't interested in going out and finding them yourself. If I don't have what you're looking for, you should try my friend, Уилтон Болиголов, over in аптека 'Слизень и Джиггер' down the street. \\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Здесь много мест, где можно купить припасы , если ты не заинтересован в том, чтобы найти его самостоятельно. Если у меня нет того, что ты ищешь, зайди к моему другу, Уилтону Болиголову, он в аптеке 'Слизень и Джиггер' ниже по улице. \\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -98,7 +98,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I suppose you could also try Mr. Mulpepper's Apothecary, although my friend Wilton really doesn't get along with him. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я полагаю, ты мог бы также попробовать Аптеку Малпеппера, хотя мой друг Уилтон довольно сильно не ладит с ним. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -129,7 +129,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I sell different botanical supplies useful for potion brewing and such. Running the shop is tough. Profits have gone down ever since that man, Mr. Mulpepper, moved in down the street. And not just me. He's driving all the competition out of business. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я продаю различные ботанические принадлежности, полезные для зелий и так далее. Управлять магазином тяжело. Прибыль упала с тех пор, как этот человек, Малпеппер, переехал в этот переулок. И не только я страдаю. Он вытесняет конкурентов из бизнеса. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

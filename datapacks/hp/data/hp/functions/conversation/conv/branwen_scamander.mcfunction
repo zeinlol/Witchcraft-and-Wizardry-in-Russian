@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет. Добро пожаловать в  our shop, Magical Menagerie. Feel free to look around, but please be careful with the the creatures. And let me know if you have any questions.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Привет. Добро пожаловать в  наш магазин 'Магический Зверинец'. Не стесняйся осматриваться, но будь осторожен с существами. И дай мне знать, если возникнут вопросы.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -35,10 +35,10 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ################################
 
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ У меня есть вопрос about magical creatures\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ У меня есть вопрос о магических существах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Scamander? Like that old author?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Саламандер? Так же как у старого писателся?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 2
 
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -72,37 +72,37 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ##### Conversation Options #####
 ################################
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о nifflers\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о нюхлерах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о mooncalves\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о лунных тельцах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 4
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Растопырникs\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о растопырнике\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о bowtruckles\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о лукотрусах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=4}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 6
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о pygmy puffs\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=5}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о карликовых пушистиках\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=5}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о demiguises\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=6}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о демигузах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=6}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 9
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о toads\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=7}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о жабах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=7}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 10
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=8}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о owls\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=8}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о совах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=8}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 11
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=9}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о cats\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=9}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о котах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=9}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 12
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=10}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о rabbits\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=10}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о кроликах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=10}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=11}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о rats\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=11}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о крысах\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=11}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 14
 
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=12}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Return_____","_____click_____","convOption","i"]}
@@ -130,7 +130,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Why yes, I get that a lot. He taught the whole world about the importance of looking after these creatures, and that's a lesson I want to continue spreading. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Да, я часто это слышу. Он рассказал всему миру о важности ухода за этими существами, и это урок, который я хочу продолжать распространять. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -162,7 +162,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A niffler is a magical creature with a long snout and a coat of black, fluffy fur. They are harmless creatures, though their strong attraction to shiny things can cause them to cause havoc if set loose in the wrong place. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Нюхлер - волшебное создание с длинной мордой и шерстью из чёрного пушистого меха. Они безобидные существа, хотя их сильное влечение к блестящим вещам может привести к хаосу, если выпустить их не в том месте. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -193,7 +193,7 @@ tag @s[scores={convState=4},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Mooncalves are shy magical creatures that only come out during a full moon. Their mating ritual includes them performing an elaborate dance on their hind legs. This also has the side effect of creating geometric patterns in wheat fields that confuse Muggles. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Лунные тельцы - это застенчивые магические существа, которые появляются только в полнолуние. Их брачный ритуал включает в себя выполнение сложного танца на задних ногах. Это также имеет побочный эффект создания геометрических узоров на пшеничных полях, которые пугают маглов. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -224,7 +224,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Растопырникs can be pretty aggressive if they aren't tamed. While their bites aren't serious in most cases, some people have a more severe reaction, the first symptoms being flames emitted from the anus, although this lasts for no more than 24 hours. The tentacles growing on their backs can be pickled and are useful in potion brewing. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Растопырники могут быть довольно агрессивными, если их не укротить. Хотя их укусы не являются серьезными в большинстве случаев, некоторые люди имеют более тяжелую реакцию. Первые симптомы - пламя, излучаемое из ануса, хотя это длится не более 24 часов. Щупальца, растущие на их спинах, можно замариновать, или использовать при приготовлении зелья. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -256,7 +256,7 @@ tag @s[scores={convState=6},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The bowtruckle is a small, insect-eating, tree-dwelling magical creature with the general appearance of a stick with twigs and bark, serving as camouflage in its natural habitat, making it difficult to spot. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Личурки - Это маленькие, питающиеся насекомыми, обитающие на деревьях волшебные существа. Выглядят как палочки с веточками и корой, служащее камуфляжем в своей естественной среде обитания, что затрудняет их обнаружение. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -288,7 +288,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Bowtruckles usually live in and care for trees whose wood is of wand quality, such as the Wiggentree. The twig-like fingers were well adapted for digging out woodlice in trees and can also be used as a weapon against a foe when aimed at the eyes. A group of bowtruckles is called a branch. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Лукотрусы обычно живут и заботятся о деревьях, древесина которых используется для палочек, например как Волшебная Рябина. Пальцы, похожие на ветки, хорошо приспособлены для выкапывания древесных вшей на деревьях, а также могут быть использованы в качестве оружия против противника, когда они нацелены в глаза. Группа лукотрусов называется веткой. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -319,7 +319,7 @@ tag @s[scores={convState=8},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A pygmy Puff is a very recent breed of puffskeins. They resemble fluffy balls that roll around, squeak and come in various shades of pink and purple. They are a popular pet amongst young witches and wizards. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Карликовые пушистики - это совсем новая порода пушистиков. Они напоминают пушистые шары, которые крутятся, визжат и бывают в различных оттенках розового и фиолетового. Они популярны среди молодых ведьм и волшебников. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -350,7 +350,7 @@ tag @s[scores={convState=9},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" The demiguise is a peaceful, herbivorous magical creature that can make itself invisible and tell the future, which makes it very hard to catch. Demiguise pelts are highly sought after as the hair can be woven into invisibility cloaks. Cloaks made from their hair eventually turn opaque, losing their invisibility effects as time passes. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Демигуз - мирное, травоядное магическое существо, которое может сделать себя невидимым и предвидеть будущее, что делает его очень трудноуловимым. Шкуры демигузов весьма востребованы, так как из волос можно соткать мантию-невидимку. Мантии, сделанные из волос, в конечном итоге становятся непрозрачными, теряя свои невидимые эффекты по мере прохождения времени. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -381,7 +381,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" While toads aren't a magical creature and are known among Muggles and wizards and witches alike, toads are popular as a pet in the wizarding world. Toads are one of only a few kinds of animal that the students of Hogwarts are allowed, although they aren't very fashionable. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Жабы не являются магическим существами и известны среди маглов и волшебников. Жабы популярны как домашние животные в волшебном мире. Они являются одним из немногих видов животных,с которыми разрешено обучаться в Хогвартсе, хотя они не очень модные. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -412,7 +412,7 @@ tag @s[scores={convState=11},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Owls aren't magical creatures and are well known to Muggles, but wizards and witches possess an ability to communicate with owls, which Muggles do not. Owls have a natural affinity to magic, unlike pigs, which are thoroughly unmagical. Owls have many functions in the wizarding world. Letters, parcels, and howlers are all delivered by owls. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Совы не магические существа и хорошо известны маглам, но волшебники обладают способностью общаться с совами, чего маглы не умеют. Совы имеют естественную близость к магии, в отличие от свиней, которые абсолютно на них не похожи. Совы имеют много функций в волшебном мире. Все письма, посылки и сообщения доставляются совами. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -443,7 +443,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Cats are sometimes kept as pets of witches and wizards. Students at Hogwarts School of Witchcraft and Wizardry are allowed to bring cats. Cats are also able to interbreed with Kneazles. Some wizards and witches make a living by breeding Kneazles or part-Kneazles. A friend of mine, Arabella Figg, a Squib, makes a living in this manner. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кошек иногда держат как домашних животных. Ученики школы колдовства и магии Хогвартс могут брать с собой кошек. Они также способны скрещиваться со жмырами. Некоторые колдуны и ведьмы зарабатывают на жизнь размножением жмыров или частично жмыров. Моя подруга, Арабелла Фигг,  сквиб, так зарабатывает на жизнь. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -473,7 +473,7 @@ tag @s[scores={convState=13},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" While rabbits often feature in Muggles' depictions of magic, being removed from hats, rabbits are thoroughly unmagical. That being said, rabbits are still a popular pet amongst witches and wizards. Many wizards' and witches' Patronus charms take the corporeal form of a rabbit. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Кролики часто присутствуют в сознании маглов как магические, ведь их можно достать из шляпы, хотя кролики совершенно не относятся к магическим существам. Тем не менее, кролики по-прежнему популярны среди ведьм и волшебников. Многие маги и ведьмы принимают телесную форму кролика. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -504,7 +504,7 @@ tag @s[scores={convState=14},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Rats often serve as pets for wizards and witches. They typically only live for a few years, and are not as popular as owls or cats. The rat's tail is useful in potion brewing. Wild rats in the wizarding world can be rather aggressive, so be careful around them. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Крысы часто служат домашними животными для волшебников и ведьм. Обычно они живут всего несколько лет, и не так популярны, как совы или кошки. Хвост крысы полезен при приготовлении зелья. Дикие крысы в волшебном мире могут быть довольно агрессивными, так что будь осторожнее с ними. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
