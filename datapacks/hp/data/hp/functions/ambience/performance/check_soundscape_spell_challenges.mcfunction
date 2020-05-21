@@ -9,7 +9,7 @@ execute unless entity @s[scores={ambienceLocation=21}] as @s[scores={lastRegion=
 execute unless entity @s[scores={ambienceLocation=20}] as @s[scores={lastRegion=8},x=5460,dx=57,y=15,dy=51,z=-84,dz=82,tag=!isFastTravelling] run function hp:ambience/soundscapes/cave
 execute unless entity @s[scores={ambienceLocation=21}] as @s[scores={lastRegion=8},x=5443,dx=139,y=4,dy=126,z=-113,dz=154,tag=!isFastTravelling] unless entity @s[x=5460,dx=57,y=15,dy=51,z=-84,dz=82] run function hp:ambience/soundscapes/hall
 
-# Brackium Emendo 5977 25 -31 6030 75 28
+# Брахиам Эмендо 5977 25 -31 6030 75 28
 execute unless entity @s[scores={ambienceLocation=20}] as @s[scores={lastRegion=8},x=5977,dx=53,y=25,dy=50,z=-31,dz=59,tag=!isFastTravelling] run function hp:ambience/soundscapes/cave
 
 # Alohomora 6438 3 -47 

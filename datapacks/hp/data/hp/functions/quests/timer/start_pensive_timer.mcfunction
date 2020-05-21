@@ -18,7 +18,7 @@ execute as @s[scores={playerID=3,trackedQuestID=15}] run scoreboard players set 
 execute as @s[scores={playerID=4,trackedQuestID=15}] run scoreboard players set stupefyPensiveTimer p4Quests 0
 execute as @s[scores={playerID=4,trackedQuestID=15}] run scoreboard players set stupefyPensiveTimerIsGoing p4Quests 1
 
-# Brackium Emendo
+# Брахиам Эмендо
 execute as @s[scores={playerID=1,trackedQuestID=16}] run scoreboard players set brackiumEmendoPensiveTimer p1Quests 0
 execute as @s[scores={playerID=1,trackedQuestID=16}] run scoreboard players set brackiumEmendoPensiveTimerIsGoing p1Quests 1
 execute as @s[scores={playerID=2,trackedQuestID=16}] run scoreboard players set brackiumEmendoPensiveTimer p2Quests 0

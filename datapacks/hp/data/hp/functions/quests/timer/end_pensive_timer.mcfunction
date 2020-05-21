@@ -91,7 +91,7 @@ execute as @s[scores={playerID=4,trackedQuestID=15}] run scoreboard players oper
 execute as @s[scores={playerID=4,trackedQuestID=15}] run scoreboard players operation fastestStupefyPensiveTimerSeconds p4Quests = @s tmp2
 
 
-# Brackium Emendo
+# Брахиам Эмендо
 execute as @s[scores={playerID=1,trackedQuestID=16}] run scoreboard players operation lastBrackiumEmendoPensiveTimer p1Quests = brackiumEmendoPensiveTimer p1Quests
 execute as @s[scores={playerID=1,trackedQuestID=16}] if score lastBrackiumEmendoPensiveTimer p1Quests < fastestBrackiumEmendoPensiveTimer p1Quests run scoreboard players operation fastestBrackiumEmendoPensiveTimer p1Quests = lastBrackiumEmendoPensiveTimer p1Quests
 execute as @s[scores={playerID=1,trackedQuestID=16}] run scoreboard players set brackiumEmendoPensiveTimerIsGoing p1Quests 0

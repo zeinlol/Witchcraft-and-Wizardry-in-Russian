@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is an art, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss. \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Есть искусство, или, скорее, умение летать. Умение заключается в том, чтобы научиться бросаться на землю и промахиваться. \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -60,7 +60,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Trouble is, sometimes you fail to miss the ground. And if you are really trying properly, the likelihood is that you will fail to miss it fairly hard. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Проблема в том, что иногда вы не успеваете промахнуться. И если вы действительно стараетесь как следует, то есть вероятность того, что вы провалите эту задачу достаточно сильно. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

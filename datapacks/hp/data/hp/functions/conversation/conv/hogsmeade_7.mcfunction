@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" This book is giving me all sorts of ideas. I feel ready to do the undoable. To reach the unreachable. To grapple with the ineffable, and see if I can't eff it after all. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эта книга дает мне всевозможные идеи. Я чувствую, что готов сделать невозможное. Достичь недостижимого. Бороться с непобедимым, и посмотреть, смогу ли я справиться с этим. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

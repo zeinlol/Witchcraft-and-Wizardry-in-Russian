@@ -68,7 +68,7 @@ scoreboard players set fastestStupefyPensiveTimer p4Quests 999999999
 
 
 
-# Brackium Emendo
+# Брахиам Эмендо
 scoreboard players set brackiumEmendoPensiveTimer p1Quests 0
 scoreboard players set brackiumEmendoPensiveTimerIsGoing p1Quests 0
 scoreboard players set brackiumEmendoPensiveTimer p2Quests 0

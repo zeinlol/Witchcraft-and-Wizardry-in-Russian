@@ -14,7 +14,7 @@ execute if score playPensiveMemoryID global matches 2 run scoreboard players set
 execute if score playPensiveMemoryID global matches 2 run tag @s add queingQuest
 execute if score playPensiveMemoryID global matches 2 run playsound minecraft:custom.ui.quest.accept_quest master @s ~ ~ ~ 1 1 1
 
-# Brackium Emendo
+# Брахиам Эмендо
 execute if score playPensiveMemoryID global matches 3 run scoreboard players set @s questQueueID 16
 execute if score playPensiveMemoryID global matches 3 run scoreboard players set @s questQueue 52
 execute if score playPensiveMemoryID global matches 3 run scoreboard players set @s trackedQuestID 0

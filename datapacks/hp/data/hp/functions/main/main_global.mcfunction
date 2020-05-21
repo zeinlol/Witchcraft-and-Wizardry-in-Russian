@@ -79,7 +79,7 @@ function hp:ambience/global_ambience
 execute if entity @p[x=5023,dx=85,y=90,dy=32,z=-5,dz=97] run function hp:quests/quests/lumos/mechanics
 # Stupefy
 execute if entity @p[x=5468,dx=115,y=0,dy=123,z=-105,dz=162] run function hp:quests/quests/stupefy/mechanics
-# Brackium Emendo
+# Брахиам Эмендо
 execute if entity @p[x=5970,dx=62,y=6,dy=96,z=-32,dz=64] run function hp:quests/quests/brackium_emendo/mechanics
 # Alohomora
 execute if entity @p[x=6432,dx=191,y=0,dy=87,z=-48,dz=95] run function hp:quests/quests/alohomora/mechanics

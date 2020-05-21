@@ -182,7 +182,7 @@ execute as @s[scores={cutSceneTimer=194},tag=cutsceneLeader] as @e[tag=flitwickC
 execute as @s[scores={cutSceneTimer=201},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
 
-# ¤Flitwick:¤ In this lesson you will learn the spell 'Brackium Emendo' as another way to restore your health after a fight.
+# ¤Flitwick:¤ In this lesson you will learn the spell 'Брахиам Эмендо' as another way to restore your health after a fight.
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 10 1 0
 execute as @s[scores={cutSceneTimer=301..450}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                    "}]
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_expression

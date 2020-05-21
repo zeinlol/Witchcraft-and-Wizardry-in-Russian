@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I love Hogsmeade. Honeydukes is brilliant, but nothing beats Zonko's. Not sure I'd want to go to Визжащая Хижина though. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я любмю Хогсмид. Сладкое Королевство прекрасно, но ни что не сравниться с Зонко. Но и не уверен, что хотел бы посетить Визжащую Хижину. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

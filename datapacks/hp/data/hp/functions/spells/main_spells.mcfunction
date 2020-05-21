@@ -33,7 +33,7 @@ execute as @s[tag=inLumos] run function hp:spells/spell/in_lumos
 execute as @s[scores={currentSpell=2,selectedSlot=1,manaAmount=1000..},tag=!inWingardium,tag=hasDoubleRightClicked] run function hp:spells/spell/stupefy
 
 #######################################################################################
-# Brackium Emendo
+# Брахиам Эмендо
 #######################################################################################
 execute as @s[scores={currentSpell=3,spellCooldown2=0,selectedSlot=1,manaAmount=2000..},tag=!inWingardium,tag=hasDoubleRightClicked] at @s run function hp:spells/spell/brackium
 

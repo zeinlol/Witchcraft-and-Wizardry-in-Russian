@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Hmm? \\n\\n\\n\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Хмм? \\n\\n\\n\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -35,8 +35,8 @@ execute if entity @s[tag=use] run tag @s add longHeader
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Travel out of the vaults\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"Gringotts Track\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"√ Отправиться обратно из хранилищ\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] if entity @p[tag=activePlayer,tag=confirmConvOption] run data merge entity @s {CustomName:"{\"text\":\"Пути Гринготтса\"}",Tags:["_____Normal_____","_____click_____","fastTravel","_____destinationGringottsTrack_____","convOption","i"]}
 #-------------------------------
 
 #===============================

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" A young admirer of the arts enters my shop! Welcome! My name is Доминик Маэстро. How may I help you? \",\"color\":\"white\",\"bold\":\"false\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Молодой поклонник искусства входит в мой магазин! Добро пожаловать! Меня зовут Доминик Маэстро. Как я могу помочь? \",\"color\":\"white\",\"bold\":\"false\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -35,7 +35,7 @@ execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:
 ################################
 
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Where did you learn to play music?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\"≤ Где вы научились музыке?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 1
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≥ До свидания\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
@@ -61,7 +61,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I've studied music around the world. Well alright, around Great Britain. Some might say that you only get to be a good musician with time and practice, but I like to think of myself as something of a prodigy. Even got an award back in my time at Hogwarts. I was part of the Frog Choir, you see. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я изучал музыку во всем мире. В основном в Великобритании. Кто-то может сказать, что ты можешь стать хорошим музыкантом только со временем и практикой, но мне нравится думать о себе как о каком-то гение. Даже получил награду во время учёбы в Хогвартсе. я был частью Хора Лягушек. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -92,7 +92,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Exquisite! Many thanks. \\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Изысканно! Большое спасибо. \\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

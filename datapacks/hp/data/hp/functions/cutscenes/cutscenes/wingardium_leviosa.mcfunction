@@ -323,7 +323,7 @@ execute as @s[scores={cutSceneTimer=190},tag=cutsceneLeader] as @e[tag=flitwickC
 execute as @s[scores={cutSceneTimer=194},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=201},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
-# ¤Flitwick:¤ The charm "Wingardium Leviosa" will allow you to levitate certain objects.
+# ¤Flitwick:¤ Заклинание "Wingardium Leviosa" will allow you to levitate certain objects.
 execute as @s[scores={cutSceneTimer=351},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
 execute as @s[scores={cutSceneTimer=351..500}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"           "}]
 execute as @s[scores={cutSceneTimer=351},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] run function hp:npc/update_npc_head_expression

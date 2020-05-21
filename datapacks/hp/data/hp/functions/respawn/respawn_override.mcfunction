@@ -25,7 +25,7 @@ execute as @s[scores={overrideRespawn=10}] run tp @s 5561.65 49.00 -87.73 359.82
 # Stupefy spell challenge 2
 execute as @s[scores={overrideRespawn=11}] run tp @s 5504.37 54.00 1.08 360.20 2.37
 
-# Brackium Emendo spell challenge
+# Брахиам Эмендо spell challenge
 execute as @s[scores={overrideRespawn=12}] run tp @s 5981.53 32.00 0.52 269.94 -4.15
 
 # Alohomora spell challenge

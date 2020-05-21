@@ -10,7 +10,7 @@ execute as @s[scores={playerID=2,trackedQuestID=15}] run scoreboard players oper
 execute as @s[scores={playerID=3,trackedQuestID=15}] run scoreboard players operation stupefyPensiveTimer p3Quests += systick time
 execute as @s[scores={playerID=4,trackedQuestID=15}] run scoreboard players operation stupefyPensiveTimer p4Quests += systick time
 
-# Brackium Emendo
+# Брахиам Эмендо
 execute as @s[scores={playerID=1,trackedQuestID=16}] run scoreboard players operation brackiumEmendoPensiveTimer p1Quests += systick time
 execute as @s[scores={playerID=2,trackedQuestID=16}] run scoreboard players operation brackiumEmendoPensiveTimer p2Quests += systick time
 execute as @s[scores={playerID=3,trackedQuestID=16}] run scoreboard players operation brackiumEmendoPensiveTimer p3Quests += systick time

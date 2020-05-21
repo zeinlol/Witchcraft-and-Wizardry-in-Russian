@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I heard Доминик Маэстро got started in music in the Frog Choir at Hogwarts. I even think he got an award for it, while he was there. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Слышал, Доминик Маэстро начинал свой путь в Хоре Лягушек в Хогвартсе. Я даже думаю, что он получил награду за это, пока был там. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

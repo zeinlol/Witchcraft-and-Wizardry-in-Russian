@@ -456,7 +456,7 @@ execute as @s[scores={cutSceneTimer=161..300}] run title @s actionbar ["",{"text
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
 execute as @s[scores={cutSceneTimer=301..440}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
 
-# ¤Hermione:¤ Other doors are magically protected against the charm, and require a key.
+# ¤Hermione:¤ Other doors are magically protected against Заклинание, and require a key.
 execute as @s[scores={cutSceneTimer=441},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
 execute as @s[scores={cutSceneTimer=441..590}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"            "}]
 

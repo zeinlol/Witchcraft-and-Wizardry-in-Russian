@@ -26,7 +26,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" I heard someone placed a Навозная бомба in Professor Binns' desk. I guess it sort of backfired, seeing as he's a ghost and all. He really was the only one who was completely unaffected. But still, I wish I had seen it. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Я слышал, что кто-то положил навозную бомбу на стол профессора Бинса. Полагаю, это как-то обернулось против него, учитывая, что он призрак и все такое. Он действительно был единственным, кто не был затронут полностью. Но все же, я хотел бы увидеть это. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

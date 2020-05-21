@@ -1,5 +1,5 @@
 ##############################################
-# Brackium Emendo Lesson
+# Брахиам Эмендо Lesson
 ##############################################
 scoreboard players set @s questID 16
 execute store result score @s questState run data get entity @e[tag=questHolder,limit=1] ArmorItems[3].tag."quests.brackiumEmmendo"
