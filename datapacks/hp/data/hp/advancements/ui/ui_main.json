@@ -1,0 +1,20 @@
+{
+	"display":{
+		"background":"minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast":false,
+		"announce_to_chat":false,
+		"hidden":true,
+		"icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}"
+        },
+		"title":"",
+		"description":"",
+		"frame":"task"
+	},
+	"criteria":{
+	"existerlol":{
+		"trigger":"minecraft:impossible"
+		}
+	}
+}

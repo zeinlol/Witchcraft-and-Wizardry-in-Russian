@@ -1,0 +1,11 @@
+{
+	"rewards": {
+		
+    },		
+    "criteria": {
+        "Quest": {
+            "trigger": "minecraft:impossible"
+			}
+        }
+    }
+}

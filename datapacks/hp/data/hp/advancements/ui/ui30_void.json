@@ -1,0 +1,22 @@
+{
+    "display": {
+		"show_toast":false,
+		"announce_to_chat":false,
+        "icon": {
+            "item": "minecraft:golden_hoe",
+            "nbt": "{HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}"
+        },
+        "title": {
+            "translate": ""
+        },
+        "description": {
+            "translate": ""
+        }
+    },
+    "parent": "hp:ui/ui29",
+    "criteria": {
+        "ui9": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

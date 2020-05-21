@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_hoe",
+            "nbt": "{HideFlags:63,Damage:120,Unbreakable:1b,qDetect:1b}"
+        },
+        "title": " ",
+        "description": "",
+		"frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "parent": "hp:quests/root",
+    "criteria": {
+        "Quest": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
