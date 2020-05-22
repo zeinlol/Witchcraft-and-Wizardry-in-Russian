@@ -62,9 +62,9 @@ execute if entity @s[scores={fastTravelID=58}] run title @s subtitle {"text":"П
 execute if entity @s[scores={fastTravelID=59}] run title @s subtitle {"text":"Дом Лавгудов","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=60}] run title @s subtitle {"text":"Флориш и Блоттс","bold":true,"color":"gold"}
 
-execute if entity @s[scores={fastTravelID=61}] run title @s subtitle {"text":"Платформа Хогсмидт","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=62}] run title @s subtitle {"text":"Дорога в Хогсмидт","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=63}] run title @s subtitle {"text":"Вход в Хогсмидт","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=61}] run title @s subtitle {"text":"Платформа Хогсмид","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=62}] run title @s subtitle {"text":"Дорога в Хогсмид","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=63}] run title @s subtitle {"text":"Вход в Хогсмид","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=64}] run title @s subtitle {"text":"Сладкое Королевство","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=65}] run title @s subtitle {"text":"Паб Три Метлы","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=66}] run title @s subtitle {"text":"Кабанья Голова","bold":true,"color":"gold"}
