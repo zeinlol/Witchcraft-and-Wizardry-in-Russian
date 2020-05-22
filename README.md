@@ -1,7 +1,7 @@
 # Witchcraft and Wizardry in Russian
   This is a mod for popular minecraft mod Witchcraft and Wizardry. I translate closely all game in Russian.
 
-[![Watch the video](https://img.youtube.com/vi/<wK_dRJeQX0w>/maxresdefault.jpg)](https://youtu.be/wK_dRJeQX0w)
+[![Watch the video](https://img.youtube.com/vi/wK_dRJeQX0w/hqdefault.jpg)](https://youtu.be/wK_dRJeQX0w)
 
   Перевод на русский язык последней официальной версии популярного мода для Майнкрафта "Witchcraft and Wizardry", окунающего игрока во вселенную Гарри Поттера. Этот мод ничего не добавляет и не удаляет из игры. При переводе учитывалась адаптация на русский язык всех имён и названий с оригинала. Для этого вся нужная информация бралась с фанатского сайта https://harrypotter.fandom.com/ru/wiki/ .На данный момент переведён интерфейс, название всех квестов, предметов, персонажей, локаций и абсолютно все диалоги. 
   
