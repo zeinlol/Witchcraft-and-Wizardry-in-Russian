@@ -313,7 +313,7 @@ execute as @s[scores={cutSceneTimer=655}] run function hp:music/music/wands_at_t
 
 
 
-# ¤Twycross:¤ By heavens! Пожиратель Смертиs! They're attacking the Ministry!
+# ¤Twycross:¤ By heavens! Death eaters! They're attacking the Ministry!
 execute as @s[scores={cutSceneTimer=650..740}] run title @a[tag=cutsceneSlave] actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"        "}]
 execute as @s[scores={cutSceneTimer=650}] as @a[tag=cutsceneSlave] at @e[tag=walkingTwycross,limit=1] run playsound minecraft:custom.voices.voice1 master @s ~ ~ ~ 3 1 0
 

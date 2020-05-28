@@ -586,8 +586,9 @@ tp @s[scores={cutSceneTimer=-3}] 4980.154 31.02095 1016.864 80.95 2.09
 tp @s[scores={cutSceneTimer=-2}] 4980.155 31.02098 1016.864 80.95 2.09
 tp @s[scores={cutSceneTimer=-1}] 4980.156 31.02102 1016.864 80.95 2.09
 tp @s[scores={cutSceneTimer=0}] 4980.157 31.02106 1016.864 80.95 2.09
+execute as @s[scores={cutSceneTimer=0}] run stopsound @s * minecraft:custom.music.witchcraft_and_wizardry
 
-# ¤McGonagall:¤ Добро пожаловать в  Hogwarts.
+# ¤McGonagall:¤ Welcome to Hogwarts.
 execute as @s[scores={cutSceneTimer=-560},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
 execute as @s[scores={cutSceneTimer=-560..-450}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
 execute as @s[scores={cutSceneTimer=-560},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression

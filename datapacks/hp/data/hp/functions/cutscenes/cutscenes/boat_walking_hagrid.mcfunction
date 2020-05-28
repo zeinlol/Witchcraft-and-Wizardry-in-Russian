@@ -2,6 +2,14 @@ execute as @s[scores={cutSceneTimer=1}] run tag @e[tag=fpEngine,tag=boatWalkingH
 execute as @s[scores={cutSceneTimer=1}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove interrupt
 execute as @s[scores={cutSceneTimer=1}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove stop
 execute as @s[scores={cutSceneTimer=1}] at @e[tag=boatWalkingHagridLayer1,limit=1] run tag @e[tag=hagrid,distance=..3] remove interactable
+execute as @s[scores={cutSceneTimer=2}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] add ignorePlayers
+execute as @s[scores={cutSceneTimer=2}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove interrupt
+execute as @s[scores={cutSceneTimer=2}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove stop
+execute as @s[scores={cutSceneTimer=2}] at @e[tag=boatWalkingHagridLayer1,limit=1] run tag @e[tag=hagrid,distance=..3] remove interactable
+execute as @s[scores={cutSceneTimer=3}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] add ignorePlayers
+execute as @s[scores={cutSceneTimer=3}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove interrupt
+execute as @s[scores={cutSceneTimer=3}] run tag @e[tag=fpEngine,tag=boatWalkingHagridFpEngine,limit=1] remove stop
+execute as @s[scores={cutSceneTimer=3}] at @e[tag=boatWalkingHagridLayer1,limit=1] run tag @e[tag=hagrid,distance=..3] remove interactable
 
 # Subtitles
 execute as @s[scores={cutSceneTimer=50}] as @a[tag=cutsceneSlave] run tag @s add cutsceneOverrideActionbar

@@ -25,8 +25,7 @@ execute as @s[scores={cutSceneTImer=35},tag=cutsceneLeader] as aef7fe88-f0f1-497
 title @s[scores={cutSceneTimer=200..400}] actionbar ["",{"text":"  "}]
 
 # 1268.11 32.80 -1626.96 -90.86 90.00
-
-tp @s[scores={cutSceneTimer=25}] 1268.109 32.799 -1626.96 -90.86 89.98824
+tp @s[scores={cutSceneTimer=25}] 1268.109 32.799 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=26}] 1268.109 32.798 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=27}] 1268.108 32.797 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=28}] 1268.108 32.796 -1626.96 -90.86 89.98824
@@ -540,7 +539,7 @@ tp @s[scores={cutSceneTimer=521}] 771.1708 132.55 257.5046 -604.4282 -3.72
 tp @s[scores={cutSceneTimer=522}] 771.2571 132.55 257.685 -604.2281 -3.72
 
 
-execute as @s[scores={cutSceneTimer=400}] run funcЗапретный Лесs/fade_out
+execute as @s[scores={cutSceneTimer=400}] run function hp:cutscenes/fade_out
 # Explore the turrets and towers, get lost in the forbidden forest,
 title @s[scores={cutSceneTimer=400..600}] actionbar ["",{"text":"          "}]
 # uncover the mysteries and uncover the mysteries of the castle and its grounds.
