@@ -557,7 +557,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Why, our Transfiguration teacher, Professor Минерва Макгонагалл of course. She is a brilliant witch, truly brilliant, but also quite stern. You'd better not cross her; she is not afraid to take points from any house, even Gryffindor. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ну, наш учитель по Трансфигурации, профессор Минерва Макгонагалл, разумеется. Она прекрасный волшебник, по-настоящему прекрасный, но строгая. Не следует ей перечить; она не боиться вычитать очки из любого факультета, даже Гриффиндора. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
