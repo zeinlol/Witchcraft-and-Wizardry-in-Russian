@@ -437,7 +437,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Передайте это мистеру Забини в Хогвартсе. Я был бы очень признателен. Он гордый Слизеринец, как и я в свое время. Полагаю, ты можешь найти его в гостинной Слизена. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Передайте это мистеру Забини в Хогвартсе. Я был бы очень признателен. Он гордый Слизеринец, как и я в свое время. Полагаю, ты можешь найти его в гостиной Слизена. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

@@ -52,7 +52,7 @@ execute as @s[tag=newState] run tag @s remove newState
 #############
 ## State 2 ###########################################################################################
 #############
-# Look for Блейз Забини in the Гостинная Слизена
+# Look for Блейз Забини in the Гостиная Слизена
 
 ### Tracked Quest ###
 execute as @s[scores={questState=2},tag=isTrackedQuest] run tag @s remove hideQuestTracking

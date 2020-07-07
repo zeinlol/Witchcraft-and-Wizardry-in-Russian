@@ -5,10 +5,10 @@ execute if entity @s[scores={fastTravelID=4}] run title @s subtitle {"text":"К�
 execute if entity @s[scores={fastTravelID=5}] run title @s subtitle {"text":"Класс Защиты от темных искуств","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=6}] run title @s subtitle {"text":"Класс Заклинаний","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=7}] run title @s subtitle {"text":"Класс Трансфигурации","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=8}] run title @s subtitle {"text":"Гостинная Гриффиндора","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=9}] run title @s subtitle {"text":"Гостинная Пуффендуя","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=10}] run title @s subtitle {"text":"Гостинная Когтеврана","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=11}] run title @s subtitle {"text":"Гостинная Слизерина","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=8}] run title @s subtitle {"text":"Гостиная Гриффиндора","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=9}] run title @s subtitle {"text":"Гостиная Пуффендуя","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=10}] run title @s subtitle {"text":"Гостиная Когтеврана","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=11}] run title @s subtitle {"text":"Гостиная Слизерина","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=12}] run title @s subtitle {"text":"Астрономическая башня","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=13}] run title @s subtitle {"text":"Двор Трансфигурации","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=14}] run title @s subtitle {"text":"Больничное Крыло","bold":true,"color":"gold"}
@@ -25,7 +25,7 @@ execute if entity @s[scores={fastTravelID=24}] run title @s subtitle {"text":"Ч
 execute if entity @s[scores={fastTravelID=25}] run title @s subtitle {"text":"Туалет Плаксы Миртл","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=26}] run title @s subtitle {"text":"Гремучая Ива","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=27}] run title @s subtitle {"text":"Дорога в Хогвартс","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=28}] run title @s subtitle {"text":"Тренировочная Площадка","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=28}] run title @s subtitle {"text":"Тренировочные Поля","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=29}] run title @s subtitle {"text":"Двор Часовой Башни","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=30}] run title @s subtitle {"text":"Часовая Башня","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=31}] run title @s subtitle {"text":"Винный Погреб","bold":true,"color":"gold"}

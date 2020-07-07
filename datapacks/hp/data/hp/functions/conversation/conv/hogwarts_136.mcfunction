@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Иногда я хочу, чтобы гостинная была на первом этаже, как гостинная Пуффендуя или Гостинная Слизена. Эти ступеньки уже всем надоели! \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Иногда я хочу, чтобы гостиная была на первом этаже, как гостиная Пуффендуя или Гостиная Слизена. Эти ступеньки уже всем надоели! \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

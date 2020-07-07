@@ -10,7 +10,7 @@ execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 #############
 ## State 1 ###########################################################################################
 #############
-# Find Роланда Трюк at the Тренировочная Площадка
+# Find Роланда Трюк at the Тренировочные Поля
 
 ### Tracked Quest ###
 execute as @s[scores={questState=1},tag=isTrackedQuest] run tag @s remove hideQuestTracking
