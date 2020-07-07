@@ -9,10 +9,10 @@ tag @s add showBossbarHeader
 function hp:misc/update_bossbars
 
 # This could be done differently to support any number of players
-execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Marauder's Map","bold":true,"color":"gray"}
-execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Marauder's Map","bold":true,"color":"gray"}
-execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Marauder's Map","bold":true,"color":"gray"}
-execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Marauder's Map","bold":true,"color":"gray"}
+execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Карта Мародёров","bold":true,"color":"gray"}
+execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Карта Мародёров","bold":true,"color":"gray"}
+execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Карта Мародёров","bold":true,"color":"gray"}
+execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Карта Мародёров","bold":true,"color":"gray"}
 execute as @s[scores={playerID=1}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initMapPlController","mapPlControllerPlayer1"],CustomName:"{\"text\":\"plController\"}",UUIDMost:10,UUIDLeast:1}
 execute as @s[scores={playerID=2}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initMapPlController","mapPlControllerPlayer2"],CustomName:"{\"text\":\"plController\"}",UUIDMost:10,UUIDLeast:2}
 execute as @s[scores={playerID=3}] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,Tags:["initMapPlController","mapPlControllerPlayer3"],CustomName:"{\"text\":\"plController\"}",UUIDMost:10,UUIDLeast:3}

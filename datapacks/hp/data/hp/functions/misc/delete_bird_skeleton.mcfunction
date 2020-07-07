@@ -1,1 +1,0 @@
-kill @e[tag=birdSkeleton,distance=..5]

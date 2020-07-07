@@ -1,3 +1,0 @@
-We'd prefer that you don't directly copy these functions for use in your own maps. 
-Atleast not in their entirety. Of course you can see how I solved various problems and take 
-snippets. Cheers.

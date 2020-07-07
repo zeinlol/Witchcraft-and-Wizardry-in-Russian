@@ -39,10 +39,10 @@ tag @s remove summonFirebolt
 
 execute as @s[tag=notAllowedToFly] run title @s times 5 20 5
 execute as @s[tag=notAllowedToFly] run title @s title {"text":" "}
-execute as @s[tag=notAllowedToFly,scores={lastRegion=2}] run title @s subtitle {"text":"You can't fly in this area","bold":false,"color":"red"}
-execute as @s[tag=notAllowedToFly,scores={lastRegion=5..6}] run title @s subtitle {"text":"You can't fly in this area","bold":false,"color":"red"}
-execute as @s[tag=notAllowedToFly,scores={lastRegion=8..9}] run title @s subtitle {"text":"You can't fly in this area","bold":false,"color":"red"}
-execute as @s[tag=notAllowedToFly,scores={lastRegion=11}] run title @s subtitle {"text":"You can't fly in this area","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,scores={lastRegion=2}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,scores={lastRegion=5..6}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,scores={lastRegion=8..9}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,scores={lastRegion=11}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
 
 execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=1}] run title @s subtitle {"text":"You can't fly inside","bold":false,"color":"red"}
 execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=3}] run title @s subtitle {"text":"You can't fly inside","bold":false,"color":"red"}

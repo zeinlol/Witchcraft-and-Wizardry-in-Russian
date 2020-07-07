@@ -1,1 +1,0 @@
-execute at @e[type=minecraft:iron_golem] run summon minecraft:snowball ~ ~4 ~ {Motion:[0.0,-5.0,0.0],owner:{L:7L,M:0L}}

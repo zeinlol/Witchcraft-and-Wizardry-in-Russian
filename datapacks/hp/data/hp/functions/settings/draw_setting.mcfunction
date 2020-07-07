@@ -420,7 +420,7 @@ execute if entity @s[scores={InvItemID=183}] as @e[tag=focusInventoryOption,limi
 # 184
 execute if entity @s[scores={InvItemID=184}] as @e[tag=focusInventoryOption,limit=1] run data merge entity @s {CustomName:"[\"\",{\"text\":\"               \",\"color\":\"gray\"}]"}
 # 185
-execute if entity @s[scores={InvItemID=185}] as @e[tag=focusInventoryOption,limit=1] run data merge entity @s {CustomName:"[\"\",{\"text\":\"\",\"color\":\"gray\"},{\"text\":\"Перевод Z3IN\",\"color\":\"gray\"}]"}
+execute if entity @s[scores={InvItemID=185}] as @e[tag=focusInventoryOption,limit=1] run data merge entity @s {CustomName:"[\"\",{\"text\":\"               \",\"color\":\"gray\"},{\"text\":\" Перевод: -Z3IN-\",\"color\":\"gray\"}]"}
 # 186
 execute if entity @s[scores={InvItemID=186}] as @e[tag=focusInventoryOption,limit=1] run data merge entity @s {CustomName:"[\"\",{\"text\":\"          И разумеется спасибо вам! :)\",\"color\":\"white\"}]"}
 

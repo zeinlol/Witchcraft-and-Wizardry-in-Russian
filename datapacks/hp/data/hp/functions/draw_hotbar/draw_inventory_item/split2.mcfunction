@@ -1,2 +1,0 @@
-execute as @s[scores={InvSelectItemID=76..112}] run function hp:draw_hotbar/draw_inventory_item/split2_1
-execute as @s[scores={InvSelectItemID=113..158}] run function hp:draw_hotbar/draw_inventory_item/split2_2

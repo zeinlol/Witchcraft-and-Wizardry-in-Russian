@@ -1,4 +1,0 @@
-summon minecraft:zombie ~ ~1 ~ {IsBaby:1b,Silent:1b,PersistenceRequired:1b,Team:"Creature",Health:15f,Tags:["undead","creature","toadCreature","toadCreatureIsBeingSummoned"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:100000000}],Attributes:[{Name:generic.maxHealth,Base:15},{Name:generic.attackDamage,Base:20},{Name:generic.followRange,Base:15},{Name:generic.movementSpeed,Base:0}],ArmorItems:[{},{},{},{id:"minecraft:stone_sword",Count:1b,tag:{Unbreakable:1b,Damage:131}}]}
-execute as @e[tag=toadCreatureIsBeingSummoned,limit=1,sort=nearest] run scoreboard players set @s animTest 0
-execute as @e[tag=toadCreatureIsBeingSummoned,limit=1,sort=nearest] store result entity @s ArmorItems[3].tag.toadType int 1 run scoreboard players set @s toadType 1
-execute as @e[tag=toadCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health

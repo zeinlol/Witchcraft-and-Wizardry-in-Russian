@@ -1,6 +1,0 @@
-summon minecraft:silverfish ~ ~1 ~ {Silent:1b,PersistenceRequired:1b,ArmorItems:[{},{},{},{id:"minecraft:golden_hoe",Count:1b,tag:{Unbreakable:1b,Damage:32}}],Team:"Creature",Health:15f,Tags:["creature","monsterBookCreature","monsterBookCreatureIsBeingSummoned"],Passengers:[{id:"minecraft:armor_stand",Pose:{Head:[0f,1f,0f]},Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["monsterBookVisual","creatureVisual"],ArmorItems:[{},{},{},{id:"minecraft:wooden_axe",Count:1b,tag:{Unbreakable:1b,Damage:9}}]}],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:100000000}],Attributes:[{Name:generic.maxHealth,Base:15},{Name:generic.attackDamage,Base:20},{Name:generic.followRange,Base:35}]}
-execute as @e[tag=monsterBookCreatureIsBeingSummoned,limit=1,sort=nearest] run scoreboard players set @s animTest 1
-execute as @e[tag=monsterBookCreatureIsBeingSummoned,limit=1,sort=nearest] run scoreboard players set @s animState 1
-execute as @e[tag=monsterBookCreatureIsBeingSummoned,limit=1,sort=nearest] store result entity @s ArmorItems[3].tag.creatureID int 1 run scoreboard players operation @s creatureID = currentCreatureID creatureID
-execute as @e[tag=monsterBookCreatureIsBeingSummoned,limit=1,sort=nearest] run scoreboard players add currentCreatureID creatureID 1
-execute as @e[tag=monsterBookCreatureIsBeingSummoned,limit=1,sort=nearest] run function hp:creatures/setup_health

@@ -180,7 +180,7 @@ execute as @s[scores={questState=6},tag=isTrackedQuest] at @s as @e[tag=questDir
 execute as @s[scores={questState=6},tag=isTrackedQuest] run scoreboard players set @s questRegion 8
 
 execute as @s[scores={questState=6},tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Подойдите к сундуку":"gold"}]
+execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Подойдите к сундуку","color":"gold"}]
 execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Подойдите к сундуку","color":"gold"}]
 execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Подойдите к сундуку","color":"gold"}]
 execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Подойдите к сундуку","color":"gold"}]

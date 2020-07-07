@@ -1,2 +1,0 @@
-execute store result entity @s ArmorItems[3].tag.Damage int 1 run scoreboard players set @s tmp 21
-execute store result entity @s ArmorItems[3].tag.sessionID int 1 run scoreboard players operation @s sessionID = global sessionID
