@@ -59,7 +59,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это письмо для меня? От Дамельзы! Надеюсь, она хорошо учится в той школе-интернате или в учебном центре для сов, или куда она там ходит. Ты знаешь, что она посылала мне письма с совой? Кто так делает?\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Это письмо для меня? От Демельзы! Надеюсь, она хорошо учится в той школе-интернате или в учебном центре для сов, или куда она там ходит. Ты знаешь, что она посылала мне письма с совой? Кто так делает?\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

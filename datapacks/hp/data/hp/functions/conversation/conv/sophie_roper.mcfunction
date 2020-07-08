@@ -25,7 +25,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мне нужно передать это письмо моему другу в Лондоне, но моя сова еще не вернулась, и я не могу просто положить его в почтовый ящик здесь, в Хогвартсе. Да и их тут нет! \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мне нужно передать это письмо моей подруге в Лондоне, но моя сова ещё не вернулась, и я не могу просто положить его в почтовый ящик здесь, в Хогвартсе. Их тут просто нет! \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -56,7 +56,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Может быть, ты мог бы доставить это для меня? Я уверен, что моя подруга даст  тебе что-нибудь взамен, если передашь ей письмо.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Может быть, ты мог бы доставить это для меня? Я уверена, что моя подруга даст тебе что-нибудь взамен, если передашь ей письмо.\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -99,7 +99,7 @@ execute if entity @s[tag=use] run tag @s add longHeader
 ##### Conversation Options #####
 ################################
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\" Я досталю это письмо\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=1}] run data merge entity @s {CustomName:"{\"text\":\" Я доставлю это письмо\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=1}] run scoreboard players set sophieRoper p1convOverride 3
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=2}] run scoreboard players set sophieRoper p2convOverride 3
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0,playerID=3}] run scoreboard players set sophieRoper p3convOverride 3

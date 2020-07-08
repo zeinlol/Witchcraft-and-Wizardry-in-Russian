@@ -621,7 +621,7 @@ tag @s[scores={convState=17},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Вот почему он известен как Почти Безголовый Ник. Его голова все еще связана с его телом крошечным куском кожи. Не упоминай это имя рядом с ним. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Вот почему он известен как Почти Безголовый Ник. Его голова все ещё связана с его телом крошечным куском кожи. Не упоминай это имя рядом с ним. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

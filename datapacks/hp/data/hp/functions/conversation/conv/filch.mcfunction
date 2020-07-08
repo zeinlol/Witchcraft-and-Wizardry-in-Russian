@@ -75,7 +75,7 @@ tag @s[scores={convState=1},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if score mirrorOfErised sharedQuests matches 1.. if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вернул зеркало? Нет? Тогда почему ты все еще здесь, чертова крыса?\"}"}
+execute if score mirrorOfErised sharedQuests matches 1.. if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вернул зеркало? Нет? Тогда почему ты все ещё здесь, чертова крыса?\"}"}
 execute if score mirrorOfErised sharedQuests matches ..0 if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Чего тебе?\\n\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
@@ -198,7 +198,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вообще уже? Это мой кабинет! Ты... Убирайся отсюда! Клянусь, они должны научить студентов хоть капле уважения. Жаль, что они позволили старым наказаниям умереть. Тебя бы повесили за большой палец в подземелье. Боже, я скучаю по этим крикам. У меня все еще есть цепи в кабинете.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вообще уже? Это мой кабинет! Ты... Убирайся отсюда! Клянусь, они должны научить студентов хоть капле уважения. Жаль, что они позволили старым наказаниям умереть. Тебя бы повесили за большой палец в подземелье. Боже, я скучаю по этим крикам. У меня все ещё есть цепи в кабинете.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -735,7 +735,7 @@ tag @s[scores={convState=21},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вернул зеркало? Нет? Тогда почему ты все еще здесь, чертова крыса? Иди! \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты вернул зеркало? Нет? Тогда почему ты все ещё здесь, чертова крыса? Уходи! \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

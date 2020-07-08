@@ -94,7 +94,7 @@ tag @s[scores={convState=2},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Помочь? Можешь посетить издательство 'Ежедневного Пророка' в Косом Переулке и спросить, почему я не получаю мои поставки их газеты! Поговори с Варнавой Кафф. Чкажи что ты от Уэйна Броклхерста. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Помочь? Можешь посетить издательство 'Ежедневного Пророка' в Косом Переулке и спросить, почему я не получаю мои поставки их газеты! Поговори с Варнавой Кафф. Скажи что ты от Уэйна Броклхерста. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -140,7 +140,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты уже понял, почему мне ничего не присылают? Нет? Тогда почему ты все еще здесь?  \\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Ты уже понял, почему мне ничего не присылают? Нет? Тогда почему ты все ещё здесь?  \\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
