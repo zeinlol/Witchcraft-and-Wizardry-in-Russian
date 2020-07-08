@@ -286,7 +286,7 @@ tag @s[scores={convState=7},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сказку о Трёх Братьях - это популярная детская сказка. Ты можешь почитать еёв книге 'Сказки Барда Бидля', которую можно купить в Косом Переулке.\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сказка о Трёх Братьях - это популярная детская сказка. Ты можешь почитать её в книге 'Сказки Барда Бидля', которую можно купить в Косом Переулке.\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

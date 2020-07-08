@@ -339,10 +339,10 @@ execute as @s[scores={conv=115,playerID=1}] run bossbar set minecraft:player1inf
 execute as @s[scores={conv=115,playerID=2}] run bossbar set minecraft:player2info name {"text":"Хьюго Тримбл","bold":true,"color":"gold"}
 execute as @s[scores={conv=115,playerID=3}] run bossbar set minecraft:player3info name {"text":"Хьюго Тримбл","bold":true,"color":"gold"}
 execute as @s[scores={conv=115,playerID=4}] run bossbar set minecraft:player4info name {"text":"Хьюго Тримбл","bold":true,"color":"gold"}
-execute as @s[scores={conv=116,playerID=1}] run bossbar set minecraft:player1info name {"text":"Вильгельма Грабблт-Дёрг","bold":true,"color":"gold"}
-execute as @s[scores={conv=116,playerID=2}] run bossbar set minecraft:player2info name {"text":"Вильгельма Грабблт-Дёрг","bold":true,"color":"gold"}
-execute as @s[scores={conv=116,playerID=3}] run bossbar set minecraft:player3info name {"text":"Вильгельма Грабблт-Дёрг","bold":true,"color":"gold"}
-execute as @s[scores={conv=116,playerID=4}] run bossbar set minecraft:player4info name {"text":"Вильгельма Грабблт-Дёрг","bold":true,"color":"gold"}
+execute as @s[scores={conv=116,playerID=1}] run bossbar set minecraft:player1info name {"text":"Вильгельма Граббли-Дёрг","bold":true,"color":"gold"}
+execute as @s[scores={conv=116,playerID=2}] run bossbar set minecraft:player2info name {"text":"Вильгельма Граббли-Дёрг","bold":true,"color":"gold"}
+execute as @s[scores={conv=116,playerID=3}] run bossbar set minecraft:player3info name {"text":"Вильгельма Граббли-Дёрг","bold":true,"color":"gold"}
+execute as @s[scores={conv=116,playerID=4}] run bossbar set minecraft:player4info name {"text":"Вильгельма Граббли-Дёрг","bold":true,"color":"gold"}
 execute as @s[scores={conv=117,playerID=1}] run bossbar set minecraft:player1info name {"text":"Диана Несус","bold":true,"color":"gold"}
 execute as @s[scores={conv=117,playerID=2}] run bossbar set minecraft:player2info name {"text":"Диана Несус","bold":true,"color":"gold"}
 execute as @s[scores={conv=117,playerID=3}] run bossbar set minecraft:player3info name {"text":"Диана Несус","bold":true,"color":"gold"}
