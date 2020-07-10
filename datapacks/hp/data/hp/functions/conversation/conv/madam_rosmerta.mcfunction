@@ -211,7 +211,7 @@ tag @s[scores={convState=5},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эрнест Поттс уже давно говорит о какой-то особой урне. Кто знает, может ты мог бы помочь. Спроси его об этом. Просто пройди по Хай-стрит, он будет слева в конце улицы. \\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Эрнест Поттс уже давно говорит о какой-то особой чаше. Кто знает, может ты мог бы помочь. Спроси его об этом. Просто пройди по Хай-стрит, он будет слева в конце улицы. \\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

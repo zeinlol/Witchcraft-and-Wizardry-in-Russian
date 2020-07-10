@@ -29,7 +29,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" У нас тут что-то вроде любовного треугольника. Кевин Энтвистл и Треван Дэвис оба без ума от Салли-Энн Перкс. Поговори с Кевином Энтвистлом. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" У нас тут что-то вроде любовного треугольника. Кевин Энтвистл и Треван Дэвис без ума от Салли-Энн Перкс. Поговори с Кевином Энтвистлом. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
