@@ -71,7 +71,7 @@ execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:player4inf
 execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:player4quest visible false
 
 execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu1 name {"translate":"Oh dear! The resource pack hasn't loaded properly","color":"gold"}
-execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu2 name {"translate":"If you are in Multiplayer download the resource pack from Discord","color":"gray"}
+execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu2 name {"translate":"If you are in Multiplayer download and apply the resource pack manually","color":"gray"}
 execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu3 name {"translate":"If you are in Singleplayer try setting mip-map levels to 0","color":"gray"}
 execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu1 players @a[tag=mainMenu]
 execute as @s[tag=mainMenu,tag=!inMainMenu] run bossbar set minecraft:mainmenu2 players @a[tag=mainMenu]
@@ -120,7 +120,7 @@ execute as @s[scores={mainMenuState=0,animTest=-10}] run title @s actionbar "
 execute as @s[scores={menuPlayerID=1,mainMenuState=1,selectCurrent=0}] run title @s actionbar [{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"gold"},{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"white"}]
 execute as @s[scores={menuPlayerID=1,mainMenuState=1,selectCurrent=1}] run title @s actionbar [{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"white"},{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"gold"}]
 # Player 2+ - Wait for player 1 to start the gmae
-execute as @s[scores={menuPlayerID=2..,mainMenuState=1}] unless entity @p[scores={menuPlayerID=1,mainMenuState=2..}] run title @s actionbar ["",{"text":"Подождите "},{"selector":"@p[scores={menuPlayerID=1}]"},{"text":" для начала игры"}]
+execute as @s[scores={menuPlayerID=2..,mainMenuState=1}] unless entity @p[scores={menuPlayerID=1,mainMenuState=2..}] run title @s actionbar ["",{"text":"Подождите "},{"selector":"@p[scores={menuPlayerID=1}]"},{"text":", чтобы начать"}]
 # Player 2+ - Join / spectate
 execute as @s[scores={menuPlayerID=2..,mainMenuState=1,selectCurrent=0}] if entity @p[scores={menuPlayerID=1,mainMenuState=20..}] run title @s actionbar [{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"gold"},{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"white"}]
 execute as @s[scores={menuPlayerID=2..,mainMenuState=1,selectCurrent=1}] if entity @p[scores={menuPlayerID=1,mainMenuState=20..}] run title @s actionbar [{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"white"},{"text":"ˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ","color":"gold"}]

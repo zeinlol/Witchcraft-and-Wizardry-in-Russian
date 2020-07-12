@@ -83,10 +83,10 @@ tag @s[scores={questRot2=..-40}] add above
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=!above,tag=!below] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=above] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction_above
 execute as @s[tag=!questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim,tag=below] if score @s lastRegion = @s questRegion run function hp:draw_hotbar/draw_hotbar_quest_direction_below
-execute as @s[tag=questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim] if score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Список Квестов\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:94,Unbreakable:1b,qDetect:1b}
-execute as @s[tag=showingTrackedQuest,tag=!playingQuestAnim] unless score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Список Квестов\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:95,Unbreakable:1b,qDetect:1b}
+execute as @s[tag=questHasNoDirection,tag=showingTrackedQuest,tag=!playingQuestAnim] if score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Журнал заданий\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:94,Unbreakable:1b,qDetect:1b}
+execute as @s[tag=showingTrackedQuest,tag=!playingQuestAnim] unless score @s lastRegion = @s questRegion run replaceitem entity @s hotbar.2 minecraft:stone_axe{display:{Name:"{\"text\":\"Журнал заданий\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:95,Unbreakable:1b,qDetect:1b}
 
-replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.2 minecraft:golden_hoe{display:{Name:"{\"text\":\"Список Квестов\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
+replaceitem entity @s[tag=!showingTrackedQuest,tag=!playingQuestAnim] hotbar.2 minecraft:golden_hoe{display:{Name:"{\"text\":\"Журнал заданий\",\"color\":\"gold\",\"bold\":true}"},HideFlags:63,Damage:32,Unbreakable:1b,qDetect:1b}
 
 # Quest icon state
 replaceitem entity @s[tag=showingTrackedQuest,tag=!playingQuestAnim,tag=questExclamation,tag=!playingQuestIconAnim,scores={damageOverlay=0},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick",tag:{Damage:24}}]}] weapon.offhand minecraft:carrot_on_a_stick{Damage:24,display:{Name:"{\"text\":\" \"}"},HideFlags:63,Unbreakable:1,fDetect:1b} 1
