@@ -13,7 +13,7 @@ execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,t
 execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,tag=!selectedDestinationLocked,scores={convState=1..}] run tag @s add invInspectItem
 execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,tag=selectedDestinationLocked,scores={convState=1..}] run title @s times 5 20 5
 execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,tag=selectedDestinationLocked,scores={convState=1..}] run title @s title {"text":" "}
-execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,tag=selectedDestinationLocked,scores={convState=1..}] run title @s subtitle {"text":"Вы ещё не разблокировали это место!","bold":false,"color":"red"}
+execute as @s[tag=!softExitMap,tag=!invInspectItem,tag=!preventDoubleExecution,tag=selectedDestinationLocked,scores={convState=1..}] run title @s subtitle {"text":"Это место ещё не открыто!","bold":false,"color":"red"}
 # Start state
 scoreboard players set @s tmp 0
 execute as @s[tag=!softExitMap,scores={convState=0,selectCurrent=1,tmp=0}] store success score @s tmp run tag @s add exitInventory

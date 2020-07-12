@@ -16,7 +16,7 @@ execute as @s[scores={fastTravelTimer=69}] run function hp:misc/update_bossbars
 
 execute as @s[scores={fastTravelTimer=85}] run title @s times 20 35 20
 execute as @s[scores={fastTravelTimer=85}] run function hp:tools/fast_travel_name
-execute as @s[scores={fastTravelTimer=85}] run title @s title {"text":"Путешествие в","color":"gray"}
+execute as @s[scores={fastTravelTimer=85}] run title @s title {"text":"Отправление","color":"gray"}
 
 # im too lazy to add seperate tags and change all the reference. these refer to map and conversation, and have nothing to do with inventory.
 tag @s[tag=inMap,scores={fastTravelTimer=1}] add exitInventory
