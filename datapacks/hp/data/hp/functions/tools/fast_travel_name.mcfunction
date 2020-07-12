@@ -68,7 +68,7 @@ execute if entity @s[scores={fastTravelID=63}] run title @s subtitle {"text":"В
 execute if entity @s[scores={fastTravelID=64}] run title @s subtitle {"text":"«Сладкое королевство»","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=65}] run title @s subtitle {"text":"«Три метлы»","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=66}] run title @s subtitle {"text":"«Кабанья голова»","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=67}] run title @s subtitle {"text":"Визжашая хижина","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=67}] run title @s subtitle {"text":"Визжащая хижина","bold":true,"color":"gold"}
 
 execute if entity @s[scores={fastTravelID=68}] run title @s subtitle {"text":"Зеркало Еиналеж","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=69}] run title @s subtitle {"text":"Тайная комната","bold":true,"color":"gold"}

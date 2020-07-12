@@ -1,8 +1,8 @@
 # On Discover
-execute as @s[tag=!discovered_st_pancras,scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1empty name {"text":"Обнаружено","color":"white","italic":"true"}
-execute as @s[tag=!discovered_st_pancras,scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2empty name {"text":"Обнаружено","color":"white","italic":"true"}
-execute as @s[tag=!discovered_st_pancras,scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3empty name {"text":"Обнаружено","color":"white","italic":"true"}
-execute as @s[tag=!discovered_st_pancras,scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4empty name {"text":"Обнаружено","color":"white","italic":"true"}
+execute as @s[tag=!discovered_st_pancras,scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1empty name {"text":"Открыта локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_st_pancras,scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2empty name {"text":"Открыта локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_st_pancras,scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3empty name {"text":"Открыта локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_st_pancras,scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4empty name {"text":"Открыта локация","color":"white","italic":"true"}
 execute at @s[tag=!discovered_st_pancras,tag=!inProperCutScene] run playsound minecraft:custom.ui.discovery.discover_location master @s ~ ~ ~ 10 1 1
 # Unlock location if it has not been discovered
 execute as @s[tag=!discovered_st_pancras,tag=!inProperCutScene] run scoreboard players set @s mapLocationID 32
@@ -12,10 +12,10 @@ scoreboard players set @s[tag=discovered_st_pancras,tag=!inProperCutScene] disco
 execute as @s[tag=!discovered_st_pancras,tag=!inProperCutScene] run tag @s add discovered_st_pancras
 
 # Title
-execute as @s[scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1discover name {"text":"станция Сент-Панкрас","color":"white","italic":"false"}
-execute as @s[scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2discover name {"text":"станция Сент-Панкрас","color":"white","italic":"false"}
-execute as @s[scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3discover name {"text":"станция Сент-Панкрас","color":"white","italic":"false"}
-execute as @s[scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4discover name {"text":"станция Сент-Панкрас","color":"white","italic":"false"}
+execute as @s[scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1discover name {"text":"Сент-Панкрас","color":"white","italic":"false"}
+execute as @s[scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2discover name {"text":"Сент-Панкрас","color":"white","italic":"false"}
+execute as @s[scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3discover name {"text":"Сент-Панкрас","color":"white","italic":"false"}
+execute as @s[scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4discover name {"text":"Сент-Панкрас","color":"white","italic":"false"}
 execute as @s[tag=!inProperCutScene] run function hp:misc/update_bossbars
 
 # Set location
