@@ -104,7 +104,7 @@ execute as @s[scores={conv=24,playerID=3}] run bossbar set minecraft:player3info
 execute as @s[scores={conv=24,playerID=4}] run bossbar set minecraft:player4info name {"text":"Маркус Тернер","bold":true,"color":"gold"}
 execute as @s[scores={conv=25,playerID=1}] run bossbar set minecraft:player1info name {"text":"Стэнли Шанпайк","bold":true,"color":"gold"}
 execute as @s[scores={conv=25,playerID=2}] run bossbar set minecraft:player2info name {"text":"Стэнли Шанпайк","bold":true,"color":"gold"}
-execute as @s[scores={conv=25,playerID=3}] run bossbar set minecraft:player3info name {"text":"Стэнли Шанпайкd","bold":true,"color":"gold"}
+execute as @s[scores={conv=25,playerID=3}] run bossbar set minecraft:player3info name {"text":"Стэнли Шанпайк","bold":true,"color":"gold"}
 execute as @s[scores={conv=25,playerID=4}] run bossbar set minecraft:player4info name {"text":"Стэнли Шанпайк","bold":true,"color":"gold"}
 execute as @s[scores={conv=26,playerID=1}] run bossbar set minecraft:player1info name {"text":"Том","bold":true,"color":"gold"}
 execute as @s[scores={conv=26,playerID=2}] run bossbar set minecraft:player2info name {"text":"Том","bold":true,"color":"gold"}
@@ -118,18 +118,18 @@ execute as @s[scores={conv=28,playerID=1}] run bossbar set minecraft:player1info
 execute as @s[scores={conv=28,playerID=2}] run bossbar set minecraft:player2info name {"text":"Мадам Малкин","bold":true,"color":"gold"}
 execute as @s[scores={conv=28,playerID=3}] run bossbar set minecraft:player3info name {"text":"Мадам Малкин","bold":true,"color":"gold"}
 execute as @s[scores={conv=28,playerID=4}] run bossbar set minecraft:player4info name {"text":"Мадам Малкин","bold":true,"color":"gold"}
-execute as @s[scores={conv=29,playerID=1}] run bossbar set minecraft:player1info name {"text":"Продавец 'Флориш и Блоттс'","bold":true,"color":"gold"}
-execute as @s[scores={conv=29,playerID=2}] run bossbar set minecraft:player2info name {"text":"Продавец 'Флориш и Блоттс'","bold":true,"color":"gold"}
-execute as @s[scores={conv=29,playerID=3}] run bossbar set minecraft:player3info name {"text":"Продавец 'Флориш и Блоттс'","bold":true,"color":"gold"}
-execute as @s[scores={conv=29,playerID=4}] run bossbar set minecraft:player4info name {"text":"Продавец 'Флориш и Блоттс'","bold":true,"color":"gold"}
+execute as @s[scores={conv=29,playerID=1}] run bossbar set minecraft:player1info name {"text":"Блоттс","bold":true,"color":"gold"}
+execute as @s[scores={conv=29,playerID=2}] run bossbar set minecraft:player2info name {"text":"Блоттс","bold":true,"color":"gold"}
+execute as @s[scores={conv=29,playerID=3}] run bossbar set minecraft:player3info name {"text":"Блоттс","bold":true,"color":"gold"}
+execute as @s[scores={conv=29,playerID=4}] run bossbar set minecraft:player4info name {"text":"Блоттс","bold":true,"color":"gold"}
 execute as @s[scores={conv=30,playerID=1}] run bossbar set minecraft:player1info name {"text":"Проводник","bold":true,"color":"gold"}
 execute as @s[scores={conv=30,playerID=2}] run bossbar set minecraft:player2info name {"text":"Проводник","bold":true,"color":"gold"}
 execute as @s[scores={conv=30,playerID=3}] run bossbar set minecraft:player3info name {"text":"Проводник","bold":true,"color":"gold"}
 execute as @s[scores={conv=30,playerID=4}] run bossbar set minecraft:player4info name {"text":"Проводник","bold":true,"color":"gold"}
-execute as @s[scores={conv=31,playerID=1}] run bossbar set minecraft:player1info name {"text":"Распределяющая Шляпа","bold":true,"color":"gold"}
-execute as @s[scores={conv=31,playerID=2}] run bossbar set minecraft:player2info name {"text":"Распределяющая Шляпа","bold":true,"color":"gold"}
-execute as @s[scores={conv=31,playerID=3}] run bossbar set minecraft:player3info name {"text":"Распределяющая Шляпа","bold":true,"color":"gold"}
-execute as @s[scores={conv=31,playerID=4}] run bossbar set minecraft:player4info name {"text":"Распределяющая Шляпа","bold":true,"color":"gold"}
+execute as @s[scores={conv=31,playerID=1}] run bossbar set minecraft:player1info name {"text":"Распределяющая шляпа","bold":true,"color":"gold"}
+execute as @s[scores={conv=31,playerID=2}] run bossbar set minecraft:player2info name {"text":"Распределяющая шляпа","bold":true,"color":"gold"}
+execute as @s[scores={conv=31,playerID=3}] run bossbar set minecraft:player3info name {"text":"Распределяющая шляпа","bold":true,"color":"gold"}
+execute as @s[scores={conv=31,playerID=4}] run bossbar set minecraft:player4info name {"text":"Распределяющая шляпа","bold":true,"color":"gold"}
 execute as @s[scores={conv=32,playerID=1}] run bossbar set minecraft:player1info name {"text":"Молли Уизли","bold":true,"color":"gold"}
 execute as @s[scores={conv=32,playerID=2}] run bossbar set minecraft:player2info name {"text":"Молли Уизли","bold":true,"color":"gold"}
 execute as @s[scores={conv=32,playerID=3}] run bossbar set minecraft:player3info name {"text":"Молли Уизли","bold":true,"color":"gold"}
@@ -138,10 +138,10 @@ execute as @s[scores={conv=33,playerID=1}] run bossbar set minecraft:player1info
 execute as @s[scores={conv=33,playerID=2}] run bossbar set minecraft:player2info name {"text":"Джемма Фарли","bold":true,"color":"gold"}
 execute as @s[scores={conv=33,playerID=3}] run bossbar set minecraft:player3info name {"text":"Джемма Фарли","bold":true,"color":"gold"}
 execute as @s[scores={conv=33,playerID=4}] run bossbar set minecraft:player4info name {"text":"Джемма Фарли","bold":true,"color":"gold"}
-execute as @s[scores={conv=34,playerID=1}] run bossbar set minecraft:player1info name {"text":"Железнодорожный Охранник","bold":true,"color":"gold"}
-execute as @s[scores={conv=34,playerID=2}] run bossbar set minecraft:player2info name {"text":"Железнодорожный Охранник","bold":true,"color":"gold"}
-execute as @s[scores={conv=34,playerID=3}] run bossbar set minecraft:player3info name {"text":"Железнодорожный Охранник","bold":true,"color":"gold"}
-execute as @s[scores={conv=34,playerID=4}] run bossbar set minecraft:player4info name {"text":"Железнодорожный Охранник","bold":true,"color":"gold"}
+execute as @s[scores={conv=34,playerID=1}] run bossbar set minecraft:player1info name {"text":"Кондуктор","bold":true,"color":"gold"}
+execute as @s[scores={conv=34,playerID=2}] run bossbar set minecraft:player2info name {"text":"Кондуктор","bold":true,"color":"gold"}
+execute as @s[scores={conv=34,playerID=3}] run bossbar set minecraft:player3info name {"text":"Кондуктор","bold":true,"color":"gold"}
+execute as @s[scores={conv=34,playerID=4}] run bossbar set minecraft:player4info name {"text":"Кондуктор","bold":true,"color":"gold"}
 execute as @s[scores={conv=35,playerID=1}] run bossbar set minecraft:player1info name {"text":"Батильда Бэгшот","bold":true,"color":"gold"}
 execute as @s[scores={conv=35,playerID=2}] run bossbar set minecraft:player2info name {"text":"Батильда Бэгшот","bold":true,"color":"gold"}
 execute as @s[scores={conv=35,playerID=3}] run bossbar set minecraft:player3info name {"text":"Батильда Бэгшот","bold":true,"color":"gold"}
@@ -162,14 +162,14 @@ execute as @s[scores={conv=39,playerID=1}] run bossbar set minecraft:player1info
 execute as @s[scores={conv=39,playerID=2}] run bossbar set minecraft:player2info name {"text":"Артур Уизли","bold":true,"color":"gold"}
 execute as @s[scores={conv=39,playerID=3}] run bossbar set minecraft:player3info name {"text":"Артур Уизли","bold":true,"color":"gold"}
 execute as @s[scores={conv=39,playerID=4}] run bossbar set minecraft:player4info name {"text":"Артур Уизли","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=1}] run bossbar set minecraft:player1info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=2}] run bossbar set minecraft:player2info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=3}] run bossbar set minecraft:player3info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=40,playerID=4}] run bossbar set minecraft:player4info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=1}] run bossbar set minecraft:player1info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=2}] run bossbar set minecraft:player2info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=3}] run bossbar set minecraft:player3info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
-execute as @s[scores={conv=41,playerID=4}] run bossbar set minecraft:player4info name {"text":"Охранник Дверей","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=1}] run bossbar set minecraft:player1info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=2}] run bossbar set minecraft:player2info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=3}] run bossbar set minecraft:player3info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=40,playerID=4}] run bossbar set minecraft:player4info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=1}] run bossbar set minecraft:player1info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=2}] run bossbar set minecraft:player2info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=3}] run bossbar set minecraft:player3info name {"text":"Страж","bold":true,"color":"gold"}
+execute as @s[scores={conv=41,playerID=4}] run bossbar set minecraft:player4info name {"text":"Страж","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=1}] run bossbar set minecraft:player1info name {"text":"Помона Стебль","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=2}] run bossbar set minecraft:player2info name {"text":"Помона Стебль","bold":true,"color":"gold"}
 execute as @s[scores={conv=42,playerID=3}] run bossbar set minecraft:player3info name {"text":"Помона Стебль","bold":true,"color":"gold"}
