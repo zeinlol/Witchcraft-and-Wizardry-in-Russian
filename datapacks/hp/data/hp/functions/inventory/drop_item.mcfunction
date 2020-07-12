@@ -2,11 +2,11 @@
 
 # Drop item
 execute as @s[tag=!editAddItems] as @e[tag=isDroppedItem,distance=..1,limit=1] run tag @s add itemBeingDropped
-execute as @s[tag=!editAddItems] unless entity @e[tag=isDroppedItem,distance=..1] run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"Выброшенный Мешокˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ\",\"color\":\"dark_gray\"}",Team:"NPC",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["interactable","glowable","chest","itemBeingDropped","removeContainerIfEmpty","isDroppedItem"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{Unbreakable:1b,Damage:59},qDetect:1b}]}
+execute as @s[tag=!editAddItems] unless entity @e[tag=isDroppedItem,distance=..1] run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"Выброшенный мешокˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈˈ\",\"color\":\"dark_gray\"}",Team:"NPC",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["interactable","glowable","chest","itemBeingDropped","removeContainerIfEmpty","isDroppedItem"],ArmorItems:[{},{},{},{id:"minecraft:wooden_sword",Count:1b,tag:{Unbreakable:1b,Damage:59},qDetect:1b}]}
 execute as @s[tag=editAddItems] as @e[tag=editAddItemsTarget,limit=1] run tag @s add itemBeingDropped
 
 execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s times 20 100 20
-execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s subtitle {"text":"Вам нужно находиться рядом с мешком, что бы посмотреть что в нём.","color":"red"}
+execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s subtitle {"text":"Нужно находиться рядом с контейнером, чтобы изменить его содержимое.","color":"red"}
 execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s title {"text":""}
 
 
