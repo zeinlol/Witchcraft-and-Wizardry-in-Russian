@@ -309,10 +309,10 @@ execute as @s[scores={questState=10},tag=isTrackedQuest] run scoreboard players 
 
 ### Function ###
 execute as @s[scores={questState=10},tag=isTrackedQuest,tag=inBrewer] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=10,playerID=1},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Сварите зелье 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=2},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Сварите зелье 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=3},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Сварите зелье 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=4},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Сварите зелье 'Настойка Растопырника'","color":"gold"}]
+execute as @s[scores={questState=10,playerID=1},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=10,playerID=2},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=10,playerID=3},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=10,playerID=4},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
 
 
 
@@ -402,10 +402,10 @@ execute as @s[scores={questState=13},tag=isTrackedQuest] run scoreboard players 
 ### Function ###
 # Title
 execute as @s[scores={questState=13},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=13,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Выберите 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Выберите 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Выберите 'Настойка Растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Выберите 'Настойка Растопырника'","color":"gold"}]
+execute as @s[scores={questState=13,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=13,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=13,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=13,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
 
 # Trigger
 execute as @s[scores={questState=13,InvSelectItemID=3},tag=isTrackedQuest] run tag @s add newState

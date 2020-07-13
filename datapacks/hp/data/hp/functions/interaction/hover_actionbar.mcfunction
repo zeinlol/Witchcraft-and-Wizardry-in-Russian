@@ -53,7 +53,7 @@ execute if entity @s[tag=turningPillar,tag=!rotatingPillar] as @p[tag=activePlay
 execute as @s[tag=turningPillar,tag=!rotatingPillar] if entity @p[tag=activePlayer,tag=hasPressedF] run function hp:misc/rotate_pillar
 
 # Mana Well
-execute if entity @s[tag=manaWell] as @p[tag=activePlayer,scores={pickUpTimer=0},tag=!cutsceneOverrideActionbar] store success score @s tmp run title @s actionbar ["",{"text":"Нажмите ","color":"gold"},{"text":"⌡","bold":false,"color":"white"},{"text":", чтобы восстановить ману","color":"gold"}]
+execute if entity @s[tag=manaWell] as @p[tag=activePlayer,scores={pickUpTimer=0},tag=!cutsceneOverrideActionbar] store success score @s tmp run title @s actionbar ["",{"text":"Нажмите ","color":"gold"},{"text":"⌡","bold":false,"color":"white"},{"text":", чтобы восстановить магию","color":"gold"}]
 execute if entity @s[tag=manaWell,tag=!rotatingPillar] as @p[tag=activePlayer,tag=hasPressedF] unless score @s manaAmount = @s maxManaAmount run function hp:misc/mana_well
 
 # Broom
