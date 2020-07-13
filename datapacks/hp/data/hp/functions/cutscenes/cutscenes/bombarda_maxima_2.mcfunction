@@ -334,7 +334,7 @@ execute as @s[scores={cutSceneTimer=310}] run function hp:cutscenes/exit_cutscen
 
 # ¤Lupin:¤ Well done!
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=20..100}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"  "}]
+execute as @s[scores={cutSceneTimer=20..100}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Готово!"}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=27},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=31},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_expression
@@ -346,8 +346,9 @@ execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=lupinFogCl
 
 
 # ¤Lupin:¤ But you're not done yet. Keep heading upwards and I'll meet you at the top.
+# ¤Lupin:¤ Но ты еще не закончил. Продолжай двигаться вверх и я встречу тебя там.
 execute as @s[scores={cutSceneTimer=100},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=100..240}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"               "}]
+execute as @s[scores={cutSceneTimer=100..240}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Но ты еще не закончил. Продолжай двигаться вверх и я встречу тебя там."}]
 execute as @s[scores={cutSceneTimer=100},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=107},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=111},tag=cutsceneLeader] as @e[tag=lupinFogClearing,limit=1] run function hp:npc/update_npc_head_expression

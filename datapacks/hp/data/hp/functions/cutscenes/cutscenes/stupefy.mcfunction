@@ -319,10 +319,11 @@ tp @s[scores={cutSceneTimer=319}] 5558.106 96.58 -18.71 14.28004 20.43
 tp @s[scores={cutSceneTimer=320}] 5558.121 96.58 -18.71 14.38004 20.43
 execute as @s[scores={cutSceneTimer=300}] as @s run function hp:cutscenes/fade_in
 
-# ¤Lupin:¤ Добро пожаловать в  Defense Against the Dark Arts!
+# ¤Lupin:¤ Welcome to Defense Against the Dark Arts!
+# ¤Lupin:¤ Добро пожаловать на Защиту от Тёмных Искусств!
 execute as @s[scores={cutSceneTimer=40},tag=cutsceneLeader] run tag @e[tag=lupinClassroomFpEngine,limit=1] remove cutsceneStop
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=20..80}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]
+execute as @s[scores={cutSceneTimer=20..80}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Добро пожаловать на Защиту от Тёмных Искусств!"}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=27},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=31},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -333,8 +334,9 @@ execute as @s[scores={cutSceneTimer=53},tag=cutsceneLeader] as @e[tag=lupinClass
 execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ I'm Professor Lupin, your Defense Against the Dark Arts teacher here at Hogwarts.
+# ¤Lupin:¤ Я профессор Люпин, ваш учитель по Защите от Тёмных Искусств.
 execute as @s[scores={cutSceneTimer=80},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=80..160}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
+execute as @s[scores={cutSceneTimer=80..160}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Я профессор Люпин, ваш учитель по Защите от Тёмных Искусств."}]
 execute as @s[scores={cutSceneTimer=80},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=87},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=91},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -345,8 +347,9 @@ execute as @s[scores={cutSceneTimer=113},tag=cutsceneLeader] as @e[tag=lupinClas
 execute as @s[scores={cutSceneTimer=120},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ Please put away your books, this is going to be a practical lesson. You will only need your wand.
+# ¤Lupin:¤ Пожалуйста, уберите книги, это будет практический урок. Вам понадобится только палочка.
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=161..320}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                   "}]
+execute as @s[scores={cutSceneTimer=161..320}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Пожалуйста, уберите книги, это будет практический урок. Вам понадобится только палочка."}]
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=168},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=172},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -357,8 +360,9 @@ execute as @s[scores={cutSceneTimer=184},tag=cutsceneLeader] as @e[tag=lupinClas
 execute as @s[scores={cutSceneTimer=191},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ Today you will be learning the spell 'Stupefy', which will allow you to stun and damage opponents.
+# ¤Lupin:¤ Сегодня вы будете учить заклинание 'Остолбеней', что позволит вам оглушить и нападать на противников.
 execute as @s[scores={cutSceneTimer=320},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=320..490}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                 "}]
+execute as @s[scores={cutSceneTimer=320..490}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Сегодня вы будете учить заклинание 'Остолбеней', что позволит вам оглушить и нападать на противников."}]
 execute as @s[scores={cutSceneTimer=320},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=327},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=331},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -608,8 +612,9 @@ execute as @s[scores={cutSceneTimer=530},tag=cutsceneLeader] as @s run setblock 
 
 
 # ¤Lupin:¤ I've set up an obstacle course with targets for you to make your way through, so you can practice the spell.
+# ¤Lupin:¤ Я установил полосу препятствий с мишенями, так что вы можете практиковать заклинание.
 execute as @s[scores={cutSceneTimer=490},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=490..980}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                     "}]
+execute as @s[scores={cutSceneTimer=490..980}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Я установил полосу препятствий с мишенями, так что вы можете практиковать заклинание."}]
 
 execute as @s[scores={cutSceneTimer=550}] as @s run function hp:cutscenes/fade_out
 tp @s[scores={cutSceneTimer=551}] 5567.31 45.23 -70.44 35.12 -9.110001
@@ -970,9 +975,10 @@ tp @s[scores={cutSceneTimer=899}] 5508.26 45.24 -41.55 160.19 5.409963
 tp @s[scores={cutSceneTimer=900}] 5508.26 45.24 -41.55 160.19 5.559963
 execute as @s[scores={cutSceneTimer=880}] as @s run function hp:cutscenes/fade_in
 
-# ¤Lupin:¤ You can select the Stupefy spell by pressing { для использования дважды нажми £.
+# ¤Lupin:¤ You can select the Stupefy spell by pressing { для использования дважды нажмите £.
+# ¤Lupin:¤ Заклинание Остолбеней можно выбрать нажатием 'Q' и для использования дважды нажмите £.
 execute as @s[scores={cutSceneTimer=980},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=980..1110}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                "}]
+execute as @s[scores={cutSceneTimer=980..1110}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Заклинание Остолбеней можно выбрать нажатием 'Q' и для использования дважды нажмите £."}]
 
 execute as @s[scores={cutSceneTimer=910}] as @s run function hp:cutscenes/fade_out
 tp @s[scores={cutSceneTimer=900}] 5507.347 43.80817 -36.82643 -336.56 -5.83
@@ -1161,7 +1167,7 @@ execute as @s[scores={cutSceneTimer=1060}] as @s run function hp:cutscenes/fade_
 
 # ¤Lupin:¤ Best of luck!
 execute as @s[scores={cutSceneTimer=1110},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=1110..1200}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
+execute as @s[scores={cutSceneTimer=1110..1200}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Желаю Удачи!"}]
 execute as @s[scores={cutSceneTimer=1110},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=1117},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=1121},tag=cutsceneLeader] as @e[tag=lupinClassroom,limit=1] run function hp:npc/update_npc_head_expression

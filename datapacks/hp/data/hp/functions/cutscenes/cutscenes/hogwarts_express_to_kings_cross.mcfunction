@@ -266,7 +266,7 @@ execute as @s[scores={cutSceneTimer=65..110,playerID=1},tag=cutsceneLeader] run 
 execute as @s[scores={cutSceneTimer=80..110,playerID=1},tag=cutsceneLeader] run particle minecraft:poof 879 46 -1722.66 5 .2 .2 .05 2 normal
 
 # All aboard!
-title @s[scores={cutSceneTimer=50..100}] actionbar ["",{"text":" "}]
+title @s[scores={cutSceneTimer=50..100}] actionbar ["",{"text":"Все на борт!"}]
 
 execute as @s[scores={cutSceneTimer=150}] run function hp:cutscenes/fade_in
 

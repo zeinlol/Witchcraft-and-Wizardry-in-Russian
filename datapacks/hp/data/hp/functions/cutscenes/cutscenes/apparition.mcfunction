@@ -870,8 +870,9 @@ tp @s[scores={cutSceneTimer=870}] 8904.779 60.23523 18.14771 -164.05 2.14
 execute as @s[scores={cutSceneTimer=850}] run function hp:cutscenes/fade_in
 
 # ¤Twycross:¤ Are we ready to begin? Wonderful.
+# ¤Двукрест:¤ Готовы начать? Прекрасно.
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=20..120}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"      "}]
+execute as @s[scores={cutSceneTimer=20..120}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Готовы начать? Прекрасно."}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=27},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=31},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -882,8 +883,9 @@ execute as @s[scores={cutSceneTimer=53},tag=cutsceneLeader] as @e[tag=cutsceneTw
 execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Twycross:¤ Now, as you know, apparition is a magical form of transportation,
+# ¤Twycross:¤ Как вы знаете, трансгрессия это магическая форма телепортации,
 execute as @s[scores={cutSceneTimer=121},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=121..230}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"           "}]
+execute as @s[scores={cutSceneTimer=121..230}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Как вы знаете, трансгрессия это магическая форма телепортации,"}]
 execute as @s[scores={cutSceneTimer=121},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=128},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=132},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -894,8 +896,9 @@ execute as @s[scores={cutSceneTimer=154},tag=cutsceneLeader] as @e[tag=cutsceneT
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Twycross:¤ instantly transporting you from one location to another.
+# ¤Twycross:¤ которая мгновенно перемещает вас с одного места в другое.
 execute as @s[scores={cutSceneTimer=231},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=231..300}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"        "}]
+execute as @s[scores={cutSceneTimer=231..300}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" которая мгновенно перемещает вас с одного места в другое."}]
 execute as @s[scores={cutSceneTimer=231},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=238},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=242},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -908,8 +911,9 @@ execute as @s[scores={cutSceneTimer=271},tag=cutsceneLeader] as @e[tag=cutsceneT
 
 
 # ¤Twycross:¤ This ability can be very useful
+# ¤Twycross:¤ Эта возможность очень полезна
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=301..350}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"      "}]
+execute as @s[scores={cutSceneTimer=301..350}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Эта возможность очень полезна"}]
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=308},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=312},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -920,8 +924,9 @@ execute as @s[scores={cutSceneTimer=334},tag=cutsceneLeader] as @e[tag=cutsceneT
 execute as @s[scores={cutSceneTimer=341},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Twycross:¤ and at times necessary in order to reach areas that are otherwise inaccessible.
+# ¤Twycross:¤ когда необходимо попасть в недоступные другим способом места.
 execute as @s[scores={cutSceneTimer=351},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=351..420}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
+execute as @s[scores={cutSceneTimer=351..420}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" когда необходимо попасть в недоступные другим способом места."}]
 execute as @s[scores={cutSceneTimer=351},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=358},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=362},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -934,8 +939,9 @@ execute as @s[scores={cutSceneTimer=391},tag=cutsceneLeader] as @e[tag=cutsceneT
 
 
 # ¤Twycross:¤ Let me demonstrate:
+# ¤Twycross:¤ Позвольте продемонстировать:
 execute as @s[scores={cutSceneTimer=421},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=421..480}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
+execute as @s[scores={cutSceneTimer=421..480}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Позвольте продемонстировать:"}]
 execute as @s[scores={cutSceneTimer=421},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=428},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=432},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -965,7 +971,7 @@ execute as @s[scores={cutSceneTimer=480..550}] run title @s actionbar ""
 
 # ¤Twycross:¤ Like so
 execute as @s[scores={cutSceneTimer=551},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=551..610}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"  "}]
+execute as @s[scores={cutSceneTimer=551..610}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Вот так"}]
 execute as @s[scores={cutSceneTimer=551},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=558},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=562},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -978,8 +984,9 @@ execute as @s[scores={cutSceneTimer=591},tag=cutsceneLeader] as @e[tag=cutsceneT
 execute as @s[scores={cutSceneTimer=610..650}] run title @s actionbar ""
 
 # ¤Twycross:¤ The important things to remember when apparating are the three D's: "Destination, Determination, Deliberation."
+# ¤Twycross:¤ В Трансгрессии очень важно помнить правило трёх 'Н'; 'Нацеленность, Настойчивость, Неспешность'
 execute as @s[scores={cutSceneTimer=651},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=651..800}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"              "}]
+execute as @s[scores={cutSceneTimer=651..800}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" В Трансгрессии очень важно помнить правило трёх 'Н'; 'Нацеленность, Настойчивость, Неспешность'"}]
 execute as @s[scores={cutSceneTimer=651},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=658},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=662},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
@@ -991,7 +998,7 @@ execute as @s[scores={cutSceneTimer=691},tag=cutsceneLeader] as @e[tag=cutsceneT
 
 # ¤Twycross:¤ Now you try.
 execute as @s[scores={cutSceneTimer=801},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=801..870}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
+execute as @s[scores={cutSceneTimer=801..870}] run title @s actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Ваш Черёд"}]
 execute as @s[scores={cutSceneTimer=801},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=808},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=812},tag=cutsceneLeader] as @e[tag=cutsceneTwycross1,limit=1] run function hp:npc/update_npc_head_expression

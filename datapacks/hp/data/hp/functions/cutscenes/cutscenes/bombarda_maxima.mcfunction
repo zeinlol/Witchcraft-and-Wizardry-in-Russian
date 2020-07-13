@@ -313,8 +313,9 @@ tp @s[scores={cutSceneTimer=300}] 7421.419 98.59769 -10.42036 -346.08 8.31
 execute as @s[scores={cutSceneTimer=280}] as @s run function hp:cutscenes/fade_in
 
 # ¤Lupin:¤ Hello Students!
+# ¤Люпин:¤ Здравствуйте Студенты!
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=20..120}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"  "}]
+execute as @s[scores={cutSceneTimer=20..120}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Здравствуйте Студенты!"}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=27},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=31},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
@@ -325,8 +326,9 @@ execute as @s[scores={cutSceneTimer=53},tag=cutsceneLeader] as @e[tag=lupinClass
 execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ Today we will be learning to use 'Bombarda Maxima';
+# ¤Lupin:¤ Сегодня мы будем учиться использовать 'Бомбарда Максима';
 execute as @s[scores={cutSceneTimer=121},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=121..210}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"         "}]
+execute as @s[scores={cutSceneTimer=121..210}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Сегодня мы будем учиться использовать 'Бомбарда Максима';"}]
 execute as @s[scores={cutSceneTimer=121},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=128},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=132},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
@@ -337,8 +339,9 @@ execute as @s[scores={cutSceneTimer=154},tag=cutsceneLeader] as @e[tag=lupinClas
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ a strong variation of the exploding charm.
+# ¤Lupin:¤  - мощное взрывное заклинание.
 execute as @s[scores={cutSceneTimer=211},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=211..300}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]
+execute as @s[scores={cutSceneTimer=211..300}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":"  - мощное взрывное заклинание."}]
 execute as @s[scores={cutSceneTimer=211},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=218},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=222},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
@@ -350,8 +353,9 @@ execute as @s[scores={cutSceneTimer=251},tag=cutsceneLeader] as @e[tag=lupinClas
 
 
 # ¤Lupin:¤ This will allow you to conjure up powerful explosions,
+# ¤Lupin:¤ Оно позволит вам вызывать мощные взрывы,
 execute as @s[scores={cutSceneTimer=300},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=300..400}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"         "}]
+execute as @s[scores={cutSceneTimer=300..400}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Оно позволит вам вызывать мощные взрывы,"}]
 execute as @s[scores={cutSceneTimer=300},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=307},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=311},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
@@ -362,8 +366,9 @@ execute as @s[scores={cutSceneTimer=333},tag=cutsceneLeader] as @e[tag=lupinClas
 execute as @s[scores={cutSceneTimer=340},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Lupin:¤ capable of dealing great damage to multiple foes as well as blowing up certain walls and objects.
+# ¤Lupin:¤ способные нанести большой ущерб нескольким врагам, а также взорвать определенные стены и объекты.
 execute as @s[scores={cutSceneTimer=400},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=400..550}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                 "}]
+execute as @s[scores={cutSceneTimer=400..550}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" способные нанести большой ущерб нескольким врагам, а также взорвать определенные стены и объекты."}]
 execute as @s[scores={cutSceneTimer=400},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=407},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=411},tag=cutsceneLeader] as @e[tag=lupinClassroomBombarda,limit=1] run function hp:npc/update_npc_head_expression
@@ -579,8 +584,9 @@ execute as @s[scores={cutSceneTimer=480}] as @s run function hp:cutscenes/fade_i
 
 
 # ¤Lupin:¤ I have set up an area below the castle where you can practice the spell.
+# ¤Lupin:¤ Я создал зону под замком, где можно практиковаться заклинанию.
 execute as @s[scores={cutSceneTimer=550},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=550..700}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"               "}]
+execute as @s[scores={cutSceneTimer=550..700}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Я создал зону под замком, где можно практиковаться заклинанию."}]
 
 # Add fog effect
 execute as @s[scores={cutSceneTimer=500}] as @s run tag @s add fog
@@ -997,8 +1003,9 @@ tp @s[scores={cutSceneTimer=900}] 7443.27 50.62037 6.37998 -126.01 -45.44996
 execute as @s[scores={cutSceneTimer=880}] as @s run function hp:cutscenes/fade_in
 
 # ¤Lupin:¤ The exit is at the top of the main room. See if you can find a way to reach it.
+# ¤Lupin:¤ Выход находится на самом верху. Посмотрим, сможете ли вы добраться до него.
 execute as @s[scores={cutSceneTimer=700},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=700..900}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                    "}]
+execute as @s[scores={cutSceneTimer=700..900}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Выход находится на самом верху. Посмотрим, сможете ли вы добраться до него."}]
 
 execute as @s[scores={cutSceneTimer=900}] as @s run function hp:cutscenes/fade_out
 tp @s[scores={cutSceneTimer=900}] 7471.457 59.49937 2.150302 -189.81 1.79
@@ -1176,8 +1183,9 @@ tp @s[scores={cutSceneTimer=1071}] 7470.872 59.3924 -1.218044 -189.81 1.79
 tp @s[scores={cutSceneTimer=1072}] 7470.869 59.39177 -1.237742 -189.81 1.79
 
 # ¤Lupin:¤ Oh, and I would hurry if I were you. The smell isn’t exactly pleasant.
+# ¤Lupin:¤ Ах да, на вашем месте я бы поторопился. Тут не самый приятный запах.
 execute as @s[scores={cutSceneTimer=900},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=900..1050}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"              "}]
+execute as @s[scores={cutSceneTimer=900..1050}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Ах да, на вашем месте я бы поторопился. Тут не самый приятный запах."}]
 
 # Clear subtitles instantly rather than a slow fade I can't control
 execute as @s[scores={cutSceneTimer=1050..}] run title @s actionbar ""

@@ -314,11 +314,13 @@ execute as @s[scores={cutSceneTimer=655}] run function hp:music/music/wands_at_t
 
 
 # ¤Twycross:¤ By heavens! Death eaters! They're attacking the Ministry!
-execute as @s[scores={cutSceneTimer=650..740}] run title @a[tag=cutsceneSlave] actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"        "}]
+# ¤Twycross:¤ Святые угодники! Пожиратели Смерти! Они атакуют Министерство!
+execute as @s[scores={cutSceneTimer=650..740}] run title @a[tag=cutsceneSlave] actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Святые угодники! Пожиратели Смерти! Они атакуют Министерство!"}]
 execute as @s[scores={cutSceneTimer=650}] as @a[tag=cutsceneSlave] at @e[tag=walkingTwycross,limit=1] run playsound minecraft:custom.voices.voice1 master @s ~ ~ ~ 3 1 0
 
 # ¤Twycross:¤ Quick, fend them off! I'll run awa... uh... I'll go get help!
-execute as @s[scores={cutSceneTimer=740..850}] run title @a[tag=cutsceneSlave] actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"            "}]
+# ¤Twycross:¤ Скорее! Задержи их! Я побегу... Э... Я позову помощь!
+execute as @s[scores={cutSceneTimer=740..850}] run title @a[tag=cutsceneSlave] actionbar ["",{"text":""},{"text":"Двукрест;","color":"dark_gray"},{"text":" Скорее! Задержи их! Я побегу... Э... Я позову помощь!"}]
 execute as @s[scores={cutSceneTimer=740}] as @a[tag=cutsceneSlave] at @e[tag=walkingTwycross,limit=1] run playsound minecraft:custom.voices.voice1 master @s ~ ~ ~ 3 1 0
 
 execute as @s[scores={cutSceneTimer=810}] as @a[tag=cutsceneSlave] run function hp:cutscenes/fade_in
