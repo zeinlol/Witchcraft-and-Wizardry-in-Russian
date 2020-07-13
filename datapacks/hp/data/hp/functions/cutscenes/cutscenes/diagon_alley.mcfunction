@@ -313,8 +313,8 @@ tp @s[scores={cutSceneTimer=320}] 2848.26 47.74 950.02 1938.66 -8.900038
 execute as @s[scores={cutSceneTimer=301}] run function hp:cutscenes/fade_in
 
 # Here, you can purchase supplies and solve quests for the shop owners.
-# Сдесь вы можете торговать и брать задания у владельцев магазинов.
-title @s[scores={cutSceneTimer=221..620}] actionbar ["",{"text":" Сдесь вы можете торговать и брать задания у владельцев магазинов"}]
+# Здесь вы можете торговать и брать задания у владельцев магазинов.
+title @s[scores={cutSceneTimer=221..620}] actionbar ["",{"text":" Здесь вы можете торговать и брать задания у владельцев магазинов"}]
 
 execute as @s[scores={cutSceneTimer=322}] run function hp:cutscenes/fade_out	
 tp @s[scores={cutSceneTimer=322}] 2856.13 54.23 862.24 87.75 -8.44
