@@ -6,6 +6,25 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestPurchaseRobes
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players remove @s money 115
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s[scores={money=..0}] money 0
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 18
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 19
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 27
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s clothesSlot1ID 19
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s clothesSlot2ID 18
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s clothesSlot3ID 27
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2855.18 48.06 927.75 -32.52 2.86
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############
@@ -44,18 +63,18 @@ execute as @s[scores={questState=2..5,npcQuestIcon=1},tag=!inProperCutScene,tag=
 
 ### Guidance titles ###
 execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2..4,conv=28},tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите Мантию","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите Головной Убор","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите Штаны","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите Мантию","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите Головной Убор","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите Штаны","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите Мантию","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите Головной Убор","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите Штаны","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите Мантию","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите Головной Убор","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите Штаны","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите школьную мантию","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите головной убор","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=1,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите штаны","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите школьную мантию","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите головной убор","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=2,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите штаны","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите школьную мантию","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите головной убор","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=3,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите штаны","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите школьную мантию","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите головной убор","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=4,conv=28},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите штаны","color":"gold"}]
 
 # check what items the player has bought and what they are allowed to purchase
 execute as @s[tag=isTrackedQuest,scores={questState=2}] run scoreboard players set @s tmp 0

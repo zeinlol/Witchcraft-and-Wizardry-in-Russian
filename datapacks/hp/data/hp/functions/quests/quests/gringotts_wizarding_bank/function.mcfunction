@@ -6,6 +6,11 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestGringotts
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2845.53 47.00 1077.58 179.84 -0.22
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s hotbar_stage 5
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # Showing tips (placed here for performance)
 execute as @s[tag=showingTips] run function hp:misc/tips
@@ -52,7 +57,7 @@ execute as @s[scores={questState=2,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=2,convState=1,conv=20}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Мне нужны деньги для подготовки к школе\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Мне нужны деньги для школьных целей\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 13
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use

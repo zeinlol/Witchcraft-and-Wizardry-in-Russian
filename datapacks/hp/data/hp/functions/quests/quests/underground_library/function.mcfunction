@@ -37,7 +37,7 @@ execute as @s[scores={questState=1,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=1,convState=1,conv=35}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Люпин отправил меня к Вам. Он сказал что Вам потребуется помощь\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Люпин прислал меня. Вам нужна моя помощь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 2
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -94,7 +94,7 @@ execute as @s[scores={questState=2,npcQuestIcon=1},tag=!inResetPoint,tag=!isFast
 execute as @s[tag=inConversation,scores={questState=2,convState=1,conv=385}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Вам известно что-то про подземную библиотеку?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Вы что-то знаете о подземной библиотеке?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 5
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -149,7 +149,7 @@ execute as @s[scores={questState=3,npcQuestIcon=1},tag=!inResetPoint,tag=!isFast
 execute as @s[tag=inConversation,scores={questState=3,convState=1,conv=36}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Мне нужен доступ к запретной секции\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Мне нужен допуск в запретную секцию\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 4
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -188,10 +188,10 @@ execute as @s[tag=newState] run scoreboard players set @s questState 4
 execute as @s[tag=newState] run function hp:quests/set_quest
 execute as @s[tag=newState] run function hp:quests/ding_sound
 execute as @s[tag=newState] run scoreboard players set @s questTextTimer 150
-execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Ключ от запретной секции может находиться в кабинете Аргуса Филча","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Ключ от запретной секции может находиться в кабинете Аргуса Филча","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Ключ от запретной секции может находиться в кабинете Аргуса Филча","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Ключ от запретной секции может находиться в кабинете Аргуса Филча","bold":false,"color":"gold"}
 execute as @s[tag=newState,scores={playerID=1}] run scoreboard players set officeFilch p1convOverride 3
 execute as @s[tag=newState,scores={playerID=2}] run scoreboard players set officeFilch p2convOverride 3
 execute as @s[tag=newState,scores={playerID=3}] run scoreboard players set officeFilch p3convOverride 3
@@ -552,6 +552,9 @@ execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players oper
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set undergroundLibrary sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

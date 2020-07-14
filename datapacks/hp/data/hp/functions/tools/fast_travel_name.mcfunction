@@ -2,7 +2,7 @@ execute if entity @s[scores={fastTravelID=1}] run title @s subtitle {"text":"Б�
 execute if entity @s[scores={fastTravelID=2}] run title @s subtitle {"text":"Библиотека","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=3}] run title @s subtitle {"text":"Лестничная башня","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=4}] run title @s subtitle {"text":"Класс зельеварения","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=5}] run title @s subtitle {"text":"Класс Защиты от Тёмных искуств","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=5}] run title @s subtitle {"text":"Класс Защиты от Тёмных искусств","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=6}] run title @s subtitle {"text":"Класс Заклинаний","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=7}] run title @s subtitle {"text":"Класс Трансфигурации","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=8}] run title @s subtitle {"text":"Гостиная Гриффиндора","bold":true,"color":"gold"}

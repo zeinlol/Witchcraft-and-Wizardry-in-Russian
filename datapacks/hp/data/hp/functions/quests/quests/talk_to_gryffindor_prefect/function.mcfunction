@@ -6,6 +6,12 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s hotbar_stage 9
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 716.29 134.00 302.47 -89.44 1.11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############
@@ -79,6 +85,9 @@ execute as @s[scores={questState=3},tag=isTrackedQuest] run scoreboard players s
 
 ### Trigger ###
 execute positioned 728.32 134.00 304.24 as @s[distance=..15,scores={questState=3},tag=inNormalState] run tag @s add completeQuest
+execute positioned 811.33 23.00 147.70 as @s[distance=..10,scores={questState=3},tag=inNormalState] run tag @s add completeQuest
+execute positioned 784 127 157 as @s[distance=..20,scores={questState=3},tag=inNormalState] run tag @s add completeQuest
+execute positioned 704.63 19.00 282.46 as @s[distance=..10,scores={questState=3},tag=inNormalState] run tag @s add completeQuest
 
 #################
 ### Completed ###
@@ -103,10 +112,6 @@ execute as @s[tag=completeQuest,scores={playerID=1}] run scoreboard players set 
 execute as @s[tag=completeQuest,scores={playerID=2}] run scoreboard players set fredGeorge p2convOverride 11
 execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players set fredGeorge p3convOverride 11
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players set fredGeorge p4convOverride 11
-execute as @s[tag=completeQuest,scores={playerID=1}] run scoreboard players set malfoy p1convOverride 14
-execute as @s[tag=completeQuest,scores={playerID=2}] run scoreboard players set malfoy p2convOverride 14
-execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players set malfoy p3convOverride 14
-execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players set malfoy p4convOverride 14
 execute as @s[tag=completeQuest,scores={playerID=1}] run scoreboard players set percy p1convOverride 9
 execute as @s[tag=completeQuest,scores={playerID=2}] run scoreboard players set percy p2convOverride 9
 execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players set percy p3convOverride 9

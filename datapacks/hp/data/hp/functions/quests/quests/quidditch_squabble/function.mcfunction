@@ -84,10 +84,10 @@ execute as @s[scores={questState=3..15},tag=isTrackedQuest] positioned 459 13 -2
 ### Function ###
 # Title
 execute as @s[scores={questState=3},tag=!inConversation,tag=!inProperCutScene,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Идите в отмеченную область и сядьте на метлу","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Идите в отмеченную область и сядьте на метлу","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Идите в отмеченную область и сядьте на метлу","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Идите в отмеченную область и сядьте на метлу","color":"gold"}]
 
 
 
@@ -1350,10 +1350,10 @@ execute as @s[tag=newState] run tag @s remove newState
 ##############
 # Success
 execute as @s[scores={questState=60,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=60,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"You beat Маркус Флинт's Time!","color":"gold"}]
-execute as @s[scores={questState=60,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"You beat Маркус Флинт's Time!","color":"gold"}]
-execute as @s[scores={questState=60,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"You beat Маркус Флинт's Time!","color":"gold"}]
-execute as @s[scores={questState=60,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"You beat Маркус Флинт's Time!","color":"gold"}]
+execute as @s[scores={questState=60,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Рекорд Маркуса Флинта побит!","color":"gold"}]
+execute as @s[scores={questState=60,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Рекорд Маркуса Флинта побит!","color":"gold"}]
+execute as @s[scores={questState=60,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Рекорд Маркуса Флинта побит!","color":"gold"}]
+execute as @s[scores={questState=60,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Рекорд Маркуса Флинта побит!","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=60,playerID=1}] if score qudditchQuarrelFlyingTimer p1Quests matches 0.. run scoreboard players set quidditchSquabble sharedQuests 70
@@ -1426,6 +1426,9 @@ execute as @s[tag=completeQuest] run tag @s remove lockTrackedQuest
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set quidditchSquabble sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

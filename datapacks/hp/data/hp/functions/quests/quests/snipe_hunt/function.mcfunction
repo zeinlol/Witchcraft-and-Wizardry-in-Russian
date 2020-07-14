@@ -18,10 +18,10 @@ execute as @s[scores={questState=1..6,lastRegion=1},tag=isTrackedQuest] at @s as
 
 # Title
 execute as @s[scores={questState=1..6,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1..6,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Полумной Лавгуд для путешествия в Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Полумной Лавгуд для путешествия в Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Полумной Лавгуд для путешествия в Дом Лавгудов","color":"gold"}]
-execute as @s[scores={questState=1..6,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Полумной Лавгуд для путешествия в Дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Полумной Лавгуд, чтобы отправиться в дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Полумной Лавгуд, чтобы отправиться в дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Полумной Лавгуд, чтобы отправиться в дом Лавгудов","color":"gold"}]
+execute as @s[scores={questState=1..6,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Полумной Лавгуд, чтобы отправиться в дом Лавгудов","color":"gold"}]
 
 
 ### Tracked Quest ###
@@ -63,7 +63,7 @@ execute as @s[scores={questState=2,lastRegion=10,npcQuestIcon=1},tag=!inProperCu
 execute as @s[tag=inConversation,scores={questState=2,conv=10,convState=1}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Полумна сказала что вы ищите Нарглов?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Полумна сказала, вы ищите нарглов\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 15
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -147,10 +147,10 @@ execute as @s[scores={playerID=2}] unless score snipeHunt p2Quests = snipeHunt s
 execute as @s[scores={playerID=3}] unless score snipeHunt p3Quests = snipeHunt sharedQuests if score snipeHunt sharedQuests matches 6 run tag @s add newState
 execute as @s[scores={playerID=4}] unless score snipeHunt p4Quests = snipeHunt sharedQuests if score snipeHunt sharedQuests matches 6 run tag @s add newState
 execute as @s[tag=newState] run scoreboard players set @s questTextTimer 150
-execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Расскажите про ваши находки Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Расскажите про ваши находки Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Расскажите про ваши находки Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Расскажите про ваши находки Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Доложите о своих находках Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Доложите о своих находках Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Доложите о своих находках Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Доложите о своих находках Ксенофилиусу Лавгуду","bold":false,"color":"gold"}
 execute as @s[tag=newState] run scoreboard players set @s questState 6
 execute as @s[tag=newState] run scoreboard players set xenophilius p1convOverride 20
 execute as @s[tag=newState] run scoreboard players set xenophilius p2convOverride 20
@@ -208,6 +208,9 @@ execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players oper
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set snipeHunt sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

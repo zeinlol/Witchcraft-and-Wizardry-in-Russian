@@ -19,10 +19,10 @@ execute as @s[scores={questState=1..3,lastRegion=1},tag=isTrackedQuest] at @s as
 
 # Title
 execute as @s[scores={questState=1..3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1..3,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Драко Малфоем что бы отправиться в Поместье Малфоев","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Драко Малфоем что бы отправиться в Поместье Малфоев","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Драко Малфоем что бы отправиться в Поместье Малфоев","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Драко Малфоем что бы отправиться в Поместье Малфоев","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Драко Малфоем, чтобы отправиться в поместье Малфоев","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Драко Малфоем, чтобы отправиться в поместье Малфоев","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Драко Малфоем, чтобы отправиться в поместье Малфоев","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4929,dx=228,y=0,dy=255,z=6958,dz=214] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Драко Малфоем, чтобы отправиться в поместье Малфоев","color":"gold"}]
 
 
 
@@ -125,7 +125,7 @@ execute as @s[scores={questState=3,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=3,conv=17,convState=14}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я собрал все вещи\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Все предметы собраны\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 28
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -165,7 +165,7 @@ execute as @s[scores={questState=4,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=4,conv=75,convState=1}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ У меня есть вещи, которые могут вас заинтересовать\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Вас могут заинтересовать эти предметы\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 14
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -195,6 +195,10 @@ execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players oper
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players operation illegalItems p4Quests = illegalItems sharedQuests
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
+
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set illegalItems sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

@@ -6,6 +6,11 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 6003.42 50.00 999.68 -211.73 -4.24
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############
@@ -71,8 +76,10 @@ execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players set 
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players set dumbledore p4convOverride 1
 execute as @s[tag=completeQuest] run tag @s remove hasSpokenToDumbledoreAboutAzkaban
 execute as @s[tag=completeQuest] run tag @s remove pensiveLocked
+execute as @s[tag=completeQuest] run scoreboard players set @s musicPhase 0
 execute as @s[tag=completeQuest] run function hp:music/music/witchcraft_and_wizardry
 execute as @s[tag=completeQuest] run scoreboard players set @s queuedMusic 4
+execute as @s[tag=completeQuest] run tag @s add playingCompletionMusic
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
 

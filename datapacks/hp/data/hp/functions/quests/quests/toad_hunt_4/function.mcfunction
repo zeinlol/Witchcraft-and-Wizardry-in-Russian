@@ -1,5 +1,5 @@
 ##############################################
-# Охота за Жабой
+# Охота за жабой
 ##############################################
 scoreboard players set @s questID 39
 scoreboard players operation @s questState = toadHunt4 sharedQuests
@@ -106,6 +106,10 @@ execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players oper
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players operation toadHunt4 p4Quests = toadHunt4 sharedQuests
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
+
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set toadHunt4 sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # This is to make the correct trevor toad visible only when the quest is active
 execute as @s[scores={questState=1}] as @e[tag=trevor4,tag=!visible,limit=1] run data merge entity @s {Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:stone_sword",Count:1b,tag:{Unbreakable:1b,Damage:122}}]}

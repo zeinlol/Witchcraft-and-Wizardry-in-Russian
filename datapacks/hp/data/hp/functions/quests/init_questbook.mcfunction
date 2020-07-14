@@ -4,10 +4,10 @@
 tag @s add inQuestBook
 playsound minecraft:custom.ui.book.open master @a ~ ~ ~ 1 1
 
-execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Квесты","bold":true,"color":"gray"}
-execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Квесты","bold":true,"color":"gray"}
-execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Квесты","bold":true,"color":"gray"}
-execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Квесты","bold":true,"color":"gray"}
+execute as @s[scores={playerID=1}] run bossbar set minecraft:player1info name {"text":"Журнал заданий","bold":true,"color":"gray"}
+execute as @s[scores={playerID=2}] run bossbar set minecraft:player2info name {"text":"Журнал заданий","bold":true,"color":"gray"}
+execute as @s[scores={playerID=3}] run bossbar set minecraft:player3info name {"text":"Журнал заданий","bold":true,"color":"gray"}
+execute as @s[scores={playerID=4}] run bossbar set minecraft:player4info name {"text":"Журнал заданий","bold":true,"color":"gray"}
 tag @s add showBossbarHeader
 function hp:misc/update_bossbars
 
@@ -42,5 +42,5 @@ tag @e[type=armor_stand,tag=initQuestPlController,limit=1] remove initQuestPlCon
 tag @s add delayQuestBookOneTick
 tag @s remove enterQuestBook
 
-# Reminder tip for Охота за Жабой
+# Reminder tip for Toad Hunt
 tag @s remove remindQuestBook

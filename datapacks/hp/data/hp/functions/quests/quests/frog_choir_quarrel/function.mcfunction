@@ -23,10 +23,10 @@ execute as @s[scores={questState=1}] as @e[type=!item_frame,tag=questHover,limit
 
 # Title
 execute as @s[scores={questState=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Повесьте листовки на доски объявлений (0 / 4)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Повесьте листовки на доски объявлений (0 / 4)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Повесьте листовки на доски объявлений (0 / 4)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Повесьте листовки на доски объявлений (0 / 4)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (0 / 4)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (0 / 4)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (0 / 4)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (0 / 4)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=1},tag=hasPressedF] if entity @e[tag=questHover] run scoreboard players operation frogChoirBoard1 sharedQuests = @e[tag=questHover,limit=1,sort=nearest] toolID
@@ -67,10 +67,10 @@ execute as @s[scores={questState=2}] as @e[type=!item_frame,tag=questHover,limit
 
 # Title
 execute as @s[scores={questState=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Повесьте листовки на доски объявлений (1 / 4)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Повесьте листовки на доски объявлений (1 / 4)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Повесьте листовки на доски объявлений (1 / 4)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Повесьте листовки на доски объявлений (1 / 4)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (1 / 4)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (1 / 4)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (1 / 4)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (1 / 4)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=2},tag=hasPressedF] if entity @e[tag=questHover] run scoreboard players operation frogChoirBoard2 sharedQuests = @e[tag=questHover,limit=1,sort=nearest] toolID
@@ -111,10 +111,10 @@ execute as @s[scores={questState=3}] as @e[type=!item_frame,tag=questHover,limit
 
 # Title
 execute as @s[scores={questState=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Повесьте листовки на доски объявлений (2 / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Повесьте листовки на доски объявлений (2 / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Повесьте листовки на доски объявлений (2 / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Повесьте листовки на доски объявлений (2 / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (2 / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (2 / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (2 / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (2 / 4)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=3},tag=hasPressedF] if entity @e[tag=questHover] run scoreboard players operation frogChoirBoard3 sharedQuests = @e[tag=questHover,limit=1,sort=nearest] toolID
@@ -156,10 +156,10 @@ execute as @s[scores={questState=4}] as @e[tag=questHover,limit=1,sort=nearest] 
 execute as @s[scores={questState=4}] as @e[type=!item_frame,tag=questHover,limit=1] at @s run function hp:interaction/quest_hover_block_check_launch
 # Title
 execute as @s[scores={questState=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=4,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Повесьте листовки на доски объявлений (3 / 4)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Повесьте листовки на доски объявлений (3 / 4)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Повесьте листовки на доски объявлений (3 / 4)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Повесьте листовки на доски объявлений (3 / 4)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (3 / 4)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (3 / 4)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (3 / 4)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Развесьте листовки на 4 доски объявлений (3 / 4)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=4},tag=hasPressedF] if entity @e[tag=questHover] run scoreboard players operation frogChoirBoard4 sharedQuests = @e[tag=questHover,limit=1,sort=nearest] toolID
@@ -231,6 +231,9 @@ execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players oper
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set frogChoirQuarrel sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

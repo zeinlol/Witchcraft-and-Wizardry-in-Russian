@@ -6,6 +6,13 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add showingMana
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add unlockedSpells
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s unlockedSpell 2
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 642.29 96.00 224.73 -381.35 1.11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # Memory catch up (Skip walking to classroom, etc.)
 execute as @s[scores={questState=1},tag=inNormalState,tag=isTrackedQuest] run tag @s add newState
@@ -51,6 +58,7 @@ execute as @s[scores={questState=3},tag=isTrackedQuest] run scoreboard players s
 
 ### Trigger ###
 execute as @s[scores={questState=3},tag=hasSpokenToLupinAboutMagicka,tag=inNormalState] run tag @s add newState
+execute positioned 5541 49 -70 as @s[scores={questState=3},distance=..5,tag=inNormalState] run tag @s add newState
 execute as @s[tag=newState] run scoreboard players set @s questState 4
 execute as @s[tag=newState] run function hp:quests/set_quest
 execute as @s[tag=newState] run function hp:quests/ding_sound
@@ -107,10 +115,10 @@ execute positioned 5504.45 50.00 20.26 as @a[distance=..12,tag=!hasLearnedStupef
 
 # Title
 execute as @s[scores={questState=5},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless score @s suitableCount = @s tmp run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=5,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=5,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=5,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=5,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=5,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=5,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=5,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=5,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
 
 # Trigger
 # This weird double tag thing is because of a super strange bug I can't explain some people run into where all the commands below execute but they don't progress to the next
@@ -159,10 +167,10 @@ execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stup
 execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 100 at @s run playsound minecraft:custom.ui.event6 master @s ~ ~ ~ 10000 1 1
 execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 100 at @s run playsound minecraft:custom.ui.event6 master @s ~ ~ ~ 10000 1 1
 
-execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 1..100 run bossbar set minecraft:player1quest name ["",{"text":"Используйте Остолбеней для атаки!","color":"gold"}]	
-execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1..100 run bossbar set minecraft:player2quest name ["",{"text":"Используйте Остолбеней для атаки!","color":"gold"}]
-execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 1..100 run bossbar set minecraft:player3quest name ["",{"text":"Используйте Остолбеней для атаки!","color":"gold"}]
-execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 1..100 run bossbar set minecraft:player4quest name ["",{"text":"Используйте Остолбеней для атаки!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 1..100 run bossbar set minecraft:player1quest name ["",{"text":"Используйте «Остолбеней», чтобы наносить урон!","color":"gold"}]	
+execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1..100 run bossbar set minecraft:player2quest name ["",{"text":"Используйте «Остолбеней», чтобы наносить урон!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 1..100 run bossbar set minecraft:player3quest name ["",{"text":"Используйте «Остолбеней», чтобы наносить урон!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 1..100 run bossbar set minecraft:player4quest name ["",{"text":"Используйте «Остолбеней», чтобы наносить урон!","color":"gold"}]
 
 execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 1 at @s run playsound minecraft:custom.ui.event15 master @s ~ ~ ~ 10000 1 1
 execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1 at @s run playsound minecraft:custom.ui.event15 master @s ~ ~ ~ 10000 1 1
@@ -182,10 +190,10 @@ execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stup
 # Count the enemies
 scoreboard players set @s tmp 1
 execute as @e[tag=creature,scores={waveID=1,questID=15}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от Боггарта!","color":"gold"}]
-execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от Боггарта!","color":"gold"}]
-execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от Боггарта!","color":"gold"}]
-execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от Боггарта!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Уничтожьте боггарта!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Уничтожьте боггарта!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Уничтожьте боггарта!","color":"gold"}]
+execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Уничтожьте боггарта!","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=6,playerID=1,tmp=1}] if score stupefyTimer p1Quests matches 0 run tag @s add newState
@@ -257,10 +265,10 @@ execute as @s[scores={questState=7,playerID=4},tag=gameLeader] if score stupefyT
 # Count the enemies
 scoreboard players set @s tmp 6
 execute as @e[tag=creature,scores={waveID=2,questID=15}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=7,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 6)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=7,playerID=1,tmp=6}] if score stupefyTimer p1Quests matches 0 run tag @s add newState
@@ -331,10 +339,10 @@ execute as @s[scores={questState=8,playerID=4},tag=gameLeader] if score stupefyT
 # Count the enemies
 scoreboard players set @s tmp 8
 execute as @e[tag=creature,scores={waveID=3,questID=15}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=8,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=8,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=8,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=8,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=8,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=8,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=8,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=8,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=8,playerID=1,tmp=8}] if score stupefyTimer p1Quests matches 0 run tag @s add newState
@@ -405,10 +413,10 @@ execute as @s[scores={questState=9,playerID=4},tag=gameLeader] if score stupefyT
 # Count the enemies
 scoreboard players set @s tmp 10
 execute as @e[tag=creature,scores={waveID=4,questID=15}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=9,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=9,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=9,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=9,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=9,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=9,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=9,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=9,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Уничтожьте противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=9,playerID=1,tmp=10}] if score stupefyTimer p1Quests matches 0 run tag @s add newState
@@ -460,10 +468,10 @@ execute as @s[scores={questState=10,playerID=1},tag=isTrackedQuest] if score stu
 execute as @s[scores={questState=10,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1..100 run scoreboard players set @s questTextTimer 2
 execute as @s[scores={questState=10,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 1..100 run scoreboard players set @s questTextTimer 2
 execute as @s[scores={questState=10,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 1..100 run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=10,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 1..100 run bossbar set minecraft:player1quest name ["",{"text":"Враги повержены!","color":"gold"}]
-execute as @s[scores={questState=10,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1..100 run bossbar set minecraft:player2quest name ["",{"text":"Враги повержены!","color":"gold"}]
-execute as @s[scores={questState=10,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 1..100 run bossbar set minecraft:player3quest name ["",{"text":"Враги повержены!","color":"gold"}]
-execute as @s[scores={questState=10,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 1..100 run bossbar set minecraft:player4quest name ["",{"text":"Враги повержены!","color":"gold"}]
+execute as @s[scores={questState=10,playerID=1},tag=isTrackedQuest] if score stupefyTimer p1Quests matches 1..100 run bossbar set minecraft:player1quest name ["",{"text":"Противники повержены!","color":"gold"}]
+execute as @s[scores={questState=10,playerID=2},tag=isTrackedQuest] if score stupefyTimer p2Quests matches 1..100 run bossbar set minecraft:player2quest name ["",{"text":"Противники повержены!","color":"gold"}]
+execute as @s[scores={questState=10,playerID=3},tag=isTrackedQuest] if score stupefyTimer p3Quests matches 1..100 run bossbar set minecraft:player3quest name ["",{"text":"Противники повержены!","color":"gold"}]
+execute as @s[scores={questState=10,playerID=4},tag=isTrackedQuest] if score stupefyTimer p4Quests matches 1..100 run bossbar set minecraft:player4quest name ["",{"text":"Противники повержены!","color":"gold"}]
 
 
 ### Trigger ###

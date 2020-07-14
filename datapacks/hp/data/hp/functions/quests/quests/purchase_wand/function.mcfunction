@@ -6,6 +6,10 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestWand
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2831.49 46.00 995.71 439.78 1.62
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # This quest is sort of special since it's added with 2 other quests. That gets taken care of here: Not very elegant but it works.
 execute as @s[tag=!currentQuestIsPurchaseWand] run scoreboard players set @s questTimer 70
@@ -73,7 +77,7 @@ execute as @s[scores={questState=2,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=2,convState=1,conv=27}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я пришёл купить волшебную палочку\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я здесь, чтобы купить палочку\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 12
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -124,10 +128,10 @@ execute as @s[tag=hasPressedF] if entity @e[tag=questHover,tag=wandBox3] at @s r
 
 # Title
 execute as @s[scores={questState=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Найдите палочки, отложенные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Найдите палочки, отложенные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Найдите палочки, отложенные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Найдите палочки, отложенные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Найдите палочки, оставленные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Найдите палочки, оставленные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Найдите палочки, оставленные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Найдите палочки, оставленные Оливандером (","color":"gold"},{"score":{"name":"@s","objective":"questSubState"},"color":"gold"},{"text":" / 3)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=3,questSubState=3},tag=inNormalState] run tag @s add newState
@@ -157,7 +161,7 @@ execute as @s[scores={questState=4,npcQuestIcon=1},tag=!inProperCutScene,tag=!in
 execute as @s[tag=inConversation,scores={questState=4,convState=1,conv=27}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Вот нужные коробки с волшебными палочками\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Вот нужные коробки с палочками\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 14
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use

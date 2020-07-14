@@ -6,7 +6,17 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
-
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 3
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s quickSlot1ID 3
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s quickSlot2ID 0
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove preventPlacingMurtlapEssenceInQuickslot
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove potionStandLocked
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 756.39 36.00 189.89 -419.75 3.19
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 #############
 ## State 1 ###########################################################################################
@@ -51,10 +61,10 @@ execute as @a[scores={trackedQuestID=28,lastLocation=3,trackQuestState=2},tag=in
 
 # Title
 execute as @s[scores={questState=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless score @s suitableCount = @s tmp run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
 
 # Trigger
 # This weird double tag thing is because of a super strange bug I can't explain some people run into where all the commands below execute but they don't progress to the next
@@ -112,10 +122,10 @@ execute as @s[tag=isTrackedQuest,tag=collectedpotionSupplies5,scores={questState
 execute as @s[tag=isTrackedQuest,tag=collectedpotionSupplies6,scores={questState=2..9}] run scoreboard players add @s tmp 1
 
 execute as @s[scores={questState=3..8},tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3..8,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Соберите ингредиенты зелий из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
-execute as @s[scores={questState=3..8,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Соберите ингредиенты зелий из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
-execute as @s[scores={questState=3..8,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Соберите ингредиенты зелий из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
-execute as @s[scores={questState=3..8,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Соберите ингредиенты зелий из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
+execute as @s[scores={questState=3..8,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Соберите ингредиенты из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
+execute as @s[scores={questState=3..8,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Соберите ингредиенты из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
+execute as @s[scores={questState=3..8,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Соберите ингредиенты из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
+execute as @s[scores={questState=3..8,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Соберите ингредиенты из ящиков (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / 6)","color":"gold"}]
 
 
 #############
@@ -309,10 +319,10 @@ execute as @s[scores={questState=10},tag=isTrackedQuest] run scoreboard players 
 
 ### Function ###
 execute as @s[scores={questState=10},tag=isTrackedQuest,tag=inBrewer] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=10,playerID=1},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=2},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=3},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=10,playerID=4},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Сварите зелье 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=10,playerID=1},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Сварите настой растопырника в котле","color":"gold"}]
+execute as @s[scores={questState=10,playerID=2},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Сварите настой растопырника в котле","color":"gold"}]
+execute as @s[scores={questState=10,playerID=3},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Сварите настой растопырника в котле","color":"gold"}]
+execute as @s[scores={questState=10,playerID=4},tag=!inConversation,tag=inBrewer,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Сварите настой растопырника в котле","color":"gold"}]
 
 
 
@@ -375,10 +385,10 @@ execute as @s[scores={questState=12},tag=isTrackedQuest] run scoreboard players 
 ### Function ###
 # Title
 execute as @s[scores={questState=12},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=12,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Откройте ваш инвентарь","color":"gold"}]
-execute as @s[scores={questState=12,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Откройте ваш инвентарь","color":"gold"}]
-execute as @s[scores={questState=12,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Откройте ваш инвентарь","color":"gold"}]
-execute as @s[scores={questState=12,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Откройте ваш инвентарь","color":"gold"}]
+execute as @s[scores={questState=12,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Откройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=12,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Откройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=12,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Откройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=12,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Откройте инвентарь","color":"gold"}]
 
 # Trigger
 execute as @s[scores={questState=12},tag=isTrackedQuest,tag=inNormalState] run tag @s add newState
@@ -402,10 +412,10 @@ execute as @s[scores={questState=13},tag=isTrackedQuest] run scoreboard players 
 ### Function ###
 # Title
 execute as @s[scores={questState=13},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=13,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
-execute as @s[scores={questState=13,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Выберите 'Настойка растопырника'","color":"gold"}]
+execute as @s[scores={questState=13,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Выберите настой растопырника","color":"gold"}]
+execute as @s[scores={questState=13,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Выберите настой растопырника","color":"gold"}]
+execute as @s[scores={questState=13,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Выберите настой растопырника","color":"gold"}]
+execute as @s[scores={questState=13,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Выберите настой растопырника","color":"gold"}]
 
 # Trigger
 execute as @s[scores={questState=13,InvSelectItemID=3},tag=isTrackedQuest] run tag @s add newState
@@ -429,10 +439,10 @@ execute as @s[scores={questState=14},tag=isTrackedQuest] run scoreboard players 
 ### Function ###
 # Title
 execute as @s[scores={questState=14},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=14,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Добавьте зелье в один из своболных слотов","color":"gold"}]
-execute as @s[scores={questState=14,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Добавьте зелье в один из своболных слотов","color":"gold"}]
-execute as @s[scores={questState=14,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Добавьте зелье в один из своболных слотов","color":"gold"}]
-execute as @s[scores={questState=14,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Добавьте зелье в один из своболных слотов","color":"gold"}]
+execute as @s[scores={questState=14,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Добавьте зелье в одну из ячеек быстрого доступа","color":"gold"}]
+execute as @s[scores={questState=14,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Добавьте зелье в одну из ячеек быстрого доступа","color":"gold"}]
+execute as @s[scores={questState=14,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Добавьте зелье в одну из ячеек быстрого доступа","color":"gold"}]
+execute as @s[scores={questState=14,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Добавьте зелье в одну из ячеек быстрого доступа","color":"gold"}]
 
 # Trigger
 execute as @s[scores={questState=14,quickSlot1ID=3},tag=isTrackedQuest] run tag @s add newState
@@ -457,10 +467,10 @@ execute as @s[scores={questState=15},tag=isTrackedQuest] run scoreboard players 
 ### Function ###
 # Title
 execute as @s[scores={questState=15},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=15,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Выйдите из инвентаря","color":"gold"}]
-execute as @s[scores={questState=15,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Выйдите из инвентаря","color":"gold"}]
-execute as @s[scores={questState=15,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Выйдите из инвентаря","color":"gold"}]
-execute as @s[scores={questState=15,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Выйдите из инвентаря","color":"gold"}]
+execute as @s[scores={questState=15,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Закройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=15,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Закройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=15,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Закройте инвентарь","color":"gold"}]
+execute as @s[scores={questState=15,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Закройте инвентарь","color":"gold"}]
 
 # Trigger
 execute as @s[scores={questState=15},tag=isTrackedQuest,tag=inNormalState] run tag @s add newState

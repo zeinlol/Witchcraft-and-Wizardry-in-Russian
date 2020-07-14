@@ -47,10 +47,10 @@ execute as @s[scores={questState=2},tag=isTrackedQuest] at @s as @e[tag=questDir
 execute as @s[scores={questState=2},tag=isTrackedQuest] run scoreboard players set @s questRegion 4
 
 execute as @s[scores={questState=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=2,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Защититесь от 10 Полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Защититесь от 10 Полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Защититесь от 10 Полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=2,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Защититесь от 10 Полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Уничтожьте 10 полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Уничтожьте 10 полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Уничтожьте 10 полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=2,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Уничтожьте 10 полтергейстов (","color":"gold"},{"score":{"name":"shriekingShackPoltergeistKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 10)","color":"gold"}]
 
 
 ### Trigger ###
@@ -89,7 +89,7 @@ execute as @s[scores={questState=3},tag=isTrackedQuest] run scoreboard players s
 execute as @s[tag=inConversation,scores={conv=388,convState=0,questState=3}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я разберусь с этим шумом\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"±ˈˈ Я разобрался с пугающим шумом\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 4
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -118,6 +118,10 @@ execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players oper
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players operation theMostHauntedPlaceInBritain p4Quests = theMostHauntedPlaceInBritain sharedQuests
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
+
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set theMostHauntedPlaceInBritain sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 
 # reset quest tracking boolean

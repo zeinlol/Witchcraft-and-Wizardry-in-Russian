@@ -6,6 +6,11 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove earmuffsLocked
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 738.15 53.00 59.32 -62.83 1.10
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 #############
 ## State 1 ###########################################################################################
@@ -50,10 +55,10 @@ execute as @a[scores={trackedQuestID=27,trackQuestState=2},tag=inNormalState] ru
 
 # Title
 execute as @s[scores={questState=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless score @s suitableCount = @s tmp run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
-execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
+execute as @s[scores={questState=2,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Дождитесь, пока все будут готовы (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" / ","color":"gold"},{"score":{"name":"@s","objective":"suitableCount"},"color":"gold"},{"text":")","color":"gold"}]
 
 # Trigger
 # This weird double tag thing is because of a super strange bug I can't explain some people run into where all the commands below execute but they don't progress to the next
@@ -100,10 +105,10 @@ execute if entity @s[tag=hasPressedF,scores={questState=3}] as @e[tag=questHover
 
 # Title
 execute as @s[scores={questState=3},tag=isTrackedQuest,tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Соберите 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Соберите 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Соберите 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Соберите 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Соберите все 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Соберите все 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Соберите все 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest,tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Соберите все 4 звезды (","color":"gold"},{"score":{"name":"collectedHerbologyStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 4)","color":"gold"}]
 
 
 

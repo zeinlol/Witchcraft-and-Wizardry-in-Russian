@@ -6,6 +6,28 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestPurchaseBooks
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players remove @s money 95
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s[scores={money=..0}] money 0
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 39
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 40
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 41
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 42
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 43
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2839.99 55.00 866.10 846.97 2.54
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############
@@ -44,29 +66,29 @@ execute as @s[scores={questState=2..4,npcQuestIcon=1},tag=!inProperCutScene,tag=
 
 ### Guidance titles ###
 execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2..6,conv=29},tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите 'Фантастические звери: места обитания'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите 'Стандартная книга Заклинаний'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите 'Расширенный курс зельеварения'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите 'Тёмные силы: пособие по самозащите'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите 'Руководство по трансфигурации для начинающих'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите «Фантастических зверей и их места обитания»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите «Стандартную книгу заклинаний»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите «Расширенный курс зельеварения»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите «Тёмные силы: пособие по самозащите»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=1,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Купите «Руководство по трансфигурации для начинающих»","color":"gold"}]
 
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите 'Фантастические звери: места обитания'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите 'Стандартная книга Заклинаний'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите 'Расширенный курс зельеварения'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите 'Тёмные силы: пособие по самозащите'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите 'Руководство по трансфигурации для начинающих'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите «Фантастических зверей и их места обитания»'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите «Стандартную книгу заклинаний»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите «Расширенный курс зельеварения»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите «Тёмные силы: пособие по самозащите»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=2,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Купите «Руководство по трансфигурации для начинающих»","color":"gold"}]
 
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите 'Фантастические звери: места обитания'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите 'Стандартная книга Заклинаний'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите 'Расширенный курс зельеварения'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите 'Тёмные силы: пособие по самозащите'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите 'Руководство по трансфигурации для начинающих'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите «Фантастических зверей и их места обитания»'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите «Стандартную книгу заклинаний»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите «Расширенный курс зельеварения»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите «Тёмные силы: пособие по самозащите»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=3,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Купите «Руководство по трансфигурации для начинающих»","color":"gold"}]
 
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите 'Фантастические звери: места обитания'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите 'Стандартная книга Заклинаний'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите 'Расширенный курс зельеварения'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите 'Тёмные силы: пособие по самозащите'","color":"gold"}]
-execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите 'Руководство по трансфигурации для начинающих'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=2,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите «Фантастических зверей и их места обитания»'","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=3,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите «Стандартную книгу заклинаний»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=4,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите «Расширенный курс зельеварения»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=5,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите «Тёмные силы: пособие по самозащите»","color":"gold"}]
+execute as @s[tag=inConversation,tag=buy,tag=inInventory,scores={questState=6,playerID=4,conv=29},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Купите «Руководство по трансфигурации для начинающих»","color":"gold"}]
 
 
 # check what items the player has bought and what they are allowed to purchase

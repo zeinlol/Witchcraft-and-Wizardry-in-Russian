@@ -1,5 +1,5 @@
   ##############################################
-# Охота за Жабой
+# Охота за жабой
 ##############################################
 scoreboard players set @s questID 13
 scoreboard players operation @s questState = toadHunt1 sharedQuests
@@ -110,6 +110,10 @@ execute as @s[tag=completeQuest] run tag @s remove completeQuest
 execute as @s[scores={questState=1}] as @e[tag=trevor1,tag=!visible,limit=1] run data merge entity @s {Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:stone_sword",Count:1b,tag:{Unbreakable:1b,Damage:122}}]}
 execute as @s[scores={questState=1}] as @e[tag=trevor1,tag=!visible,limit=1] run tag @s add visible
 execute as @s[scores={questState=1},tag=gameLeader] as @e[tag=trevor1,tag=!visible,limit=1] run function hp:quests/quests/toad_hunt/croak
+
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set toadHunt1 sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

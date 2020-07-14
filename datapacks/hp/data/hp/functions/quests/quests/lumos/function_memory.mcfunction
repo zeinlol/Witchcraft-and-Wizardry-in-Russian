@@ -6,6 +6,14 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add unlockedSpells
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s unlockedSpell 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s selectedSpell 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s currentSpell 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 681.87 64.00 70.09 -70.52 -0.23
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # Memory catch up (Skip walking to classroom, etc.)
 execute as @s[scores={questState=1},tag=inNormalState,tag=isTrackedQuest] run tag @s add newState
@@ -57,10 +65,10 @@ execute if entity @s[tag=hasPressedF,scores={questState=3}] as @e[tag=questHover
 
 # Title
 execute as @s[scores={questState=3},tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Найдите все 5 звезд в темном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Найдите все 5 звезд в темном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Найдите все 5 звезд в темном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Найдите все 5 звезд в темном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Найдите все 5 звёзд в тёмном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Найдите все 5 звёзд в тёмном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Найдите все 5 звёзд в тёмном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Найдите все 5 звёзд в тёмном лабиринте (","color":"gold"},{"score":{"name":"collectedLumosStars","objective":"sharedQuests"},"color":"gold"},{"text":" / 5)","color":"gold"}]
 
 
 
@@ -86,10 +94,10 @@ execute as @s[scores={questState=4},tag=isTrackedQuest] run scoreboard players s
 
 
 execute as @s[scores={questState=4},tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=4,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Выйдите из темного лабиринта","color":"gold"}]
-execute as @s[scores={questState=4,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Выйдите из темного лабиринта","color":"gold"}]
-execute as @s[scores={questState=4,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Выйдите из темного лабиринта","color":"gold"}]
-execute as @s[scores={questState=4,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Выйдите из темного лабиринта","color":"gold"}]
+execute as @s[scores={questState=4,playerID=1},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player1quest name ["",{"text":"Выберитесь из тёмного лабиринта","color":"gold"}]
+execute as @s[scores={questState=4,playerID=2},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player2quest name ["",{"text":"Выберитесь из тёмного лабиринта","color":"gold"}]
+execute as @s[scores={questState=4,playerID=3},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player3quest name ["",{"text":"Выберитесь из тёмного лабиринта","color":"gold"}]
+execute as @s[scores={questState=4,playerID=4},tag=!inConversation,tag=isTrackedQuest,tag=!inProperCutScene,tag=!inResetPoint] run bossbar set minecraft:player4quest name ["",{"text":"Выберитесь из тёмного лабиринта","color":"gold"}]
 
 
 

@@ -10,11 +10,11 @@ execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlay
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
 
-# Wonky placement for adding the option to enter площадь Гриммо
+# Wonky placement for adding the option to enter grimmauld place
 execute if score unlockedGrimmauldPlace sharedQuests matches 1 positioned 2456 60 -218 as @s[distance=..6,tag=inConversation,scores={convState=8,conv=220}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"Хочу посетить пл. Гриммо 12\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"Хочу посетить площадь Гриммо, 12\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 25
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -28,11 +28,11 @@ execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlay
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
 
-# Дом Лавгудов
+# Lovegood Residence
 execute if score unlockedLovegoodResidence sharedQuests matches 1 as @s[tag=inConversation,scores={convState=1,conv=16}] unless score @s lastRegion matches 10 run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"√ Хочу отправиться в Дом Лавгудов\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"√ Хочу отправиться в дом Лавгудов\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 16
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -52,12 +52,12 @@ tag @s remove use
 
 
 #############
-# Охота за Жабой #
+# Toad Hunt #
 #############
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt1 sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[tag=nevillePlatform9_3_4,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=3016,y=58,z=-457,dx=15,dy=11,dz=11] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt1 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 23
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -66,7 +66,7 @@ tag @s remove use
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt2 sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[tag=owleryNeville,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=663,y=52,z=53,dx=11,dy=10,dz=14] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt2 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 7
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -74,7 +74,7 @@ tag @s remove use
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt3 sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[tag=quidditchNeville,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=433,y=11,z=-215,dx=11,dy=13,dz=14] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt3 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 9
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -82,7 +82,7 @@ tag @s remove use
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt4 sharedQuests matches 0 as @s[scores={npcQuestIcon=10},tag=hasLearnedVeraVerto] at @e[tag=greenhousesNeville,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=825,y=51,z=148,dx=10,dy=11,dz=11,tag=hasLearnedVeraVerto] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt4 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 11
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -90,7 +90,7 @@ tag @s remove use
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt5 sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[tag=clockTowerNeville,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=586,y=62,z=270,dx=11,dy=9,dz=10] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt5 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 13
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -98,7 +98,7 @@ tag @s remove use
 execute if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt6 sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[tag=postOfficeNeville,scores={conv=15},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if entity @s[x=5390,y=105,z=2468,dx=11,dy=11,dz=14] if score toadHuntIsGoing sharedQuests matches 0 if score toadHunt6 sharedQuests matches 0 as @s[tag=inConversation,scores={convState=6,conv=15}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 15
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -139,13 +139,13 @@ execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlay
 tag @s remove use
 
 ######################
-# Тайная Комната #
+# Chamber of Secrets #
 ######################
 execute if score chamberOfSecrets sharedQuests matches 0 as @s[scores={npcQuestIcon=10},tag=hasBeenToAzkaban] at @e[scores={conv=220},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if score chamberOfSecrets sharedQuests matches 0 as @s[tag=inConversation,tag=hasBeenToAzkaban,scores={convState=8,conv=220}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Как я моуг помочть Ордену?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Как я могу помочь Ордену?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 12
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -161,13 +161,13 @@ execute if score goldenSkull sharedQuests matches 0 as @s[x=702,y=53,z=32,dx=11,
 execute if score undergroundLibraryResetFilch sharedQuests matches 1 as @e[tag=filchFpEngine,limit=1] if entity @s[tag=cutsceneStop] run function hp:quests/quests/underground_library/reset_filch
 
 ######################
-# Зеркало Еиналеж   #
+# Mirror of Erised   #
 ######################
 execute if score mirrorOfErised sharedQuests matches 0 unless score undergroundLibrary sharedQuests matches 1.. as @s[scores={npcQuestIcon=10}] at @e[scores={conv=5},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 execute if score mirrorOfErised sharedQuests matches 0 unless score undergroundLibrary sharedQuests matches 1.. as @s[tag=inConversation,scores={convState=1,conv=5}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Я могу вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=hasLearnedVeraVerto] run scoreboard players set @s convState 14
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=!hasLearnedVeraVerto] run scoreboard players set @s convState 24
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
@@ -180,7 +180,7 @@ execute unless entity @s[x=758,y=121,z=131,dx=37,dy=95,dz=37] unless score @s la
 execute unless entity @s[x=758,y=121,z=131,dx=37,dy=95,dz=37] unless score @s lastRegion matches 4 if score theRoomOfRequirement sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=16}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе с чем-нибудь помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 7
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -198,7 +198,7 @@ execute if score burrowInfestation sharedQuests matches 0 as @s[scores={npcQuest
 execute if score burrowInfestation sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=13}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе нужна помощь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=hasLearnedStupefy] run scoreboard players set @s convState 15
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=!hasLearnedStupefy] run scoreboard players set @s convState 19
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
@@ -211,7 +211,7 @@ execute if score oneMansTrash sharedQuests matches 0 as @s[scores={npcQuestIcon=
 execute if score oneMansTrash sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=39}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам с чем-нибудь помочь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 2
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -223,7 +223,7 @@ execute as @s[tag=hasCompletedSortingCeremony,scores={lastRegion=1}] if score ki
 execute as @s[tag=hasCompletedSortingCeremony,scores={lastRegion=1}] if score kitchenRaid sharedQuests matches 0 as @s[tag=inConversation,scores={convState=11,conv=18}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Могу я помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 7
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -280,7 +280,7 @@ execute if score anticAdvertisement sharedQuests matches 0 as @s[scores={npcQues
 execute if score anticAdvertisement sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=113}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 4
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -292,7 +292,7 @@ execute if score curableCreatureConsultation sharedQuests matches 0 as @s[scores
 execute if score curableCreatureConsultation sharedQuests matches 0 as @s[tag=inConversation,scores={convState=0,conv=116}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 15
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -304,13 +304,13 @@ execute if score handOfGlory sharedQuests matches 0 as @s[scores={npcQuestIcon=1
 execute if score handOfGlory sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=75,hotbar_stage=5..}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 9
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
 
 ############################
-# Delinquent 'Ежедневный Пророк' #
+# Delinquent Daily Prophet #
 ############################
 execute if score delinquentDailyProphet sharedQuests matches 0 as @s[scores={npcQuestIcon=10}] at @e[scores={conv=427},tag=npc,tag=!inConversationNPC] run particle minecraft:heart ~ ~2 ~ 0 0 0 100 1 force @s
 
@@ -331,7 +331,7 @@ execute as @s[tag=hasCompletedSortingCeremony,scores={lastRegion=1}] if score de
 execute as @s[tag=hasCompletedSortingCeremony,scores={lastRegion=1}] if score demiguiseDodge sharedQuests matches 0 as @s[tag=inConversation,scores={convState=1,conv=0}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 25
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -367,7 +367,7 @@ execute if score theMostHauntedPlaceInBritain sharedQuests matches 0 as @s[score
 execute if score theMostHauntedPlaceInBritain sharedQuests matches 0 as @s[tag=inConversation,scores={convState=0,conv=388}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=hasLearnedStupefy] run scoreboard players set @s convState 1
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer,tag=!hasLearnedStupefy] run scoreboard players set @s convState 6
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
@@ -380,7 +380,7 @@ execute if score dungeonDelving sharedQuests matches 0 as @s[scores={npcQuestIco
 execute if score dungeonDelving sharedQuests matches 0 as @s[tag=inConversation,scores={convState=0,conv=121}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 2
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -403,7 +403,7 @@ execute if entity @s[x=664,y=54,z=211,dx=34,dy=35,dz=30,tag=hasCompletedSortingC
 execute if entity @s[x=664,y=54,z=211,dx=34,dy=35,dz=30,tag=hasCompletedSortingCeremony] if score illegalItems sharedQuests matches 0 as @s[tag=inConversation,scores={convState=14,conv=17}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужна помощь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе помочь с чем-нибудь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 22
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
@@ -421,7 +421,7 @@ execute as @s[tag=hasLearnedAlohomora,scores={playerID=3}] if score aBitOfLightR
 execute as @s[tag=hasLearnedAlohomora,scores={playerID=4}] if score aBitOfLightReading p4Quests matches 0 as @s[tag=inConversation,scores={convState=1,conv=14}] run tag @s add use
 scoreboard players remove @s[tag=use] questConvOffset 1
 
-execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Вам нужно ещё с чем-то помощь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset run data merge entity @s {CustomName:"{\"text\":\"ⁿ Тебе ещё с чем-нибудь помощь?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s convState 21
 execute as @s[tag=qtr] as @e[tag=convOption] if score @s con = @p[tag=activePlayer] questConvOffset if score @s con = @p[tag=activePlayer] selectCurrent as @p[tag=activePlayer] run scoreboard players set @s questConvOffset 1
 tag @s remove use
