@@ -41,7 +41,7 @@ Trailer:
   
   >6. Вставьте ранее скопированную папку, согласившись с заменой всех файлов. Ничего не удаляйте из папки вручную, может привести к непредвиденым проблемам с игрой;
   
-  >6. Скачайте ресурс пак по [СЫЛКЕ](https://drive.google.com/drive/folders/1CkYaAEprlcU8bR46wLQpeCwJwq4ybCsn?usp=sharing);
+  >6. Скачайте ресурс пак по [СЫЛКЕ](https://drive.google.com/drive/folders/1CkYaAEprlcU8bR46wLQpeCwJwq4ybCsn?usp=sharing) ;
   
   >7. Замените архив resources.zip в папке с вашим миров на скаченный.
   
@@ -58,7 +58,7 @@ Trailer:
   
   Отдельно хочу поблагодарить администраторов сайта https://ru-minecraft.ru/ за популяризацию [оригинальной игры](https://ru-minecraft.ru/mody-minecraft/62629-witchcraft-and-wizardry.html) и [моего русификатора](https://ru-minecraft.ru/fayly-dlya-minecraft/62515-witchcraft-and-wizardry-perevod-na-russkiy.html) на их сайте.
   
-  На данный момен файлы русификитора расположены на этой странице и на гугл диске: [Готовая сборка]https://drive.google.com/drive/folders/1N-pXBGT4-jjfFW2-wPbayiv6zhDFvMep?usp=sharing, [Ресурспак]https://drive.google.com/drive/folders/1CkYaAEprlcU8bR46wLQpeCwJwq4ybCsn?usp=sharing, [Фалы с этой страницы](https://drive.google.com/drive/folders/1KZaP_0HES0AIWg5HRYeD1tuYbo8-ItXR). Рекомендую скачивать по ссылкам, указанным выше, так как именно в них находится самая актуальная и последняя версия, со всеми правками и изменениями. Если увидите этот проект на других ресурсах, имейте в виду, что автор к этим ресурсам не имеет никакого отношения.  
+  На данный момен файлы русификитора расположены на этой странице и на гугл диске: [Готовая сборка](https://drive.google.com/drive/folders/1N-pXBGT4-jjfFW2-wPbayiv6zhDFvMep?usp=sharing), [Ресурспак](https://drive.google.com/drive/folders/1CkYaAEprlcU8bR46wLQpeCwJwq4ybCsn?usp=sharing), [Фалы с этой страницы](https://drive.google.com/drive/folders/1KZaP_0HES0AIWg5HRYeD1tuYbo8-ItXR). Рекомендую скачивать по ссылкам, указанным выше, так как именно в них находится самая актуальная и последняя версия, со всеми правками и изменениями. Если увидите этот проект на других ресурсах, имейте в виду, что автор к этим ресурсам не имеет никакого отношения.  
 
 Если вы обнаружили ошибку/описку/нелогичный момент в переводе, пожалуйста сообщите мне об этом тут, или в дискорде: -Z3IN-#4648  
 
