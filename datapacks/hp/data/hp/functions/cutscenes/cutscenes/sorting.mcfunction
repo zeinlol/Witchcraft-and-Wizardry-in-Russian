@@ -642,7 +642,7 @@ execute as @s[scores={cutSceneTimer=-182},tag=cutsceneLeader] as @e[tag=sortingC
 
 # ¤McGonagall:¤ We're ready for you now. Follow me.
 execute as @s[scores={cutSceneTimer=-100},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-100..0}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Идите отсюда. Церемония отбора сейчас начнется."}]
+execute as @s[scores={cutSceneTimer=-100..0}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Следуйте за мной. Церемония отбора сейчас начнется."}]
 execute as @s[scores={cutSceneTimer=-100},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-93},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-89},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -1545,7 +1545,7 @@ tp @s[scores={cutSceneTimer=731}] 4941.61 32.73009 1050.55 -57.42 12.68
 
 # ¤McGonagall:¤ Can you wait along here please?
 execute as @s[scores={cutSceneTimer=660},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=660..720}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Выстройтесь в шеренгу и идите за мной!"}]
+execute as @s[scores={cutSceneTimer=660..720}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Выстройтесь в шеренгу и ожидайте пока вас вызовут!"}]
 execute as @s[scores={cutSceneTimer=660},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=667},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=671},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
