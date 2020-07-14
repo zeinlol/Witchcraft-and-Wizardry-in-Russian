@@ -22,7 +22,7 @@ Trailer:
 
   Вы можете скачать готовую сборку с гугл диска: [СЫЛКА](https://drive.google.com/drive/folders/1N-pXBGT4-jjfFW2-wPbayiv6zhDFvMep?usp=sharing)  
   
-  Установка: распакованный мир вставить в папку со всеми сохранёнными мирами. По умолчанию это C:\Users\ИМЯ ПОЛЬЗОВАТЕЛЯ\AppData\Roaming\ .minecraft\saves.
+  >Установка: распакованный мир вставить в папку со всеми сохранёнными мирами. По умолчанию это C:\Users\ИМЯ ПОЛЬЗОВАТЕЛЯ\AppData\Roaming\ .minecraft\saves.
   
   Для игры по сети с друзьями всем, кто присоединился к вашему миру нужно установить ресурс пак по [СЫЛКЕ](https://drive.google.com/drive/folders/1CkYaAEprlcU8bR46wLQpeCwJwq4ybCsn?usp=sharing)  
   
