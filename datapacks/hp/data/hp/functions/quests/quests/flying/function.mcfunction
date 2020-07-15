@@ -22,10 +22,10 @@ execute as @s[scores={questState=1..12},tag=isTrackedQuest] positioned 668.57 53
 ### Function ###
 # Title
 execute as @s[scores={questState=1},tag=!inConversation,tag=!inProperCutScene,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=1,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=1,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
-execute as @s[scores={questState=1,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Идите в отмеченную область и запрыгните на метлу","color":"gold"}]
+execute as @s[scores={questState=1,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Идите в отмеченную область и оседлайте метлу","color":"gold"}]
+execute as @s[scores={questState=1,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Идите в отмеченную область и оседлайте метлу","color":"gold"}]
+execute as @s[scores={questState=1,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Идите в отмеченную область и оседлайте метлу","color":"gold"}]
+execute as @s[scores={questState=1,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Идите в отмеченную область и оседлайте метлу","color":"gold"}]
 
 
 
@@ -973,10 +973,10 @@ execute as @s[tag=newState] run tag @s remove newState
 ##############
 # Cancelled
 execute as @s[scores={questState=101,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=101,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Круг отменен.","color":"red"}]
-execute as @s[scores={questState=101,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Круг отменен.","color":"red"}]
-execute as @s[scores={questState=101,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Круг отменен.","color":"red"}]
-execute as @s[scores={questState=101,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Круг отменен.","color":"red"}]
+execute as @s[scores={questState=101,playerID=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Полёт отменен.","color":"red"}]
+execute as @s[scores={questState=101,playerID=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Полёт отменен.","color":"red"}]
+execute as @s[scores={questState=101,playerID=2},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Полёт отменен.","color":"red"}]
+execute as @s[scores={questState=101,playerID=4},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Полёт отменен.","color":"red"}]
 
 ### Trigger ###
 execute as @s[scores={questState=101,playerID=1}] if score flyingTimer p1Quests matches 0.. run tag @s add completeQuest

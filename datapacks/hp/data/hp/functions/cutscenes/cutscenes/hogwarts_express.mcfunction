@@ -7,7 +7,7 @@ execute as @s[scores={cutSceneTimer=22}] run tag @s add cutsceneZoom
 execute as @s[scores={cutSceneTimer=22}] run function hp:cutscenes/fade_out
 
 # Fix cutscene start location
-# If the player is in the last cart move them because the train at Станция 'Хогсмид' is one cart shorter shhh no one will notice
+# If the player is in the last cart move them because the train at Станция «Хогсмид» is one cart shorter shhh no one will notice
 execute as @s[scores={cutSceneTimer=1},x=2908,dx=20,y=60,dy=3,z=-444,dz=3] run scoreboard players add @s posX 2600000
 execute as @s[scores={cutSceneTimer=1}] run scoreboard players remove @s posX 218600000
 execute as @s[scores={cutSceneTimer=1}] run scoreboard players remove @s posY 1070000

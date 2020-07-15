@@ -349,7 +349,7 @@ execute as @s[scores={cutSceneTimer=601..690}] run title @s actionbar ["",{"text
 
 # ¤Flitwick:¤ and click € again to release it.
 execute as @s[scores={cutSceneTimer=691},tag=cutsceneLeader] as @e[tag=flitwickClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 100000 1 0
-execute as @s[scores={cutSceneTimer=691..760}] run title @s actionbar ["",{"text":""},{"text":"Флитвик;","color":"dark_gray"},{"text":" и нажмите ещё раз € что бы опустить."}]
+execute as @s[scores={cutSceneTimer=691..760}] run title @s actionbar ["",{"text":""},{"text":"Флитвик;","color":"dark_gray"},{"text":" и нажмите ещё раз € чтобы опустить."}]
 
 # ¤Flitwick:¤ When levitating an object simply look where you want it to go.
 # ¤Flitwick:¤ При левитации объекта смотрите, куда он должен двигаться.

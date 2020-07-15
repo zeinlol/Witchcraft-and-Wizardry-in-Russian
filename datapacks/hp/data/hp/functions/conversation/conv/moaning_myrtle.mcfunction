@@ -134,7 +134,7 @@ tag @s[scores={convState=3},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Один из говоривших был мальчикю Я, естественно, отперла дверь и сказала ему, что бы он шел в свой туалет. Тут-то это и произошло... Я умерла. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Один из говоривших был мальчикю Я, естественно, отперла дверь и сказала ему, чтобы он шел в свой туалет. Тут-то это и произошло... Я умерла. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

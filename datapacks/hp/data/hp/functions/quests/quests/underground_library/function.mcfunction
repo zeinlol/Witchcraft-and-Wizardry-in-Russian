@@ -188,10 +188,10 @@ execute as @s[tag=newState] run scoreboard players set @s questState 4
 execute as @s[tag=newState] run function hp:quests/set_quest
 execute as @s[tag=newState] run function hp:quests/ding_sound
 execute as @s[tag=newState] run scoreboard players set @s questTextTimer 150
-execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
-execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Ключ от Запретной секции должен быть в офисе смотрителя","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=1}] run bossbar set minecraft:player1quest name {"text":"Ключ от Запретной секции должен быть в кабинете смотрителя","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=2}] run bossbar set minecraft:player2quest name {"text":"Ключ от Запретной секции должен быть в кабинете смотрителя","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=3}] run bossbar set minecraft:player3quest name {"text":"Ключ от Запретной секции должен быть в кабинете смотрителя","bold":false,"color":"gold"}
+execute as @s[tag=newState,scores={playerID=4}] run bossbar set minecraft:player4quest name {"text":"Ключ от Запретной секции должен быть в кабинете смотрителя","bold":false,"color":"gold"}
 execute as @s[tag=newState,scores={playerID=1}] run scoreboard players set officeFilch p1convOverride 3
 execute as @s[tag=newState,scores={playerID=2}] run scoreboard players set officeFilch p2convOverride 3
 execute as @s[tag=newState,scores={playerID=3}] run scoreboard players set officeFilch p3convOverride 3

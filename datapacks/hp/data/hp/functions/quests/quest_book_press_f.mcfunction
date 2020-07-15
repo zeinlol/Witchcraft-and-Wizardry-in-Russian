@@ -5,7 +5,7 @@ execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=!lockTrackedQ
 execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=!lockTrackedQuest,tag=!noQuests] if entity @e[type=armor_stand,tag=inventoryOption,tag=selected,tag=!isTrackedQuest,limit=1] at @s run playsound minecraft:custom.ui.learn.spell_temporarily_unlocked master @s ~ ~ ~ 10000 1.9 1
 execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=lockTrackedQuest,tag=!noQuests] run title @s times 5 30 5
 execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=lockTrackedQuest,tag=!noQuests] run title @s title {"text":" "}
-execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=lockTrackedQuest,tag=!noQuests] run title @s subtitle {"text":"Вы не можете изменний отслеживаемый квест прямо сейчас","bold":false,"color":"red"}
+execute as @s[scores={questMenu=1},tag=!preventDoubleExecution,tag=lockTrackedQuest,tag=!noQuests] run title @s subtitle {"text":"Вы не можете сейчас изменить отслеживаемый квест","bold":false,"color":"red"}
 
 
 # Select Menus

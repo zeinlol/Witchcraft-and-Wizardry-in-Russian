@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Пожиратели Смерти атакуют Министерство? Будь они прокляты! Хорошо, что ты пришел рассказать об этом Ордену. Пожиратели Смерти снова начинают действовать после стольких лет...\\n\\n \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Пожиратели Смерти атакуют Министерство? Будь они прокляты! Хорошо, что ты пришёл рассказать об этом Ордену. Пожиратели Смерти снова начинают действовать после стольких лет...\\n\\n \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

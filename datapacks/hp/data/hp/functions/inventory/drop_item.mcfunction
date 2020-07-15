@@ -6,7 +6,7 @@ execute as @s[tag=!editAddItems] unless entity @e[tag=isDroppedItem,distance=..1
 execute as @s[tag=editAddItems] as @e[tag=editAddItemsTarget,limit=1] run tag @s add itemBeingDropped
 
 execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s times 20 100 20
-execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s subtitle {"text":"Вам нужно находиться рядом с мешком, что бы посмотреть что в нём.","color":"red"}
+execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s subtitle {"text":"Вам нужно находиться рядом с контейнером, чтобы посмотреть что в нём.","color":"red"}
 execute as @s[tag=editAddItems] unless entity @e[tag=editAddItemsTarget,limit=1] run title @s title {"text":""}
 
 

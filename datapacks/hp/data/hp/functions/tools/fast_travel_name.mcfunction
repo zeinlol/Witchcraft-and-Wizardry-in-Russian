@@ -2,7 +2,7 @@ execute if entity @s[scores={fastTravelID=1}] run title @s subtitle {"text":"Б�
 execute if entity @s[scores={fastTravelID=2}] run title @s subtitle {"text":"Библиотека","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=3}] run title @s subtitle {"text":"Лестничная Башня","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=4}] run title @s subtitle {"text":"Класс Зельеварения","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=5}] run title @s subtitle {"text":"Класс Защиты от темных искуств","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=5}] run title @s subtitle {"text":"Класс Защиты от темных искусств","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=6}] run title @s subtitle {"text":"Класс Заклинаний","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=7}] run title @s subtitle {"text":"Класс Трансфигурации","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=8}] run title @s subtitle {"text":"Гостиная Гриффиндора","bold":true,"color":"gold"}
@@ -16,11 +16,11 @@ execute if entity @s[scores={fastTravelID=15}] run title @s subtitle {"text":"Д
 execute if entity @s[scores={fastTravelID=16}] run title @s subtitle {"text":"Теплицы","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=17}] run title @s subtitle {"text":"Совятня","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=18}] run title @s subtitle {"text":"Причал","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=19}] run title @s subtitle {"text":"Хижины Хагрида","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=19}] run title @s subtitle {"text":"Хижина Хагрида","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=20}] run title @s subtitle {"text":"Въездные Ворота","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=21}] run title @s subtitle {"text":"Запретный Лес","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=22}] run title @s subtitle {"text":"Логово Пауков","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=23}] run title @s subtitle {"text":"Стадион для игры в квиддич","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=23}] run title @s subtitle {"text":"Стадион для Квиддича","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=24}] run title @s subtitle {"text":"Чердак","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=25}] run title @s subtitle {"text":"Туалет Плаксы Миртл","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=26}] run title @s subtitle {"text":"Гремучая Ива","bold":true,"color":"gold"}
@@ -68,7 +68,7 @@ execute if entity @s[scores={fastTravelID=63}] run title @s subtitle {"text":"В
 execute if entity @s[scores={fastTravelID=64}] run title @s subtitle {"text":"Сладкое Королевство","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=65}] run title @s subtitle {"text":"Паб Три Метлы","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=66}] run title @s subtitle {"text":"Кабанья Голова","bold":true,"color":"gold"}
-execute if entity @s[scores={fastTravelID=67}] run title @s subtitle {"text":"Визжашая Хижина","bold":true,"color":"gold"}
+execute if entity @s[scores={fastTravelID=67}] run title @s subtitle {"text":"Визжащая Хижина","bold":true,"color":"gold"}
 
 execute if entity @s[scores={fastTravelID=68}] run title @s subtitle {"text":"Зеркало Еиналеж","bold":true,"color":"gold"}
 execute if entity @s[scores={fastTravelID=69}] run title @s subtitle {"text":"Тайная Комната","bold":true,"color":"gold"}

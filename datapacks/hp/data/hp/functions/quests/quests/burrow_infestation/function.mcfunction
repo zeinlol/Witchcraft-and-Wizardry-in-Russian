@@ -18,10 +18,10 @@ execute as @s[scores={questState=1..3,lastRegion=1},tag=isTrackedQuest] at @s as
 
 # Title
 execute as @s[scores={questState=1..3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1..3,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Роном Уизли что бы отправиться в Нору","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Роном Уизли что бы отправиться в Нору","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Роном Уизли что бы отправиться в Нору","color":"gold"}]
-execute as @s[scores={questState=1..3,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Роном Уизли что бы отправиться в Нору","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=1,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player1quest name ["",{"text":"Поговорите с Роном Уизли, чтобы отправиться в Нору","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=2,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player2quest name ["",{"text":"Поговорите с Роном Уизли, чтобы отправиться в Нору","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=3,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player3quest name ["",{"text":"Поговорите с Роном Уизли, чтобы отправиться в Нору","color":"gold"}]
+execute as @s[scores={questState=1..3,playerID=4,lastRegion=1},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] unless entity @s[x=4992,dx=819,y=0,dy=255,z=3968,dz=819] run bossbar set minecraft:player4quest name ["",{"text":"Поговорите с Роном Уизли, чтобы отправиться в Нору","color":"gold"}]
 
 
 

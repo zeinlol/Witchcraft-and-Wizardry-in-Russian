@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Все в Слизение одержими чистотой крови. А я даже не знаю какая у меня кровь. Мой отец очень давно бросил маму. И у меня нет никаких доказательств что он был волшебником. \\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Все в Слизериние одержими чистотой крови. А я даже не знаю какая у меня кровь. Мой отец очень давно бросил маму. И у меня нет никаких доказательств что он был волшебником. \\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

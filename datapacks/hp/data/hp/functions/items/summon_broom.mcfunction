@@ -44,9 +44,9 @@ execute as @s[tag=notAllowedToFly,scores={lastRegion=5..6}] run title @s subtitl
 execute as @s[tag=notAllowedToFly,scores={lastRegion=8..9}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
 execute as @s[tag=notAllowedToFly,scores={lastRegion=11}] run title @s subtitle {"text":"Вы не можете летать в этой области","bold":false,"color":"red"}
 
-execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=1}] run title @s subtitle {"text":"You can't fly inside","bold":false,"color":"red"}
-execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=3}] run title @s subtitle {"text":"You can't fly inside","bold":false,"color":"red"}
-execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=4}] run title @s subtitle {"text":"You can't fly inside","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=1}] run title @s subtitle {"text":"Нельзя летать внутри помещений","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=3}] run title @s subtitle {"text":"Нельзя летать внутри помещений","bold":false,"color":"red"}
+execute as @s[tag=notAllowedToFly,tag=!playerIsOutside,scores={lastRegion=4}] run title @s subtitle {"text":"Нельзя летать внутри помещений","bold":false,"color":"red"}
 
 scoreboard players set @s placeBroomTimer 15
 

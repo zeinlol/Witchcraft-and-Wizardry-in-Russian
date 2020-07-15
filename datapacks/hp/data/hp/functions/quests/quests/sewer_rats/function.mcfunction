@@ -135,10 +135,10 @@ execute as @s[scores={questState=3,playerID=4},tag=gameLeader] if score elikElix
 # Count the enemies
 scoreboard players set @s tmp 9
 execute as @e[tag=creature,scores={waveID=1,questID=32}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=3,playerID=1,tmp=9},tag=inNormalState] if score elikElixersRatsTimer p1Quests matches 0 run scoreboard players set elikElixersRats sharedQuests 4
@@ -217,10 +217,10 @@ execute as @s[scores={questState=4,playerID=4},tag=gameLeader] if score elikElix
 # Count the enemies
 scoreboard players set @s tmp 9
 execute as @e[tag=creature,scores={waveID=2,questID=32}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=4,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
 
 
 ### Trigger ###
@@ -300,10 +300,10 @@ execute as @s[scores={questState=5,playerID=4},tag=gameLeader] if score elikElix
 # Count the enemies
 scoreboard players set @s tmp 9
 execute as @e[tag=creature,scores={waveID=3,questID=32}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=5,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=1},tag=isTrackedQuest] if score elikElixersRatsTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=2},tag=isTrackedQuest] if score elikElixersRatsTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=3},tag=isTrackedQuest] if score elikElixersRatsTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=4},tag=isTrackedQuest] if score elikElixersRatsTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 9)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=5,playerID=1,tmp=9},tag=inNormalState] if score elikElixersRatsTimer p1Quests matches 0 run scoreboard players set elikElixersRats sharedQuests 6

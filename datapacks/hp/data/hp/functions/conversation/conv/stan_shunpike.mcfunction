@@ -387,7 +387,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Просто дождитесь пока все залезут внутрь! \\n\\n\\n\\n\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Просто Дождитесь, пока все залезут внутрь! \\n\\n\\n\\n\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -449,7 +449,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Зачем ты со мной разговариваешь? Тебе надо сесть в Хогвартс-экспресс что бы попасть в школу! Отходит с платформы номер девять и три четверти со станции Кингс-Кросс, она рядом. Можешь конечно погулять по Лондону, пока ты тут. Решай сам. \\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Зачем ты со мной разговариваешь? Тебе надо сесть в Хогвартс-экспресс, чтобы попасть в школу! Отходит с платформы номер девять и три четверти со станции Кингс-Кросс, она рядом. Можешь конечно погулять по Лондону, пока ты тут. Решай сам. \\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

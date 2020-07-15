@@ -104,10 +104,10 @@ execute as @s[scores={questState=3,playerID=4},tag=gameLeader] if score brackium
 # Count the enemies
 scoreboard players set @s tmp 8
 execute as @e[tag=creature,scores={waveID=1,questID=16}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
-execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
+execute as @s[scores={questState=3,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 8)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=3,playerID=1,tmp=8}] if score brackiumTimer p1Quests matches 0 run tag @s add newState
@@ -190,10 +190,10 @@ execute as @s[scores={questState=4,playerID=4},tag=gameLeader] if score brackium
 # Count the enemies
 scoreboard players set @s tmp 15
 execute as @e[tag=creature,scores={waveID=2,questID=16}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=4,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=4,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=4,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=4,playerID=1,tmp=15}] if score brackiumTimer p1Quests matches 0 run tag @s add newState
@@ -276,10 +276,10 @@ execute as @s[scores={questState=5,playerID=4},tag=gameLeader] if score brackium
 # Count the enemies
 scoreboard players set @s tmp 6
 execute as @e[tag=creature,scores={waveID=3,questID=16}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=5,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
-execute as @s[scores={questState=5,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
+execute as @s[scores={questState=5,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 5)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=5,playerID=1,tmp=6}] if score brackiumTimer p1Quests matches 0 run tag @s add newState
@@ -362,10 +362,10 @@ execute as @s[scores={questState=6,playerID=4},tag=gameLeader] if score brackium
 # Count the enemies
 scoreboard players set @s tmp 15
 execute as @e[tag=creature,scores={waveID=4,questID=16}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
-execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=6,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=6,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=6,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
+execute as @s[scores={questState=6,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 13)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=6,playerID=1,tmp=15}] if score brackiumTimer p1Quests matches 0 run tag @s add newState
@@ -458,10 +458,10 @@ execute as @s[scores={questState=7,playerID=4},tag=gameLeader] if score brackium
 # Count the enemies
 scoreboard players set @s tmp 10
 execute as @e[tag=creature,scores={waveID=5,questID=16}] run scoreboard players remove @p[tag=activePlayer] tmp 1
-execute as @s[scores={questState=7,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
-execute as @s[scores={questState=7,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от оппонентов (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=1},tag=isTrackedQuest] if score brackiumTimer p1Quests matches 0 run bossbar set minecraft:player1quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=2},tag=isTrackedQuest] if score brackiumTimer p2Quests matches 0 run bossbar set minecraft:player2quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=3},tag=isTrackedQuest] if score brackiumTimer p3Quests matches 0 run bossbar set minecraft:player3quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
+execute as @s[scores={questState=7,playerID=4},tag=isTrackedQuest] if score brackiumTimer p4Quests matches 0 run bossbar set minecraft:player4quest name ["",{"text":"Защищайтесь  от противников (","color":"gold"},{"score":{"name":"@s","objective":"tmp"},"color":"gold"},{"text":" из 10)","color":"gold"}]
 
 ### Trigger ###
 execute as @s[scores={questState=7,playerID=1,tmp=10}] if score brackiumTimer p1Quests matches 0 run tag @s add newState

@@ -27,7 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Здравствуй! Я преподаватель по защите от тёмных искуств,\\n \"},{\"text\":\"профессор Римус Джон Люпин\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Здравствуй! Я преподаватель по защите от тёмных искусств,\\n \"},{\"text\":\"профессор Римус Джон Люпин\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\".\\n\\n\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -77,7 +77,7 @@ execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о Боггарте\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 3
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о защите от тёмных искуств\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Расскажите мне о защите от тёмных искусств\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 8
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Кем был предыдущий преподаватель по ЗОТИ?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
@@ -445,7 +445,7 @@ tag @s[scores={convState=12},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Дементоры работают в британском Министерстве Магии, которое в основном использует их в качестве тюремных надзирателей в Азкабане. У дементоров нет истинной преданности, кроме тех, кто может дать им больше людей, что бы питаться душами. Они жестокие существа, которые не смогут отличить того, на кого они охотятся, от того, кто встанет у них на пути.\"}"} 
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Дементоры работают в британском Министерстве Магии, которое в основном использует их в качестве тюремных надзирателей в Азкабане. У дементоров нет истинной преданности, кроме тех, кто может дать им больше людей, чтобы питаться душами. Они жестокие существа, которые не смогут отличить того, на кого они охотятся, от того, кто встанет у них на пути.\"}"} 
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -577,7 +577,7 @@ tag @s[scores={convState=16},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Есть ещё кое-что, что бы ты мог сделать для меня. Идеально подойдёт для такого как ты; кажется, у тебя есть к этому талант. Я знаю, что известный историк, Батильда Бэгшот, занимается поиском новой книги. Не удивлюсь, если она воспользуется твоей помощью. Поговори с ней и скажи, что я тебя послал. Ты найдешь её в Годриковой впадине. \"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Есть ещё кое-что, чтобы ты мог сделать для меня. Идеально подойдёт для такого как ты; кажется, у тебя есть к этому талант. Я знаю, что известный историк, Батильда Бэгшот, занимается поиском новой книги. Не удивлюсь, если она воспользуется твоей помощью. Поговори с ней и скажи, что я тебя послал. Ты найдешь её в Годриковой впадине. \"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -1403,7 +1403,7 @@ tag @s[scores={convState=39},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Заклинание Остолбеней - боевое заклинание, которое позволит тебе нападать и защитить себя от противников. Заклинание хорошо работает в сочетании с оружием малой дальности, и порой, нет ничего плохого в том что бы просто ударить своих врагов палочкой.\\n\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Заклинание Остолбеней - боевое заклинание, которое позволит тебе нападать и защитить себя от противников. Заклинание хорошо работает в сочетании с оружием малой дальности, и порой, нет ничего плохого в том, чтобы просто ударить своих врагов палочкой.\\n\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -1639,7 +1639,7 @@ tag @s[scores={convState=46},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Обучением и тестированием занимаются в Министерстве Магии. На твоём месте я бы отправился в Министерство что бы пройти тест. Поговори с Уикли Двукрестом. Но знай, это не входит в программу Хогвартса. Это не будет бесплатно.\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Обучением и тестированием занимаются в Министерстве Магии. На твоём месте я бы отправился в Министерство чтобы пройти тест. Поговори с Уикли Двукрестом. Но знай, это не входит в программу Хогвартса. Это не будет бесплатно.\\n\\n\",\"color\":\"white\",\"bold\":\"false\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

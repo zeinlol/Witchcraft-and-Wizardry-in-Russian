@@ -21,10 +21,10 @@ execute as @s[scores={questState=1},tag=isTrackedQuest] run scoreboard players s
 
 
 execute as @s[scores={questState=1},tag=isTrackedQuest,tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint] run scoreboard players set @s questTextTimer 2
-execute as @s[scores={questState=1,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Защитись от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Защитись от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Защитись от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
-execute as @s[scores={questState=1,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Защитись от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=1},tag=isTrackedQuest] run bossbar set minecraft:player1quest name ["",{"text":"Защититесь от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=2},tag=isTrackedQuest] run bossbar set minecraft:player2quest name ["",{"text":"Защититесь от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=3},tag=isTrackedQuest] run bossbar set minecraft:player3quest name ["",{"text":"Защититесь от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
+execute as @s[scores={questState=1,playerID=4},tag=isTrackedQuest] run bossbar set minecraft:player4quest name ["",{"text":"Защититесь от 20 Флоббер-червей (","color":"gold"},{"score":{"name":"trainingGroundToadsKills","objective":"sharedQuests"},"color":"gold"},{"text":" из 20)","color":"gold"}]
 
 
 

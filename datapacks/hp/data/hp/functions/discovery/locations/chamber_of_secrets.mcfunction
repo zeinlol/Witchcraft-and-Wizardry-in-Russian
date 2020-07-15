@@ -1,8 +1,8 @@
 # On Discover
-execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1empty name {"text":"Discovered Secret","color":"white","italic":"true"}
-execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2empty name {"text":"Discovered Secret","color":"white","italic":"true"}
-execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3empty name {"text":"Discovered Secret","color":"white","italic":"true"}
-execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4empty name {"text":"Discovered Secret","color":"white","italic":"true"}
+execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=1},tag=!inProperCutScene] run bossbar set minecraft:player1empty name {"text":"Обнаружена секретная локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=2},tag=!inProperCutScene] run bossbar set minecraft:player2empty name {"text":"Обнаружена секретная локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=3},tag=!inProperCutScene] run bossbar set minecraft:player3empty name {"text":"Обнаружена секретная локация","color":"white","italic":"true"}
+execute as @s[tag=!discovered_chamber_of_secrets,scores={playerID=4},tag=!inProperCutScene] run bossbar set minecraft:player4empty name {"text":"Обнаружена секретная локация","color":"white","italic":"true"}
 execute at @s[tag=!discovered_chamber_of_secrets,tag=!inProperCutScene] run playsound minecraft:custom.ui.discovery.discover_secret master @s ~ ~ ~ 10 1 1
 # Unlock location if it has not been discovered
 execute as @s[tag=!discovered_chamber_of_secrets,tag=!inProperCutScene] run scoreboard players set @s mapLocationID 56
