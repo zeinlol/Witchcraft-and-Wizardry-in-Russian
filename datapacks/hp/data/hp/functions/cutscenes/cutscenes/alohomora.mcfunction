@@ -445,28 +445,34 @@ tp @s[scores={cutSceneTimer=450}] 6456.276 38.27179 9.472455 -89.92 12.38
 execute as @s[scores={cutSceneTimer=430}] run function hp:cutscenes/fade_in
 
 # ¤Hermione:¤ When exploring the world, you will come across doors that are locked.
+# ¤Гермиона:¤ Изучая этот мир ты будешь часто встречаться с закрытыми дверьми.
 execute as @s[scores={cutSceneTimer=30},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=30..160}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"            "}]
+execute as @s[scores={cutSceneTimer=30..160}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Изучая этот мир ты будешь часто встречаться с закрытыми дверьми."}]
 
 # ¤Hermione:¤ These can be unlocked with the 'Alohomora' charm.
+# ¤Гермиона:¤ Их можно открыть заклинанием 'Алохомора'.
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=161..300}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"        "}]
+execute as @s[scores={cutSceneTimer=161..300}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Их можно открыть заклинанием 'Алохомора'."}]
 
 # ¤Hermione:¤ Double click £ while hovering over the locked door to use the spell.
+# ¤Гермиона:¤ Двойное нажатие £ перед запертой дверью откроет её.
 execute as @s[scores={cutSceneTimer=301},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=301..440}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
+execute as @s[scores={cutSceneTimer=301..440}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Двойное нажатие £ перед запертой дверью откроет её."}]
 
 # ¤Hermione:¤ Other doors are magically protected against Заклинание, and require a key.
+# ¤Гермиона:¤ Некоторые двери защищены от открытия заклинанием. Для них потребуется ключ.
 execute as @s[scores={cutSceneTimer=441},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=441..590}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"            "}]
+execute as @s[scores={cutSceneTimer=441..590}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Некоторые двери защищены от открытия заклинанием. Для них потребуется ключ."}]
 
 # ¤Hermione:¤ Keys can only be used once, but you can usually find one nearby these doors.
+# ¤Гермиона:¤ Ключ можно использовать один раз, но ты скорее всего найдёшь его возле двери.
 execute as @s[scores={cutSceneTimer=591},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=591..740}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"               "}]
+execute as @s[scores={cutSceneTimer=591..740}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":"Ключ можно использовать один раз, но ты скорее всего найдёшь его возле двери."}]
 
 # ¤Hermione:¤ See if you can make it through this obstacle course.
+# ¤Гермиона;¤ Посмотрим, справишься ли ты со всеми заданиями.
 execute as @s[scores={cutSceneTimer=741},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=741..870}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"          "}]
+execute as @s[scores={cutSceneTimer=741..870}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Посмотрим, справишься ли ты со всеми заданиями."}]
 
 
 execute as @s[scores={cutSceneTimer=870}] run function hp:music/music/swish_and_flick
@@ -474,7 +480,7 @@ execute as @s[scores={cutSceneTimer=870}] run scoreboard players set @s queuedMu
 
 # ¤Hermione:¤ Удачи!
 execute as @s[scores={cutSceneTimer=870},tag=cutsceneLeader] at @s run playsound minecraft:custom.voices.voice2 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=870..950}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"  "}]
+execute as @s[scores={cutSceneTimer=870..950}] run title @s actionbar ["",{"text":""},{"text":"Гермиона;","color":"dark_gray"},{"text":" Удачи!"}]
 
 
 execute as @s[scores={cutSceneTimer=450}] run function hp:cutscenes/fade_out

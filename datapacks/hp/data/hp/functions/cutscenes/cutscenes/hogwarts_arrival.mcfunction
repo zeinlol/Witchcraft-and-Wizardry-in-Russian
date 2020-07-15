@@ -21,11 +21,13 @@ execute as @s[scores={cutSceneTimer=35},tag=cutsceneLeader] as 1a1a00da-0001-495
 execute as @s[scores={cutSceneTImer=35},tag=cutsceneLeader] as aef7fe88-f0f1-4979-bf9a-02f0e39f5239 run tp @s 1267.11 33.89 -1627.46 -90 0
 
 
-
-title @s[scores={cutSceneTimer=200..400}] actionbar ["",{"text":"  "}]
+#Welcome to Hogwarts!
+#Добро Пожаловать в Хогвартс!
+title @s[scores={cutSceneTimer=200..400}] actionbar ["",{"text":"Добро Пожаловать в Хогвартс!"}]
 
 # 1268.11 32.80 -1626.96 -90.86 90.00
-tp @s[scores={cutSceneTimer=25}] 1268.109 32.799 -1626.96 -90.86 89.98824
+
+tp @s[scores={cutSceneTimer=25}] 1268.109 32.799 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=26}] 1268.109 32.798 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=27}] 1268.108 32.797 -1626.96 -90.86 89.98824
 tp @s[scores={cutSceneTimer=28}] 1268.108 32.796 -1626.96 -90.86 89.98824
@@ -541,9 +543,11 @@ tp @s[scores={cutSceneTimer=522}] 771.2571 132.55 257.685 -604.2281 -3.72
 
 execute as @s[scores={cutSceneTimer=400}] run function hp:cutscenes/fade_out
 # Explore the turrets and towers, get lost in the forbidden forest,
-title @s[scores={cutSceneTimer=400..600}] actionbar ["",{"text":"          "}]
+# Исследуйте здания и помещения, заблудитесь в запретном лесу,
+title @s[scores={cutSceneTimer=400..600}] actionbar ["",{"text":"Исследуйте здания и помещения, заблудитесь в запретном лесу,"}]
 # uncover the mysteries and uncover the mysteries of the castle and its grounds.
-title @s[scores={cutSceneTimer=600..800}] actionbar ["",{"text":"        "}]
+# раскройте загадки и тайны замка на его территории.
+title @s[scores={cutSceneTimer=600..800}] actionbar ["",{"text":" раскройте загадки и тайны замка на его территории."}]
 
 title @s[scores={cutSceneTimer=801..}] actionbar ""
 

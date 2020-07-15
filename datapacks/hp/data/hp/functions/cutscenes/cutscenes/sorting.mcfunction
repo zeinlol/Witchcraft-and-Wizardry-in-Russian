@@ -590,7 +590,7 @@ execute as @s[scores={cutSceneTimer=0}] run stopsound @s * minecraft:custom.musi
 
 # ¤McGonagall:¤ Welcome to Hogwarts.
 execute as @s[scores={cutSceneTimer=-560},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-560..-450}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
+execute as @s[scores={cutSceneTimer=-560..-450}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Добро пожаловать в Хогвартс."}]
 execute as @s[scores={cutSceneTimer=-560},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-553},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-549},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -602,8 +602,9 @@ execute as @s[scores={cutSceneTimer=-520},tag=cutsceneLeader] as @e[tag=sortingC
 
 
 # ¤McGonagall:¤ Now in a few moments you will pass through these doors, and join your classmates,
+# ¤McGonagall:¤ Скоро начнется банкет по случаю начала учебного года,
 execute as @s[scores={cutSceneTimer=-450},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-450..-330}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"               "}]
+execute as @s[scores={cutSceneTimer=-450..-330}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Скоро начнется банкет по случаю начала учебного года,"}]
 execute as @s[scores={cutSceneTimer=-450},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-443},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-439},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -616,7 +617,7 @@ execute as @s[scores={cutSceneTimer=-410},tag=cutsceneLeader] as @e[tag=sortingC
 
 # ¤McGonagall:¤ but before you can take your seats you must be sorted into your houses.
 execute as @s[scores={cutSceneTimer=-330},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-330..-220}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"              "}]
+execute as @s[scores={cutSceneTimer=-330..-220}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" но прежде чем вы сядете за столы, вас разделят на факультеты."}]
 execute as @s[scores={cutSceneTimer=-330},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-323},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-319},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -628,7 +629,7 @@ execute as @s[scores={cutSceneTimer=-290},tag=cutsceneLeader] as @e[tag=sortingC
 
 # ¤McGonagall:¤ They are Gryffindor, Hufflepuff, Ravenclaw, and Slytherin.
 execute as @s[scores={cutSceneTimer=-220},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-220..-100}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]
+execute as @s[scores={cutSceneTimer=-220..-100}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Факультетов в школе четыре — Гриффиндор, Пуффендуй, Когтевран и Слизерин."}]
 execute as @s[scores={cutSceneTimer=-220},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-213},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-209},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -641,7 +642,7 @@ execute as @s[scores={cutSceneTimer=-182},tag=cutsceneLeader] as @e[tag=sortingC
 
 # ¤McGonagall:¤ We're ready for you now. Follow me.
 execute as @s[scores={cutSceneTimer=-100},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=-100..0}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]
+execute as @s[scores={cutSceneTimer=-100..0}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Следуйте за мной. Церемония отбора сейчас начнется."}]
 execute as @s[scores={cutSceneTimer=-100},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=-93},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=-89},tag=cutsceneLeader] as @e[tag=sortingCeremonyMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -1544,7 +1545,7 @@ tp @s[scores={cutSceneTimer=731}] 4941.61 32.73009 1050.55 -57.42 12.68
 
 # ¤McGonagall:¤ Can you wait along here please?
 execute as @s[scores={cutSceneTimer=660},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] at @s run playsound minecraft:custom.voices.voice4 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=660..720}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"      "}]
+execute as @s[scores={cutSceneTimer=660..720}] run title @s actionbar ["",{"text":""},{"text":"Макгонагалл;","color":"dark_gray"},{"text":" Выстройтесь в шеренгу и ожидайте пока вас вызовут!"}]
 execute as @s[scores={cutSceneTimer=660},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=667},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=671},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingMcGonagall,limit=1] run function hp:npc/update_npc_head_expression
@@ -1811,7 +1812,7 @@ tp @s[scores={cutSceneTimer=981}] 4941.976 33.23383 1054.329 -13.91503 3.827497
 
 # ¤Dumbledore:¤ Welcome! Welcome! To another year at Hogwarts.
 execute as @s[scores={cutSceneTimer=751},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=751..850}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"       "}]
+execute as @s[scores={cutSceneTimer=751..850}] run title @s actionbar ["",{"text":""},{"text":"Дамблдор;","color":"dark_gray"},{"text":" Добро пожаловать! Добро пожаловать в Хогвартс!"}]
 execute as @s[scores={cutSceneTimer=751},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=758},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=762},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_expression
@@ -1828,7 +1829,7 @@ execute as @s[scores={cutSceneTimer=793},tag=cutsceneLeader] as @e[tag=sortingCe
 
 # ¤Dumbledore:¤ Let the sorting ceremony begin!
 execute as @s[scores={cutSceneTimer=850},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1 1 0
-execute as @s[scores={cutSceneTimer=850..960}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"     "}]
+execute as @s[scores={cutSceneTimer=850..960}] run title @s actionbar ["",{"text":""},{"text":"Дамблдор;","color":"dark_gray"},{"text":" Время начинать церемонию отбора!"}]
 execute as @s[scores={cutSceneTimer=850},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=857},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=861},tag=cutsceneLeader] as @e[tag=sortingCeremonyWalkingDumbledore,limit=1] run function hp:npc/update_npc_head_expression

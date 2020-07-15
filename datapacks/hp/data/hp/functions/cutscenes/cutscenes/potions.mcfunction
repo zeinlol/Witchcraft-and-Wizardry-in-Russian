@@ -1095,8 +1095,9 @@ tp @s[scores={cutSceneTimer=1080}] 758.9767 36.55687 188.6976 267.87 6.05
 
 
 # ¤Snape:¤ There will be no foolish wand waving or silly incantations in this class.
+# ¤Snape:¤ На этом уроке не будет дурацких взмахов волшебной палочки и глупых заклинаний.
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=20..140}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
+execute as @s[scores={cutSceneTimer=20..140}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" На этом уроке не будет дурацких взмахов волшебной палочки и глупых заклинаний."}]
 execute as @s[scores={cutSceneTimer=20},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=27},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=31},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1108,7 +1109,7 @@ execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=snapeClass
 
 # ¤Snape:¤ As such, I don't expect many of you to appreciate the subtle science and exact art that is potion brewing,
 execute as @s[scores={cutSceneTimer=140},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=140..320}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                    "}]
+execute as @s[scores={cutSceneTimer=140..320}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" Я не надеюсь, что вы оцените такую тонкую науку, такое точное искусство, как приготовление зелий."}]
 execute as @s[scores={cutSceneTimer=140},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=147},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=151},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1120,7 +1121,7 @@ execute as @s[scores={cutSceneTimer=180},tag=cutsceneLeader] as @e[tag=snapeClas
 
 # ¤Snape:¤ However for those select few who posess the predisposition
 execute as @s[scores={cutSceneTimer=320},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=320..420}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"         "}]
+execute as @s[scores={cutSceneTimer=320..420}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" Однако тех нескольких... избранных, кто имеет предрасположение,"}]
 execute as @s[scores={cutSceneTimer=320},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=327},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=331},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1132,7 +1133,7 @@ execute as @s[scores={cutSceneTimer=360},tag=cutsceneLeader] as @e[tag=snapeClas
 
 # ¤Snape:¤ I can teach you how to bewitch the mind, and ensnare the senses.
 execute as @s[scores={cutSceneTimer=420},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=420..600}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"             "}]
+execute as @s[scores={cutSceneTimer=420..600}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" Я научу вас, как околдовать разум и обмануть чувства. Я расскажу вам как"}]
 execute as @s[scores={cutSceneTimer=420},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=427},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=431},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1144,7 +1145,7 @@ execute as @s[scores={cutSceneTimer=460},tag=cutsceneLeader] as @e[tag=snapeClas
 
 # ¤Snape:¤ I can tell you how to bottle fame, brew glory and even put a stopper in death.
 execute as @s[scores={cutSceneTimer=510},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=510..600}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                 "}]
+execute as @s[scores={cutSceneTimer=510..600}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" разлить по бутылкам известность, как заваривать славу, и даже как закупорить смерть…"}]
 execute as @s[scores={cutSceneTimer=510},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=517},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=521},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1156,8 +1157,9 @@ execute as @s[scores={cutSceneTimer=550},tag=cutsceneLeader] as @e[tag=snapeClas
 
 
 # ¤Snape:¤ In this lesson you will be brewing the "Настойка Растопырника" potion,
+# ¤Snape:¤ На этом занятии вы научитесь варить зелье 'Настойка Растопырника',
 execute as @s[scores={cutSceneTimer=600},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=600..800}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"           "}]
+execute as @s[scores={cutSceneTimer=600..800}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" На этом занятии вы научитесь варить зелье 'Настойка Растопырника',"}]
 execute as @s[scores={cutSceneTimer=600},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=607},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=611},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1168,8 +1170,9 @@ execute as @s[scores={cutSceneTimer=633},tag=cutsceneLeader] as @e[tag=snapeClas
 execute as @s[scores={cutSceneTimer=640},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 
 # ¤Snape:¤ which when consumed will restore a significant amount of your health.
+# ¤Snape:¤ которое восстановит часть вашего здоровья при употреблении.
 execute as @s[scores={cutSceneTimer=700},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=700..800}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"           "}]
+execute as @s[scores={cutSceneTimer=700..800}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" которое восстановит часть вашего здоровья при употреблении."}]
 execute as @s[scores={cutSceneTimer=700},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=707},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=711},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1181,8 +1184,9 @@ execute as @s[scores={cutSceneTimer=740},tag=cutsceneLeader] as @e[tag=snapeClas
 
 
 # ¤Snape:¤ For this you need to collect a variety of potion supplies that are scattered in and around this room.
+# ¤Snape:¤ Для этого вам нужно собрать различные ингредиенты для зелья, разложенные в этой комнате.
 execute as @s[scores={cutSceneTimer=800},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=800..970}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"                   "}]
+execute as @s[scores={cutSceneTimer=800..970}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" Для этого вам нужно собрать различные ингредиенты для зелья, разложенные в этой комнате."}]
 execute as @s[scores={cutSceneTimer=800},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=807},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=811},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
@@ -1194,7 +1198,7 @@ execute as @s[scores={cutSceneTimer=840},tag=cutsceneLeader] as @e[tag=snapeClas
 
 # ¤Snape:¤ You may begin.
 execute as @s[scores={cutSceneTimer=970},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=970..1170}] run title @s actionbar ["",{"text":""},{"text":"","color":"dark_gray"},{"text":"   "}]
+execute as @s[scores={cutSceneTimer=970..1170}] run title @s actionbar ["",{"text":""},{"text":"Снегг;","color":"dark_gray"},{"text":" Можете начинать."}]
 execute as @s[scores={cutSceneTimer=970},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=977},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=981},tag=cutsceneLeader] as @e[tag=snapeClassroom,limit=1] run function hp:npc/update_npc_head_expression
