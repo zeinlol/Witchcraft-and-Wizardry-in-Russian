@@ -27,8 +27,7 @@ tag @s[scores={convState=0},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мне нужно передать это письмо моему другу из Лондона, но моя сова ещё не вернулась, и я не могу просто положить письмо в почтовый ящик в Хогвартсе. Тут их нет! Ни одного!
-\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Мне нужно передать это письмо моему другу из Лондона, но моя сова ещё не вернулась, и я не могу просто положить письмо в почтовый ящик в Хогвартсе. Тут их нет! Ни одного!\"}"}
 # execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
