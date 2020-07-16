@@ -110,7 +110,7 @@ execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=1}] as @s[tag=
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=2}] run data merge entity @s {CustomName:"{\"text\":\"≤ Вам что-то известно о Сами-знаете-ком?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=2}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 5
 #-------------------------------
-execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Какие у Вас задачи в замке?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
+execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=3}] run data merge entity @s {CustomName:"{\"text\":\"≤ Какие у вас задачи в замке?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
 execute as @s[tag=trg] as @e[type=armor_stand,limit=1,scores={con=3}] as @s[tag=convSelected] as @p[tag=activePlayer,scores={tmp=0}] store success score @s tmp run scoreboard players set @s convState 13
 #-------------------------------
 execute as @s[tag=use] as @e[type=armor_stand,limit=1,scores={con=4}] run data merge entity @s {CustomName:"{\"text\":\"≤ Почему вы такой высокий?\"}",Tags:["_____Normal_____","_____click_____","convOption","i"]}
@@ -617,7 +617,7 @@ tag @s[scores={convState=18},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Когда зайдешь, yтебе следует пойти в \"},{\"text\":\"Банк Гринготтс\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\" и поменяй часть магловских денег на нашу волшебную валюту. Нет более безопасного места чем это, ни единого. Кроме, возможно, Хогвартса. Банком управляют гоблины. Поговори с Крюкохватом, он тебе поможет. \\n Что ж, удачи! Увидимся в Хогвартсе.\"}]"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"[{\"text\":\" Когда зайдешь, тебе следует пойти в \"},{\"text\":\"Банк Гринготтс\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\" и поменяй часть магловских денег на нашу волшебную валюту. Нет более безопасного места чем это, ни единого. Кроме, возможно, Хогвартса. Банком управляют гоблины. Поговори с Крюкохватом, он тебе поможет. \\n Что ж, удачи! Увидимся в Хогвартсе.\"}]"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

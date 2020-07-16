@@ -337,7 +337,7 @@ execute as @s[scores={cutSceneTimer=60},tag=cutsceneLeader] as @e[tag=lupinStupe
 # ¤Lupin:¤ You've already learned to aim and shoot the spell. Now for a bit more of a challenge.
 # ¤Lupin:¤ Ты научился использовать заклинание. Теперь перейдём к следующему заданию.
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] at @s run playsound minecraft:custom.voices.voice1 master @a ~ ~ ~ 1000 1 1
-execute as @s[scores={cutSceneTimer=161..311}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Ты научились использовать заклинание. Теперь перейдём к следующему заданию."}]
+execute as @s[scores={cutSceneTimer=161..311}] run title @s actionbar ["",{"text":""},{"text":"Люпин;","color":"dark_gray"},{"text":" Вы научились использовать заклинание. Теперь перейдём к следующему заданию."}]
 execute as @s[scores={cutSceneTimer=161},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] run function hp:npc/update_npc_head_expression
 execute as @s[scores={cutSceneTimer=168},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] run function hp:npc/update_npc_head_neutral
 execute as @s[scores={cutSceneTimer=172},tag=cutsceneLeader] as @e[tag=lupinStupefyArena,limit=1] run function hp:npc/update_npc_head_expression
