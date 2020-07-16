@@ -290,10 +290,10 @@ execute as @s[scores={conv=73,playerID=1}] run bossbar set minecraft:player1info
 execute as @s[scores={conv=73,playerID=2}] run bossbar set minecraft:player2info name {"text":"Эйвери Аббот","bold":true,"color":"gold"}
 execute as @s[scores={conv=73,playerID=3}] run bossbar set minecraft:player3info name {"text":"Эйвери Аббот","bold":true,"color":"gold"}
 execute as @s[scores={conv=73,playerID=4}] run bossbar set minecraft:player4info name {"text":"Эйвери Аббот","bold":true,"color":"gold"}
-execute as @s[scores={conv=74,playerID=1}] run bossbar set minecraft:player1info name {"text":"Бравен Саламандер","bold":true,"color":"gold"}
-execute as @s[scores={conv=74,playerID=2}] run bossbar set minecraft:player2info name {"text":"Бравен Саламандер","bold":true,"color":"gold"}
-execute as @s[scores={conv=74,playerID=3}] run bossbar set minecraft:player3info name {"text":"Бравен Саламандер","bold":true,"color":"gold"}
-execute as @s[scores={conv=74,playerID=4}] run bossbar set minecraft:player4info name {"text":"Бравен Саламандер","bold":true,"color":"gold"}
+execute as @s[scores={conv=74,playerID=1}] run bossbar set minecraft:player1info name {"text":"Бравена Саламандер","bold":true,"color":"gold"}
+execute as @s[scores={conv=74,playerID=2}] run bossbar set minecraft:player2info name {"text":"Бравена Саламандер","bold":true,"color":"gold"}
+execute as @s[scores={conv=74,playerID=3}] run bossbar set minecraft:player3info name {"text":"Бравена Саламандер","bold":true,"color":"gold"}
+execute as @s[scores={conv=74,playerID=4}] run bossbar set minecraft:player4info name {"text":"Бравена Саламандер","bold":true,"color":"gold"}
 execute as @s[scores={conv=75,playerID=1}] run bossbar set minecraft:player1info name {"text":"Карактак Бёрк","bold":true,"color":"gold"}
 execute as @s[scores={conv=75,playerID=2}] run bossbar set minecraft:player2info name {"text":"Карактак Бёрк","bold":true,"color":"gold"}
 execute as @s[scores={conv=75,playerID=3}] run bossbar set minecraft:player3info name {"text":"Карактак Бёрк","bold":true,"color":"gold"}
