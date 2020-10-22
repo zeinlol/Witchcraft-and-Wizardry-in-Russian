@@ -74,7 +74,7 @@ execute as @s[scores={questState=3},tag=isTrackedQuest] run tag @s add questHasN
 execute as @s[scores={questState=3},tag=isTrackedQuest] run scoreboard players set @s questRegion 1
 
 ### Trigger ###
-execute positioned 288.09 5.00 436.40 as @s[distance=..4,scores={questState=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set demiguiseDodge sharedQuests 4
+execute positioned 309.38 14.00 357.45 as @s[distance=..4,scores={questState=3},tag=!inConversation,tag=!inProperCutScene,tag=!inResetPoint,tag=isTrackedQuest] run scoreboard players set demiguiseDodge sharedQuests 4
 
 execute as @s[scores={playerID=1}] unless score demiguiseDodge p1Quests = demiguiseDodge sharedQuests if score demiguiseDodge sharedQuests matches 4 run tag @s add newState
 execute as @s[scores={playerID=2}] unless score demiguiseDodge p2Quests = demiguiseDodge sharedQuests if score demiguiseDodge sharedQuests matches 4 run tag @s add newState
@@ -198,6 +198,10 @@ execute as @s[tag=completeQuest,scores={playerID=3}] run scoreboard players oper
 execute as @s[tag=completeQuest,scores={playerID=4}] run scoreboard players operation demiguiseDodge p4Quests = demiguiseDodge sharedQuests
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
+
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set demiguiseDodge sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 
 # reset quest tracking boolean
