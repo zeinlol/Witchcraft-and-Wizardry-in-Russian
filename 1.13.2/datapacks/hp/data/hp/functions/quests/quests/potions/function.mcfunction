@@ -6,7 +6,17 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
-
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemID 3
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s InvItemCount 1
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run function hp:inventory/give_player_item
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s quickSlot1ID 3
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s quickSlot2ID 0
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove preventPlacingMurtlapEssenceInQuickslot
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove potionStandLocked
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 756.39 36.00 189.89 -419.75 3.19
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 #############
 ## State 1 ###########################################################################################

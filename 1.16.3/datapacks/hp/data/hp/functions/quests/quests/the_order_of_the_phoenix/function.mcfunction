@@ -6,6 +6,19 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=1}] run scoreboard players set alastorMoody p1convOverride 4
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=2}] run scoreboard players set alastorMoody p2convOverride 4
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=3}] run scoreboard players set alastorMoody p3convOverride 4
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=4}] run scoreboard players set alastorMoody p4convOverride 4
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=1}] run scoreboard players set mundungusFletcher p1convOverride 8
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=2}] run scoreboard players set mundungusFletcher p2convOverride 8
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=3}] run scoreboard players set mundungusFletcher p3convOverride 8
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=4}] run scoreboard players set mundungusFletcher p4convOverride 8
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 9851.19 122.00 10176.16 -179.83 -0.89
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############

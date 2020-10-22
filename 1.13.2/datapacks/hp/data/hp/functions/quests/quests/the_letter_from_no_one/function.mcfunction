@@ -6,6 +6,12 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add trigger
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2312.15 64.00 -937.34 -702.52 -0.05
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s hotbar_stage 4
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ##
 #############

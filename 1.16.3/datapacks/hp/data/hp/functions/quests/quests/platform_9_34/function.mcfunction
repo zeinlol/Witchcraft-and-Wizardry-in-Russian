@@ -6,6 +6,18 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=1}] run scoreboard players set stan p1convOverride 12
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=2}] run scoreboard players set stan p2convOverride 12
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=3}] run scoreboard players set stan p3convOverride 12
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=4}] run scoreboard players set stan p4convOverride 12
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=1}] run scoreboard players set trainConductor p1convOverride 11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=2}] run scoreboard players set trainConductor p2convOverride 11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=3}] run scoreboard players set trainConductor p3convOverride 11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest,scores={playerID=4}] run scoreboard players set trainConductor p4convOverride 11
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 3022.48 60.00 -441.33 -180.15 3.17
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 #############
 ## State 1 ###########################################################################################

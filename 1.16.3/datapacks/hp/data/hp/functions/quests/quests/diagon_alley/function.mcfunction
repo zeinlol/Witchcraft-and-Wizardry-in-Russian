@@ -6,6 +6,13 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2849.56 56.00 801.78 1.20 -0.88
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove diagonAlleyNotUnlocked
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s worldBarrier 2
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 #############
 ## State 1 ###########################################################################################
 #############

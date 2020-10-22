@@ -111,6 +111,10 @@ execute as @s[scores={questState=1}] as @e[tag=trevor1,tag=!visible,limit=1] run
 execute as @s[scores={questState=1}] as @e[tag=trevor1,tag=!visible,limit=1] run tag @s add visible
 execute as @s[scores={questState=1},tag=gameLeader] as @e[tag=trevor1,tag=!visible,limit=1] run function hp:quests/quests/toad_hunt/croak
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set toadHunt1 sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
+
 # reset quest tracking boolean
 tag @s remove isTrackedQuest
 

@@ -6,6 +6,11 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestGringotts
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2845.53 47.00 1077.58 179.84 -0.22
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s hotbar_stage 5
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # Showing tips (placed here for performance)
 execute as @s[tag=showingTips] run function hp:misc/tips

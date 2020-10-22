@@ -412,10 +412,11 @@ execute as @s[tag=completeQuest] store result entity 85e9b3cd-e941-46cc-9f51-24e
 execute as @s[tag=completeQuest] store result entity 85e9b3cd-e941-46cc-9f51-24e733358a40 ArmorItems[3].tag."invItem.AntidoteToPoisons.count" int 1 run scoreboard players set tmp tmp 1
 execute as @s[tag=completeQuest] store result entity 85e9b3cd-e941-46cc-9f51-24e733358a40 ArmorItems[3].tag."invItem.EssenceOfGillyweed.count" int 1 run scoreboard players set tmp tmp 1
 execute as @s[tag=completeQuest,tag=gameLeader] run scoreboard players add global sqCompleted 1
-execute as @s[tag=completeQuest] run tag @s add musicController
-execute as @s[tag=completeQuest,scores={musicPhase=..0}] run scoreboard players set @s musicPhase 0
 execute as @s[tag=completeQuest] run tag @s remove completeQuest
 
+# Complete Quest Cheat
+execute as @s[tag=completeTrackedQuest] run scoreboard players set elikElixersRats sharedQuests -1
+execute as @s[tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # reset quest tracking boolean
 tag @s remove isTrackedQuest

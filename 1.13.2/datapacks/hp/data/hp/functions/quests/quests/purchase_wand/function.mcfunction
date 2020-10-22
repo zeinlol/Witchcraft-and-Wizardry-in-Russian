@@ -6,6 +6,10 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuestWand
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 2831.49 46.00 995.71 439.78 1.62
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # This quest is sort of special since it's added with 2 other quests. That gets taken care of here: Not very elegant but it works.
 execute as @s[tag=!currentQuestIsPurchaseWand] run scoreboard players set @s questTimer 70

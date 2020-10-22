@@ -6,6 +6,23 @@ execute store result score @s questState run data get entity @e[tag=questHolder,
 execute if score @s questID = @s trackedQuestID run scoreboard players operation @s trackQuestState = @s questState
 execute if score @s questID = @s trackedQuestID run tag @s add isTrackedQuest
 
+# Complete Quest Cheat
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add completeQuest
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run summon area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:1000,Particle:"block air",Tags:[chunkLoader]}
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] as @e[tag=chunkLoader,limit=1,sort=nearest] at @s run spreadplayers 728 136 1 1 false @s
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @s 722.52 66.00 152.50 179.84 0.68
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s add unlockedSpells
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run scoreboard players set @s unlockedSpell 7
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] at @s run tp @e[tag=veraVertoGoblet] ~ ~-500 ~
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] at @s run tp @e[tag=mcGonagallClassroomCat] ~ ~-500 ~
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] at @s run tp @e[tag=mcGonagallClassroomCutscene] ~ ~-500 ~
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run kill @e[tag=veraVertoGoblet]
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run kill @e[tag=mcGonagallClassroomCat]
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run kill @e[tag=mcGonagallClassroomCutscene]
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run effect clear @e[tag=veraVertoParrot,limit=1] minecraft:invisibility
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tp @e[tag=mcGonagallClassroom] 724 66 140
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run kill @e[tag=chunkLoader]
+execute as @s[tag=isTrackedQuest,tag=completeTrackedQuest] run tag @s remove completeTrackedQuest
 
 # Memory catch up (Skip walking to classroom, etc.)
 execute as @s[scores={questState=1},tag=inNormalState,tag=isTrackedQuest] run tag @s add newState
