@@ -369,8 +369,7 @@ tag @s[scores={convState=10},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" There is one Keeper per team, and it is their job to guard the three goalposts attempting to stop the other team's Chasers from scoring. Вратарь also wears the most protection than any other position, which includes a helmet, shoulder/chest pads, and knee pads. This protects them and effectively makes them heavier than most of their other teammates.
-На каждую команду приходится по одному Вратарю. Его работа - охранять три кольца, в которые пытаются забросить Квофл игроки второй команды. Кроме того, Вратарь имеет наибольшую степень защиты, чем другие игроки, которая включает в себя шлем, накладки на плечи/грудь и колени. Это защищает их и естественно делает их тяжелее, чем большинство их товарищей по команде.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" На каждую команду приходится по одному Вратарю. Его работа - охранять три кольца, в которые пытаются забросить Квофл игроки второй команды. Кроме того, Вратарь имеет наибольшую степень защиты, чем другие игроки, которая включает в себя шлем, накладки на плечи/грудь и колени. Это защищает их и естественно делает их тяжелее, чем большинство их товарищей по команде.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################
@@ -534,8 +533,7 @@ tag @s[scores={convState=15},tag=triggerOption,tag=!drawOptions] add trg
 ################################
 ##### Conversation Header ######
 ################################
-execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Snidgets were used in Quidditch until the 14th century, when Quidditch had grown so much in popularity that the snidget had become an endangered species. People started looking for alternative birds when Bowman Wright, a metal-charmer from Годрикова впадина, came up with the artificial snidget, Золотой Снитч, that is also used in modern Quidditch.
-Сниджеты использовались в Квиддиче до 14 века. В то время Квиддич стал настолько популярен, что сниджеты стали вымирающим видом. Люди начали искать альтернативных птиц, когда Боумен Райт, волшебник, работающий с металлом из Годриковой Впадины, придумал и создал Золотой Снитч, который используется до сих пор.\"}"}
+execute if entity @s[tag=use] as 0-0-6-0-9 run data merge entity @s {CustomName:"{\"text\":\" Сниджеты использовались в Квиддиче до 14 века. В то время Квиддич стал настолько популярен, что сниджеты стали вымирающим видом. Люди начали искать альтернативных птиц, когда Боумен Райт, волшебник, работающий с металлом из Годриковой Впадины, придумал и создал Золотой Снитч, который используется до сих пор.\"}"}
 execute if entity @s[tag=use] run tag @s add longHeader
 
 ################################

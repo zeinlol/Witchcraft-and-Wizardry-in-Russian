@@ -100,6 +100,7 @@ execute if entity @s[tag=riddlePotion] if entity @p[tag=activePlayer,tag=hasPres
 # Locked door
 execute if entity @s[tag=keyLockedDoor,tag=locked] as @p[tag=activePlayer,scores={pickUpTimer=0,keys=0},tag=!cutsceneOverrideActionbar] store success score @s tmp run title @s actionbar ["",{"text":"Вам нужен ключ, чтобы отпереть эту дверь!","bold":false,"color":"red"}]
 execute if entity @s[tag=keyLockedDoor,tag=locked] as @p[tag=activePlayer,scores={pickUpTimer=0,keys=1..},tag=!cutsceneOverrideActionbar] store success score @s tmp run title @s actionbar ["",{"text":"Нажмите ","color":"gold"},{"text":"⌡","bold":false,"color":"white"},{"text":" чтобы открыть дверь с помощью ключа. В наличии ","color":"gold"},{"score":{"name":"@s","objective":"keys"},"bold":true,"color":"white"},{"text":" шт.","color":"gold"}]
+execute if entity @s[tag=keyLockedDoor,tag=locked] if entity @p[tag=activePlayer,scores={keys=1..},tag=hasPressedF] at @s run function hp:misc/open_locked_door
 
 # Radio
 execute if entity @s[tag=radio,tag=!radioOn] unless score @s animTest matches 1.. as @p[tag=activePlayer,scores={pickUpTimer=0},tag=!cutsceneOverrideActionbar] store success score @s tmp run title @s actionbar ["",{"text":"Нажмите ","color":"gold"},{"text":"⌡","bold":false,"color":"white"},{"text":" чтобы включить","color":"gold"}]
