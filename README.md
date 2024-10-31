@@ -1,5 +1,5 @@
 # Witchcraft and Wizardry in Russian
-  This is a Russian version of popular Minecraft map Witchcraft and Wizardry. Now this map is fully thanslated in Russian.  
+  This is a Russian version of popular Minecraft map Witchcraft and Wizardry. Now this map is fully translated in Russian.  
 Trailer:  
 [![Watch the video](https://img.youtube.com/vi/wK_dRJeQX0w/hqdefault.jpg)](https://youtu.be/wK_dRJeQX0w)
 
